@@ -1,0 +1,8 @@
+Generate_tf.py \
+--jobConfig=MC15.240000.ParticleGun_single_geantinos_E10.py \
+--ecmEnergy=14000 \
+--outputEVNTFile=pgun_10GeV_geantinos_EVNT.root \
+--maxEvents=100000 \
+--randomSeed=1234 \
+--runNumber=240000 \
+--firstEvent=1

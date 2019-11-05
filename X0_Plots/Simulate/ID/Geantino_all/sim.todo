@@ -1,0 +1,11 @@
+Sim_tf.py \
+--inputEVNTFile pgun_2M_10GeV_geantinos_Eta6_v2_EVNT.root \
+--outputHITSFile OUT.HITS_ID.pool.root \
+--skipEvents 0 \
+--maxEvents 100000 \
+--geometryVersion ATLAS-R2-2016-00-01-00_VALIDATION \
+--conditionsTag OFLCOND-MC16-SDR-03 \
+--DataRunNumber=284500 \
+--randomSeed 873254 \
+--preInclude preInclude.IDOnly.py \
+--preInclude G4UserActions/LengthIntegrator_options.py

@@ -1,0 +1,1 @@
+rm -f submit.log ; bsub_lxplus 1nd submit.log 0 ./submit.sh

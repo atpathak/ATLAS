@@ -1,0 +1,13 @@
+Sim_tf.py \
+--inputEVNTFile /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/INPUT/pgun_2M_10GeV_geantinos_Eta6_v2_EVNT.root \
+--outputHITSFile OUT.HITS_IExtBrl4.pool.root \
+--skipEvents 0 \
+--maxEvents 40000 \
+--geometryVersion 'default:ATLAS-P2-ITK-12-00-01_VALIDATION' \
+--conditionsTag 'default:OFLCOND-MC15c-SDR-13' \
+--DataRunNumber '240000' \
+--randomSeed 873254 \
+--preInclude 'all:InDetSLHC_Example/preInclude.SLHC.py,InDetSLHC_Example/preInclude.NoTRT_NoBCM_NoDBM.py,InDetSLHC_Example/preInclude.SLHC_Setup_IExtBrl_4.py,InDetSLHC_Example/preInclude.SLHC_Setup_Strip_GMX.py,G4UserActions/LengthIntegrator_options.py' \
+--postExec 'EVNTtoHITS:ServiceMgr.DetDescrCnvSvc.DoInitNeighbours = False' \
+--postInclude 'all:PyJobTransforms/UseFrontier.py,InDetSLHC_Example/postInclude.SLHC_Setup_IExtBrl_4.py,InDetSLHC_Example/postInclude.SLHC_Setup.py' \
+--preExec 'all:from InDetSLHC_Example.SLHC_JobProperties import SLHC_Flags;SLHC_Flags.doGMX.set_Value_and_Lock(True)'
