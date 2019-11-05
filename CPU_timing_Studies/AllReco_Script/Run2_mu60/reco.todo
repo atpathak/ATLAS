@@ -1,0 +1,18 @@
+Reco_tf.py \
+--inputRDOFile SLHCtest_1.RDO.pool.root,SLHCtest_2.RDO.pool.root \
+--outputESDFile SLHCtest.ESD.pool.root \
+--digiSeedOffset1 '50107' --digiSeedOffset2 '57122' \
+--maxEvents 50 \
+--skipEvents 350 \
+--conditionsTag 'default:OFLCOND-MC16-SDR-13' \
+--pileupFinalBunch '6' \
+--numberOfHighPtMinBias '0.312197744' \
+--autoConfiguration 'everything' \
+--numberOfLowPtMinBias '59.68780226' \
+--preInclude 'HITtoRDO:Digitization/ForceUseOfPileUpTools.py,SimulationJobOptions/preInclude.PileUpBunchTrainsMC15_2015_25ns_Config1.py,RunDependentSimData/configLumi_user.py' 'RDOtoRDOTrigger:RecExPers/RecoOutputMetadataList_jobOptions.py' 'switch_off_trigger.py' \
+--postExec 'all:CfgMgr.MessageSvc().setError+=["HepMcParticleLink"]' \
+--postInclude 'default:PyJobTransforms/UseFrontier.py' \
+--preExec 'all:rec.Commissioning.set_Value_and_Lock(True);from AthenaCommon.BeamFlags import jobproperties;jobproperties.Beam.numberOfCollisions.set_Value_and_Lock(20.0);from LArROD.LArRODFlags import larRODFlags;larRODFlags.NumberOfCollisions.set_Value_and_Lock(20);larRODFlags.nSamples.set_Value_and_Lock(4);larRODFlags.doOFCPileupOptimization.set_Value_and_Lock(True);larRODFlags.firstSample.set_Value_and_Lock(0);larRODFlags.useHighestGainAutoCorr.set_Value_and_Lock(True)' 'ESDtoAOD:TriggerFlags.AODEDMSet="AODFULL"' 'HITtoRDO:userRunLumiOverride={"run":284500, "lb":1, "starttstamp":1445203790, "mu":60.0}' 'rec.doTruth.set_Value_and_Lock(False)' \
+--triggerConfig 'RDOtoRDOTrigger=MCRECO:DBF:TRIGGERDBMC:2094,36,102' \
+--geometryVersion 'default:ATLAS-R2-2016-00-01-00' \
+--numberOfCavernBkg '0'

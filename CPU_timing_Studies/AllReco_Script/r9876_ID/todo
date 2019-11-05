@@ -1,0 +1,11 @@
+#!/bin/bash
+shopt -s expand_aliases
+sleep 120
+cd /data/apathak/VF_ITK_6Oct2017_r9876_ID
+# directly go to directory to launch jobs so that multiple instances of asetup can be run simultaneously without interfereing with each other
+export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+source /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/user/atlasLocalSetup.sh
+source $AtlasSetup/scripts/asetup.sh 20.20.10.9,AtlasProduction,here
+cd /data/apathak/VF_ITK_6Oct2017_r9876_ID/RunArea/Reconstr_5
+rm -f reco.log
+time ./reco.todo 2>&1 > reco.log

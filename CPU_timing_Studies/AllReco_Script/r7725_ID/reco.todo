@@ -1,0 +1,16 @@
+Reco_tf.py \
+--inputRDOFile SLHCtest_1.RDO.pool.root,SLHCtest_2.RDO.pool.root \
+--outputESDFile SLHCtest.ESD.pool.root \
+--digiSeedOffset1 '50107' --digiSeedOffset2 '57122' \
+--maxEvents 50 \
+--skipEvents 200 \
+--conditionsTag 'default:OFLCOND-MC15c-SDR-09' \
+--pileupFinalBunch '6' \
+--numberOfHighPtMinBias '0.12268057' \
+--autoConfiguration 'everything' \
+--numberOfLowPtMinBias '39.8773194' \
+--preInclude switch_off_non_id.py \
+--postInclude 'default:RecJobTransforms/UseFrontier.py' \
+--preExec 'all:rec.Commissioning.set_Value_and_Lock(True);from AthenaCommon.BeamFlags import jobproperties;jobproperties.Beam.numberOfCollisions.set_Value_and_Lock(20.0);from LArROD.LArRODFlags import larRODFlags;larRODFlags.NumberOfCollisions.set_Value_and_Lock(20);larRODFlags.nSamples.set_Value_and_Lock(4);larRODFlags.doOFCPileupOptimization.set_Value_and_Lock(True);larRODFlags.firstSample.set_Value_and_Lock(0);larRODFlags.useHighestGainAutoCorr.set_Value_and_Lock(True)' 'RAWtoESD:from CaloRec.CaloCellFlags import jobproperties;jobproperties.CaloCellFlags.doLArCellEmMisCalib=False' 'rec.doTruth.set_Value_and_Lock(False);' \
+--geometryVersion 'default:ATLAS-R2-2015-03-01-00' \
+--numberOfCavernBkg '0'

@@ -1,0 +1,11 @@
+all : histogrambinned Pileup Pileup_new #cpuEfficiency cpuEfficiency_old
+histogrambinned: histogrambinned.cc
+	g++ -g -O2 -fPIC -Wno-deprecated -D__USE_XOPEN2K8 -o histogrambinned histogrambinned.cc `root-config --cflags --libs --ldflags` -L${ROOTSYS}/lib -lHistFactory -lXMLParser -lRooStats -lRooFit -lRooFitCore -lThread -lMinuit -lFoam -lMathMore -lHtml -lGpad -lm
+Pileup: Pileup.cc
+	g++ -g -O2 -fPIC -Wno-deprecated -D__USE_XOPEN2K8 -o Pileup Pileup.cc `root-config --cflags --libs --ldflags` -L${ROOTSYS}/lib -lHistFactory -lXMLParser -lRooStats -lRooFit -lRooFitCore -lThread -lMinuit -lFoam -lMathMore -lHtml -lGpad -lm
+Pileup_new: Pileup_new.cc
+	g++ -g -O2 -fPIC -Wno-deprecated -D__USE_XOPEN2K8 -o Pileup_new Pileup_new.cc `root-config --cflags --libs --ldflags` -L${ROOTSYS}/lib -lHistFactory -lXMLParser -lRooStats -lRooFit -lRooFitCore -lThread -lMinuit -lFoam -lMathMore -lHtml -lGpad -lm
+#cpuEfficiency_old: cpuEfficiency_old.cc
+#	g++ -g -O2 -fPIC -Wno-deprecated -D__USE_XOPEN2K8 -o cpuEfficiency_old cpuEfficiency_old.cc `root-config --cflags --libs --ldflags` -L${ROOTSYS}/lib -lHistFactory -lXMLParser -lRooStats -lRooFit -lRooFitCore -lThread -lMinuit -lFoam -lMathMore -lHtml -lGpad -lm
+clean: 
+	rm -f histogrambinned Pileup Pileup_new #cpuEfficiency
