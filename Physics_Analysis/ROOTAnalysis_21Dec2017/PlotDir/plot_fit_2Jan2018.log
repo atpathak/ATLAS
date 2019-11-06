@@ -1,0 +1,1353 @@
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0154189 FROM MIGRAD    STATUS=CONVERGED    1346 CALLS        1741 TOTAL
+                     EDM=6.51037e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.77299e-04   3.06656e-02   7.87819e-05   8.17776e-04
+   2  p1           1.79528e-01   1.87790e-01   1.28049e-03   1.18291e-05
+   3  p2           6.65758e-02   1.80719e-01   1.00144e-03  -5.86280e-05
+   4  p3           1.10201e-01   4.63009e-02   8.97475e-05  -1.00728e-03
+   5  p4           1.18912e-02   2.70036e-02   1.17753e-04  -5.93608e-04
+   6  p5           1.60180e-02   3.48910e-02   9.97399e-05  -8.70536e-04
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_1.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.00458302 FROM HESSE     STATUS=OK             40 CALLS        1386 TOTAL
+                     EDM=8.92256e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.65042e-04   7.03555e-03   1.28932e-05   1.64699e-03
+   2  p1           1.59843e-01   1.68338e-01   2.62579e-04  -1.92567e-05
+   3  p2           6.28981e-02   1.52684e-01   2.22880e-04  -2.46181e-04
+   4  p3           8.11052e-02   1.46957e-02   8.45537e-06   1.47630e-03
+   5  p4           5.57011e-03   8.61632e-03   1.48405e-05   1.94109e-03
+   6  p5           1.40477e-02   1.75653e-02   1.27001e-05  -4.14092e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_2.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.207314 FROM HESSE     STATUS=OK             40 CALLS         832 TOTAL
+                     EDM=5.52811e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.68301e-03   4.64938e-03   8.53632e-06   2.17299e-03
+   2  p1           7.10421e-02   1.35642e-02   1.20296e-05  -7.62655e-05
+   3  p2           8.88410e-03   1.23237e-02   2.63058e-05   1.67601e-04
+   4  p3           2.10552e-05   1.54692e-01   1.95202e-03   6.43892e-05
+   5  p4           1.63036e-01   9.98237e-02   4.26445e-04  -4.90422e-05
+   6  p5           1.40207e-02   3.27389e-02   3.00204e-05  -7.12869e-04
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_3.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0423805 FROM MIGRAD    STATUS=CONVERGED     124 CALLS        1744 TOTAL
+                     EDM=3.60747e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.06262e-03   5.80725e-03   3.56515e-05  -3.02379e-03
+   2  p1           5.67063e-02   1.04457e-02   3.69817e-05   2.15749e-03
+   3  p2           4.63397e-03   6.93446e-03   8.75807e-05  -1.90747e-04
+   4  p3           6.81792e-02   6.91513e-02   1.53197e-04  -2.87692e-03
+   5  p4           8.03128e-03   2.10418e-02   1.67240e-04  -1.36207e-03
+   6  p5           5.21978e-03   1.47051e-02   5.90744e-05   2.57254e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_4.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Warning in <Fit>: Abnormal termination of minimization.
+ FCN=0.0227395 FROM MIGRAD    STATUS=FAILED       1647 CALLS        1648 TOTAL
+                     EDM=0.00302604    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.09059e-03   8.50075e-01   1.09070e-04  -1.07098e-04
+   2  p1           2.46677e-01   2.44930e-01   1.00179e-02   2.21583e-04
+   3  p2           1.02120e-01   1.32715e-01   1.55235e-03  -3.26604e-04
+   4  p3           4.91121e-02   6.50529e-03   3.96666e-04   7.36668e-04
+   5  p4           2.85553e-03   6.70193e-03   6.46537e-05  -2.90565e-03
+   6  p5           7.29658e-03   1.01070e-02   4.50239e-04  -3.59511e-04
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_5.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.246995 FROM HESSE     STATUS=FAILED          5 CALLS         833 TOTAL
+                     EDM=3.55318e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.47649e-01   2.24768e-01   2.24768e-03   7.20367e-01
+   2  p1           2.45300e-01   5.53017e-02   5.53017e-04   3.52098e-02
+   3  p2           3.24893e-03   5.59687e-02   5.59687e-04  -3.69004e-02
+   4  p3           4.28002e-02   1.02190e-02   1.02190e-04  -3.64234e-01
+   5  p4           6.45568e-03   3.66314e-03   3.66314e-05   8.27320e-02
+   6  p5           6.89403e-03   6.88627e-03   6.88627e-05  -2.89770e-01
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_6.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0103276 FROM MIGRAD    STATUS=CONVERGED     603 CALLS        1027 TOTAL
+                     EDM=4.51648e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.17359e-04   1.27328e-01   1.37036e-04  -1.34295e-03
+   2  p1           2.45908e-01   1.50888e-01   4.15869e-02   1.29458e-06
+   3  p2           1.74963e-01   1.86590e-01   1.38241e-02  -2.76128e-05
+   4  p3           3.01308e-02   7.02486e-03   3.19204e-05  -4.31120e-03
+   5  p4           3.10772e-03   3.81890e-03   4.93987e-05   7.09726e-03
+   6  p5           5.20665e-03   5.52774e-03   3.61089e-05  -7.66331e-05
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_7.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Warning in <Fit>: Abnormal termination of minimization.
+ FCN=0.806973 FROM MIGRAD    STATUS=FAILED        568 CALLS         569 TOTAL
+                     EDM=8.17924e+08    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.29784e-01   1.99826e-01  -0.00000e+00   0.00000e+00
+   2  p1           5.71334e-02   1.51951e-01  -0.00000e+00   0.00000e+00
+   3  p2           3.20662e-05   2.99618e-02  -0.00000e+00   2.15265e+03
+   4  p3           4.34500e-13   1.66301e-01   0.00000e+00** at limit **
+   5  p4           1.34414e-02   4.61375e-02   0.00000e+00  -1.23069e-01
+   6  p5           8.56443e-03   1.19122e-01   0.00000e+00  -1.66837e+00
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_8.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0129924 FROM MIGRAD    STATUS=CONVERGED     460 CALLS        1448 TOTAL
+                     EDM=2.75221e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.04847e-04   4.64940e-03   9.36434e-05  -2.49741e-03
+   2  p1           1.22942e-02   1.09178e-02   6.44359e-05   1.55670e-03
+   3  p2           2.62471e-03   7.07126e-03   9.06849e-05  -2.65939e-03
+   4  p3           1.15898e-02   9.07849e-03   4.00341e-05  -1.24465e-03
+   5  p4           1.66059e-03   4.54834e-03   5.28102e-05   1.01785e-02
+   6  p5           1.83182e-03   6.25710e-03   3.07504e-05  -4.57001e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_9.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.836492 FROM HESSE     STATUS=FAILED          9 CALLS         592 TOTAL
+                     EDM=3.67644e-06    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.19818e-02   1.19518e-02   8.77962e-05  -1.79438e-02
+   2  p1           2.60506e-06   2.47225e-01   7.72144e-03  -6.83715e-05
+   3  p2           2.38095e-01   2.19197e-01   3.46344e-03  -1.01250e-04
+   4  p3           3.11259e-02   1.33367e-01  -1.61804e-04   0.00000e+00
+   5  p4           3.60380e-05   5.74456e-02  -1.76077e-04   0.00000e+00
+   6  p5           2.00703e-01   3.37031e-01  -0.00000e+00   0.00000e+00
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay0_Fit_10.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0094007 FROM HESSE     STATUS=OK             40 CALLS        1081 TOTAL
+                     EDM=7.13995e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.56282e-03   4.46746e-02   2.43145e-05   1.14464e-04
+   2  p1           8.89625e-02   8.24116e-02   4.61445e-05   7.76961e-04
+   3  p2           2.68089e-02   1.48015e-01   6.52281e-05  -1.16104e-03
+   4  p3           8.06742e-02   1.46282e-01   7.68815e-05   7.02133e-04
+   5  p4           3.17981e-02   2.22169e-01   6.42000e-05  -4.28973e-04
+   6  p5           1.00195e-02   1.02949e-01   9.02084e-05  -1.78646e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_1.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.00305599 FROM MIGRAD    STATUS=CONVERGED     379 CALLS        1165 TOTAL
+                     EDM=2.82513e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.90020e-03   1.69201e-02   4.61715e-05  -3.42055e-04
+   2  p1           4.42440e-02   2.01087e-01   2.23896e-04   3.86406e-04
+   3  p2           1.79923e-02   5.36523e-02   2.59883e-04  -2.24720e-04
+   4  p3           6.55051e-02   4.61961e-02   1.25075e-04   2.16458e-04
+   5  p4           8.93493e-03   2.07501e-02   1.61748e-04   3.39313e-04
+   6  p5           1.07654e-02   3.00053e-02   1.11702e-04  -3.02556e-04
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_2.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.00386929 FROM MIGRAD    STATUS=CONVERGED     579 CALLS        1413 TOTAL
+                     EDM=1.75979e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.55035e-03   1.09110e-02   4.19796e-05   2.62443e-04
+   2  p1           3.60810e-02   1.84808e-01   2.01472e-04  -2.30918e-03
+   3  p2           1.46442e-02   4.28979e-02   2.34916e-04   6.32109e-04
+   4  p3           5.36276e-02   3.25424e-02   1.02507e-04   1.66080e-03
+   5  p4           6.84037e-03   1.45922e-02   1.42025e-04  -1.76863e-03
+   6  p5           9.02718e-03   2.22736e-02   6.06349e-05  -5.77375e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_3.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.115112 FROM HESSE     STATUS=OK             40 CALLS         728 TOTAL
+                     EDM=3.70527e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.01993e-04   3.56370e-02   2.88855e-05  -2.57489e-04
+   2  p1           2.50000e-01   5.74621e-02   3.01175e-03   1.62227e-06
+   3  p2           2.49891e-01   5.72599e-02   2.64110e-03  -6.96358e-05
+   4  p3           3.62183e-02   2.11539e-02   2.34266e-05   2.08470e-03
+   5  p4           1.02548e-02   1.37100e-02   2.09285e-05   8.59396e-04
+   6  p5           1.06623e-02   1.15581e-02   1.23094e-05   3.01593e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_4.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.115877 FROM HESSE     STATUS=FAILED          5 CALLS         946 TOTAL
+                     EDM=4.42325e-10    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.94913e-05   1.88247e-01   1.88247e-03   1.68911e-01
+   2  p1           2.46577e-01   5.58886e-02   5.58886e-04   3.55834e-02
+   3  p2           1.46002e-04   5.73951e-02   5.73951e-04  -3.78409e-02
+   4  p3           3.13532e-02   1.50301e-02   1.50301e-04  -1.90064e-01
+   5  p4           9.46242e-03   6.87798e-03   6.87798e-05   6.35242e-02
+   6  p5           8.28731e-03   8.27580e-03   8.27580e-05  -2.89304e-01
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_5.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0957984 FROM MIGRAD    STATUS=CONVERGED     134 CALLS         932 TOTAL
+                     EDM=1.6963e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.55357e-04   2.62459e-02   9.87690e-05  -3.06721e-03
+   2  p1           1.28431e-05   5.72146e-02   8.36645e-03   5.26734e-05
+   3  p2           2.37071e-01   1.27484e-01   1.28106e-02  -7.17203e-04
+   4  p3           2.67877e-02   1.56439e-02   9.93851e-05  -1.02222e-03
+   5  p4           6.43484e-03   1.25927e-02   1.12037e-04  -4.92783e-04
+   6  p5           6.26355e-03   8.84804e-03   4.52865e-05   1.21193e-02
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_6.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Warning in <Fit>: Abnormal termination of minimization.
+ FCN=0.191597 FROM MIGRAD    STATUS=FAILED        535 CALLS         536 TOTAL
+                     EDM=3.88741e+16    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.44936e-01   1.37851e-01  -0.00000e+00   0.00000e+00
+   2  p1           1.36372e-01   3.67429e-03  -0.00000e+00   0.00000e+00
+   3  p2           1.20906e-03   8.12991e-03   0.00000e+00  -2.93799e+01
+   4  p3           2.28517e-02   2.54675e-02   0.00000e+00   6.28426e-02
+   5  p4           9.40622e-03   1.31776e-01   0.00000e+00   1.66564e+00
+   6  p5           6.24392e-03   6.23742e-03   0.00000e+00  -8.08865e-01
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_7.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0796784 FROM MIGRAD    STATUS=CONVERGED     341 CALLS         686 TOTAL
+                     EDM=3.38926e-07    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   2.5 per cent
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.52315e-04   2.80924e-02  -2.92950e-03   1.39173e-03
+   2  p1           1.22549e-01   1.78639e-01   6.87923e-04   4.93727e-04
+   3  p2           2.26526e-01   1.31230e-01   1.52461e-03   2.42741e-04
+   4  p3           1.20847e-02   7.17746e-03  -2.55952e-04   2.44860e-03
+   5  p4           3.52871e-03   4.74765e-03   1.71050e-03   2.39369e-04
+   6  p5           3.96550e-03   4.36396e-03  -2.84004e-05  -4.15520e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_8.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.0769039 FROM HESSE     STATUS=OK             44 CALLS         842 TOTAL
+                     EDM=3.37354e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.13804e-08   7.90438e-02   4.23193e-04** at limit **
+   2  p1           1.88792e-01   9.04553e-02   5.00000e-01   5.43202e-10
+   3  p2           2.49774e-01   5.73582e-02   5.00000e-01   2.01683e-09
+   4  p3           7.01651e-03   4.46548e-03   4.46359e-05   1.45069e-03
+   5  p4           2.16211e-03   2.03688e-03   3.62224e-05   1.37873e-03
+   6  p5           2.65921e-03   2.65973e-03   9.36760e-05  -9.81208e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_9.pdf has been created
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+Info in ROOT::Math::ParameterSettings>: lower/upper bounds outside current parameter value. The value will be set to (low+up)/2 
+ FCN=0.824892 FROM HESSE     STATUS=FAILED          9 CALLS         419 TOTAL
+                     EDM=9.80488e-09    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.25550e-02   1.25281e-02   8.95610e-05  -6.96797e-04
+   2  p1           3.69447e-09   2.27532e-01   6.81182e-03** at limit **
+   3  p2           2.49999e-01   5.74618e-02   2.24246e-02   4.79946e-06
+   4  p3           3.54052e-02   5.28620e-02   5.28620e-04  -3.91296e+00
+   5  p4           5.13178e-05   1.85839e-01   1.85839e-03   4.44406e-07
+   6  p5           1.20426e-01   2.73864e-01   2.73864e-03  -8.00036e-02
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay1_Fit_10.pdf has been created
+ FCN=0.001712 FROM MIGRAD    STATUS=CONVERGED     542 CALLS        1131 TOTAL
+                     EDM=6.61366e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.49946e-03   9.95516e-02   5.17952e-05   3.03585e-05
+   2  p1           7.20871e-02   1.40792e-01   2.88848e-04  -1.85093e-03
+   3  p2           2.95589e-02   1.85962e-01   3.45839e-04   3.38633e-04
+   4  p3           1.02964e-01   1.75937e-01   2.50898e-04   2.76483e-03
+   5  p4           1.83415e-02   1.44850e-01   2.47596e-04  -2.64122e-03
+   6  p5           1.24080e-02   1.26258e-01   7.66799e-05   7.81475e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_1.pdf has been created
+ FCN=0.00279999 FROM HESSE     STATUS=OK             40 CALLS        1208 TOTAL
+                     EDM=5.89603e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.50932e-03   2.06540e-02   9.55167e-06   3.36122e-03
+   2  p1           5.58751e-02   1.50536e-01   4.31993e-05  -5.16211e-04
+   3  p2           2.25055e-02   5.60393e-02   5.17386e-05  -9.42827e-04
+   4  p3           7.35083e-02   7.27797e-02   3.65337e-05   2.33306e-04
+   5  p4           1.14139e-02   3.30078e-02   4.18314e-05   1.82402e-03
+   6  p5           9.32159e-03   3.71283e-02   1.44371e-05  -1.60985e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_2.pdf has been created
+ FCN=0.00358538 FROM MIGRAD    STATUS=CONVERGED     731 CALLS        1163 TOTAL
+                     EDM=4.15994e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.94985e-03   1.48522e-02   4.38835e-05  -2.31644e-03
+   2  p1           4.48462e-02   1.45873e-01   2.00248e-04   3.51234e-04
+   3  p2           1.82321e-02   4.67487e-02   2.42711e-04  -2.47390e-04
+   4  p3           5.93055e-02   4.82511e-02   1.38885e-04  -1.13334e-03
+   5  p4           8.55598e-03   2.15915e-02   1.70968e-04   6.56463e-04
+   6  p5           8.08921e-03   2.79245e-02   6.46528e-05   1.33903e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_3.pdf has been created
+ FCN=0.00446661 FROM MIGRAD    STATUS=CONVERGED     712 CALLS        1374 TOTAL
+                     EDM=1.84657e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.61334e-03   1.19071e-02   3.93454e-05   1.67520e-03
+   2  p1           3.85761e-02   7.38434e-02   1.77718e-04  -4.72267e-04
+   3  p2           1.55120e-02   3.94590e-02   2.18979e-04   1.10123e-04
+   4  p3           5.02493e-02   4.30922e-02   1.28338e-04  -3.23287e-04
+   5  p4           7.28373e-03   1.87232e-02   1.59515e-04   2.77865e-04
+   6  p5           6.35800e-03   2.28009e-02   5.85079e-05  -1.99399e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_4.pdf has been created
+ FCN=0.00606101 FROM HESSE     STATUS=OK             40 CALLS        1294 TOTAL
+                     EDM=2.64405e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.20688e-03   8.76645e-03   6.81507e-06  -4.26277e-03
+   2  p1           3.31565e-02   6.49494e-02   3.29194e-05  -6.38795e-04
+   3  p2           1.34270e-02   3.38027e-02   4.05123e-05  -3.34472e-04
+   4  p3           4.34946e-02   3.61084e-02   2.29413e-05  -2.23499e-04
+   5  p4           6.26716e-03   1.58241e-02   2.95152e-05  -3.84193e-04
+   6  p5           4.84197e-03   1.71009e-02   1.01879e-05   1.06731e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_5.pdf has been created
+ FCN=0.0027699 FROM MIGRAD    STATUS=CONVERGED     363 CALLS        1226 TOTAL
+                     EDM=7.28891e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.08086e-03   7.66106e-03   3.06660e-05  -6.55799e-04
+   2  p1           2.83112e-02   5.42642e-02   1.39521e-04   2.98865e-04
+   3  p2           1.12166e-02   2.76174e-02   1.73666e-04   1.01727e-04
+   4  p3           3.69643e-02   3.65920e-02   1.14791e-04  -1.57835e-03
+   5  p4           5.53869e-03   1.59584e-02   1.46701e-04  -1.59353e-03
+   6  p5           3.84957e-03   1.49774e-02   4.71517e-05  -1.94622e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_6.pdf has been created
+ FCN=0.0010094 FROM MIGRAD    STATUS=CONVERGED     420 CALLS         983 TOTAL
+                     EDM=4.53464e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.54704e-04   7.66895e-03   2.70291e-05   9.19163e-03
+   2  p1           2.15280e-02   4.27815e-02   1.10483e-04  -3.34210e-03
+   3  p2           8.54926e-03   2.25193e-02   1.41535e-04  -3.54639e-04
+   4  p3           2.76207e-02   4.04293e-02   1.20520e-04   2.34207e-03
+   5  p4           4.61979e-03   1.68555e-02   1.46743e-04   2.63767e-03
+   6  p5           2.84551e-03   1.70835e-02   4.35308e-05  -5.93934e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_7.pdf has been created
+ FCN=0.000796956 FROM MIGRAD    STATUS=CONVERGED     387 CALLS        1190 TOTAL
+                     EDM=2.05921e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.13299e-04   6.62252e-03   2.30708e-05  -5.26222e-03
+   2  p1           1.43917e-02   2.64552e-02   8.43010e-05  -3.02279e-03
+   3  p2           5.77715e-03   1.61158e-02   1.10070e-04  -4.28756e-03
+   4  p3           1.80135e-02   4.39308e-02   1.21806e-04  -2.17945e-03
+   5  p4           3.40782e-03   2.04480e-02   1.40581e-04   5.92223e-03
+   6  p5           1.86062e-03   1.87612e-02   3.91431e-05  -7.26725e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_8.pdf has been created
+ FCN=0.00109523 FROM MIGRAD    STATUS=CONVERGED     218 CALLS        2073 TOTAL
+                     EDM=1.63389e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.56262e-04   1.50969e-03   1.57865e-05   4.85543e-03
+   2  p1           9.54151e-03   8.48870e-03   4.27670e-05   2.09661e-03
+   3  p2           3.52834e-03   6.11743e-03   5.63219e-05   1.50314e-03
+   4  p3           1.88386e-02   1.25193e-01   1.90030e-04  -5.90883e-04
+   5  p4           2.80352e-03   1.52213e-02   2.25800e-04   2.07680e-04
+   6  p5           4.10739e-04   6.85669e-03   2.91712e-05   3.60378e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_9.pdf has been created
+ FCN=0.00114024 FROM HESSE     STATUS=OK             40 CALLS        1441 TOTAL
+                     EDM=5.364e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.86965e-04   1.99428e-03   2.29072e-06   5.55508e-03
+   2  p1           4.75693e-03   1.03900e-02   6.89074e-06  -8.71740e-04
+   3  p2           1.82914e-03   5.57193e-03   8.95683e-06   1.48743e-03
+   4  p3           8.24591e-03   1.37680e-01   2.10184e-05  -1.13847e-03
+   5  p4           1.28115e-03   1.88411e-02   2.60670e-05  -3.35018e-04
+   6  p5           3.15907e-04   1.51249e-02   4.28589e-06  -1.42373e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay2_Fit_10.pdf has been created
+ FCN=0.00510573 FROM HESSE     STATUS=OK             40 CALLS        1337 TOTAL
+                     EDM=3.86543e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.26962e-03   4.62021e-02   1.34668e-05   8.31376e-04
+   2  p1           7.16081e-02   2.08267e-01   9.16523e-05  -5.68858e-04
+   3  p2           3.23420e-02   2.33746e-01   2.26116e-05   5.37644e-07
+   4  p3           6.02136e-02   2.18620e-01   5.30448e-05   1.85572e-04
+   5  p4           2.22238e-02   5.64326e-02   4.41156e-05  -1.06891e-04
+   6  p5           1.31038e-02   5.15399e-02   1.63009e-05   1.74759e-04
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_1.pdf has been created
+ FCN=0.00220052 FROM MIGRAD    STATUS=CONVERGED     555 CALLS        1071 TOTAL
+                     EDM=4.93754e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.55266e-03   7.46312e-02   8.61848e-05   2.42050e-03
+   2  p1           3.59575e-02   2.31188e-01   1.81817e-04  -2.95780e-03
+   3  p2           1.58664e-02   1.41934e-01   2.22739e-04   1.19099e-03
+   4  p3           6.05562e-02   2.19044e-01   2.02448e-04   1.23872e-04
+   5  p4           1.11916e-02   1.82837e-01   2.07086e-04   4.06156e-03
+   6  p5           9.20728e-03   1.28325e-01   6.85317e-05   5.08658e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_2.pdf has been created
+ FCN=0.00174968 FROM HESSE     STATUS=OK             40 CALLS        1315 TOTAL
+                     EDM=0.000138248    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.43742e-03   1.61555e-01   7.90180e-06  -7.27687e-03
+   2  p1           3.09247e-02   2.20978e-01   3.10519e-05   2.19850e-03
+   3  p2           1.37939e-02   2.32986e-01   3.82929e-05   2.21526e-03
+   4  p3           5.17243e-02   1.96915e-01   3.86435e-05  -9.70535e-05
+   5  p4           9.44423e-03   1.92209e-01   4.03003e-05  -3.92340e-05
+   6  p5           6.86809e-03   6.26540e-01   1.26841e-05  -2.38700e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_3.pdf has been created
+Warning in <Fit>: Abnormal termination of minimization.
+ FCN=0.00254423 FROM MIGRAD    STATUS=FAILED       1213 CALLS        1214 TOTAL
+                     EDM=1.1217e-05    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.24646e-03   6.11212e-03   3.19121e-05   2.01687e-02
+   2  p1           3.35812e-02   3.52939e-02   1.05548e-04  -3.90822e-03
+   3  p2           1.44687e-02   2.80494e-02   1.32472e-04  -1.04031e-03
+   4  p3           7.12818e-02   1.41320e-01   3.49988e-04  -4.32321e-05
+   5  p4           1.10409e-02   3.83236e-02   3.75047e-04   7.10536e-05
+   6  p5           2.20070e-03   2.10810e-02   5.72277e-05  -1.08979e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_4.pdf has been created
+ FCN=0.00163964 FROM HESSE     STATUS=OK             40 CALLS        1231 TOTAL
+                     EDM=1.12663e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           8.78445e-04   3.17467e-02   6.06815e-06  -6.92336e-05
+   2  p1           1.74284e-02   1.53281e-01   2.72678e-05  -1.64308e-03
+   3  p2           7.20220e-03   1.90984e-01   3.41186e-05  -2.42310e-03
+   4  p3           3.27410e-02   1.83122e-01   2.03105e-05  -1.90014e-03
+   5  p4           5.65028e-03   1.16698e-02   2.40652e-05  -3.14586e-03
+   6  p5           5.64371e-03   3.33709e-02   9.17264e-06  -4.74820e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_5.pdf has been created
+ FCN=0.00325004 FROM MIGRAD    STATUS=CONVERGED     393 CALLS         964 TOTAL
+                     EDM=1.97671e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.28751e-03   1.42309e-02   3.21575e-05  -2.59939e-03
+   2  p1           2.32440e-02   1.97586e-01   1.54711e-04   1.21721e-03
+   3  p2           1.14042e-02   2.81769e-02   1.99742e-04  -2.58728e-03
+   4  p3           2.54532e-02   1.85550e-01   2.29228e-04  -5.29175e-04
+   5  p4           8.41119e-03   1.32954e-01   2.07146e-04   1.54200e-03
+   6  p5           3.44677e-03   3.31262e-02   5.33171e-05   3.61109e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_6.pdf has been created
+ FCN=0.00315821 FROM HESSE     STATUS=OK             40 CALLS         983 TOTAL
+                     EDM=8.86003e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           9.08774e-04   9.00366e-03   6.10221e-06  -3.02329e-04
+   2  p1           1.74167e-02   5.11733e-02   3.03438e-05  -5.67188e-04
+   3  p2           8.62476e-03   2.66253e-02   4.00041e-05  -2.13657e-04
+   4  p3           1.75595e-02   1.93345e-01   3.33445e-05  -6.30028e-04
+   5  p4           5.95891e-03   2.58529e-02   2.99388e-05  -5.87940e-04
+   6  p5           3.03855e-03   1.69162e-02   9.20608e-06   5.05604e-04
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_7.pdf has been created
+ FCN=0.00393499 FROM MIGRAD    STATUS=CONVERGED     484 CALLS        1099 TOTAL
+                     EDM=8.45039e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           6.39017e-04   5.90818e-03   2.75768e-05  -5.03344e-03
+   2  p1           1.13667e-02   3.27665e-02   1.34269e-04   3.64299e-03
+   3  p2           5.75544e-03   2.00708e-02   1.76332e-04   6.29153e-04
+   4  p3           1.05535e-02   3.50863e-02   1.20691e-04  -2.95570e-03
+   5  p4           3.67056e-03   1.29965e-02   1.05602e-04   2.32003e-03
+   6  p5           2.34530e-03   1.00606e-02   3.90139e-05  -1.74466e-02
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_8.pdf has been created
+ FCN=0.00269811 FROM MIGRAD    STATUS=CONVERGED     453 CALLS        1503 TOTAL
+                     EDM=1.91201e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.98093e-04   3.15567e-03   2.34684e-05  -4.99406e-03
+   2  p1           7.15585e-03   2.00358e-02   1.11184e-04   1.00782e-03
+   3  p2           3.56204e-03   1.51090e-02   1.42271e-04  -1.54566e-03
+   4  p3           5.79600e-03   1.61714e-02   8.17320e-05  -9.79073e-03
+   5  p4           2.04454e-03   5.92663e-03   7.16457e-05   1.81879e-04
+   6  p5           1.61503e-03   5.60021e-03   3.12445e-05  -2.97007e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_9.pdf has been created
+ FCN=0.003286 FROM HESSE     STATUS=OK             40 CALLS        1830 TOTAL
+                     EDM=7.53232e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.31894e-04   2.07691e-02   2.41636e-06   2.14457e-03
+   2  p1           2.56200e-03   5.42309e-02   8.03726e-06   5.90499e-04
+   3  p2           1.09460e-03   3.16123e-02   1.03165e-05   2.25711e-03
+   4  p3           4.77800e-03   1.80744e-01   1.04081e-05  -2.72731e-03
+   5  p4           8.73969e-04   8.06322e-03   1.17352e-05  -3.74701e-03
+   6  p5           7.12007e-04   4.30565e-02   3.85471e-06   7.06484e-03
+                               ERR DEF= 0.5
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/Angle_Vis_neutrino_decay3_Fit_10.pdf has been created
+icut = 0 ipbin = 0 20 < p < 40 fit_status = 0 fit_param = 0.000977299 0.179528 0.0665758 0.110201 0.0118912 0.016018 
+icut = 0 ipbin = 1 40 < p < 50 fit_status = 4000 fit_param = 0.000565042 0.159843 0.0628981 0.0811052 0.00557011 0.0140477 
+icut = 0 ipbin = 2 50 < p < 60 fit_status = 4000 fit_param = 0.00368301 0.0710421 0.0088841 2.10552e-05 0.163036 0.0140207 
+icut = 0 ipbin = 3 60 < p < 70 fit_status = 0 fit_param = 0.00206262 0.0567063 0.00463397 0.0681792 0.00803128 0.00521978 
+icut = 0 ipbin = 4 70 < p < 80 fit_status = 4 fit_param = 0.00109059 0.246677 0.10212 0.0491121 0.00285553 0.00729658 
+icut = 0 ipbin = 5 80 < p < 100 fit_status = 4000 fit_param = 0.147649 0.2453 0.00324893 0.0428002 0.00645568 0.00689403 
+icut = 0 ipbin = 6 100 < p < 150 fit_status = 0 fit_param = 0.000217359 0.245908 0.174963 0.0301308 0.00310772 0.00520665 
+icut = 0 ipbin = 7 150 < p < 250 fit_status = 4 fit_param = 0.929784 0.0571334 3.20662e-05 4.345e-13 0.0134414 0.00856443 
+icut = 0 ipbin = 8 250 < p < 450 fit_status = 0 fit_param = 0.000304847 0.0122942 0.00262471 0.0115898 0.00166059 0.00183182 
+icut = 0 ipbin = 9 450 < p < 1000 fit_status = 0 fit_param = 0.0119818 2.60506e-06 0.238095 0.0311259 3.6038e-05 0.200703 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FuncP0.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.000977299, ex[0]=0, ey[0]=0.0306656
+x[1]=45, y[1]=0.000565042, ex[1]=0, ey[1]=0.00703555
+x[2]=55, y[2]=0.00368301, ex[2]=0, ey[2]=0.00464938
+x[3]=65, y[3]=0.00206262, ex[3]=0, ey[3]=0.00580725
+x[4]=75, y[4]=0.00109059, ex[4]=0, ey[4]=0.850075
+x[5]=90, y[5]=0.147649, ex[5]=0, ey[5]=0.224768
+x[6]=125, y[6]=0.000217359, ex[6]=0, ey[6]=0.127328
+x[7]=200, y[7]=0.929784, ex[7]=0, ey[7]=0.199826
+x[8]=350, y[8]=0.000304847, ex[8]=0, ey[8]=0.0046494
+x[9]=725, y[9]=0.0119818, ex[9]=0, ey[9]=0.0119518
+ FCN=10.1924 FROM MINOS     STATUS=FAILURE       517 CALLS        2953 TOTAL
+                     EDM=5.21929e-15    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.72919e+02   4.34705e+00  -2.69856e-01  -2.30145e-09
+   2  p1          -7.32306e+00   6.79866e-02   1.10797e-02  -2.83847e-07
+   3  p2           9.08670e-02   2.00684e-04  -1.32782e-04  -2.97260e-04
+   4  p3          -2.89767e-04   3.07554e-07   4.18849e-07  -3.82654e-02
+   5  p4           2.45430e-07   3.53204e-10   3.53204e-10  -8.04648e+02
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FitP0.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 0 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FuncP1.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.179528, ex[0]=0, ey[0]=0.18779
+x[1]=45, y[1]=0.159843, ex[1]=0, ey[1]=0.168338
+x[2]=55, y[2]=0.0710421, ex[2]=0, ey[2]=0.0135642
+x[3]=65, y[3]=0.0567063, ex[3]=0, ey[3]=0.0104457
+x[4]=75, y[4]=0.246677, ex[4]=0, ey[4]=0.24493
+x[5]=90, y[5]=0.2453, ex[5]=0, ey[5]=0.0553017
+x[6]=125, y[6]=0.245908, ex[6]=0, ey[6]=0.150888
+x[7]=200, y[7]=0.0571334, ex[7]=0, ey[7]=0.151951
+x[8]=350, y[8]=0.0122942, ex[8]=0, ey[8]=0.0109178
+x[9]=725, y[9]=2.60506e-06, ex[9]=0, ey[9]=0.247225
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+ FUNCTION MUST BE MINIMIZED BEFORE CALLING MINOs     
+ FCN=12.1367 FROM MINOS     STATUS=SUCCESSFUL   1989 CALLS       16026 TOTAL
+                     EDM=8.80106e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.05405e+02   1.77483e+02  -8.10520e-02  -1.19816e-03
+   2  p1           9.66494e-01   3.56138e-01  -2.50092e-04  -2.30782e-01
+   3  p2          -1.78718e-01   3.79420e-01  -9.23723e-04   1.70146e-01
+   4  p3           3.70145e-01   2.18516e-01   2.07659e-05   1.16353e-01
+   5  p4          -8.64049e-04   4.99172e-04   4.99172e-04   7.20771e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FitP1.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 1 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FuncP2.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0665758, ex[0]=0, ey[0]=0.180719
+x[1]=45, y[1]=0.0628981, ex[1]=0, ey[1]=0.152684
+x[2]=55, y[2]=0.0088841, ex[2]=0, ey[2]=0.0123237
+x[3]=65, y[3]=0.00463397, ex[3]=0, ey[3]=0.00693446
+x[4]=75, y[4]=0.10212, ex[4]=0, ey[4]=0.132715
+x[5]=90, y[5]=0.00324893, ex[5]=0, ey[5]=0.0559687
+x[6]=125, y[6]=0.174963, ex[6]=0, ey[6]=0.18659
+x[7]=200, y[7]=3.20662e-05, ex[7]=0, ey[7]=0.0299618
+x[8]=350, y[8]=0.00262471, ex[8]=0, ey[8]=0.00707126
+x[9]=725, y[9]=0.238095, ex[9]=0, ey[9]=0.219197
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+ NEW MINIMUM FOUND.  GO BACK TO MINIMIZATION STEP.
+ =================================================
+                                                  V
+                                                  V
+                                                  V
+                                               VVVVVVV
+                                                VVVVV
+                                                 VVV
+                                                  V
+
+ FCN=1.48399 FROM MINOS     STATUS=FAILURE      4657 CALLS       30576 TOTAL
+                     EDM=1.66531e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.52284e+00   2.46727e-02   1.77769e-03  -6.39515e-01
+   2  p1          -6.12815e-02   9.00726e-04   2.28750e-05   2.26011e+01
+   3  p2           5.64147e+00   1.54078e+00   5.51107e-03  -4.61752e-03
+   4  p3          -2.12327e+00   5.00169e-02  -2.54236e-03  -2.53824e-01
+   5  p4          -7.68921e-03   2.32096e-04   2.32096e-04   1.68634e+01
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FitP2.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 2 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FuncP3.pdf has been created
+cleaned cnew_0
+Warning in <Fit>: Abnormal termination of minimization.
+x[0]=30, y[0]=0.110201, ex[0]=0, ey[0]=0.0463009
+x[1]=45, y[1]=0.0811052, ex[1]=0, ey[1]=0.0146957
+x[2]=55, y[2]=2.10552e-05, ex[2]=0, ey[2]=0.154692
+x[3]=65, y[3]=0.0681792, ex[3]=0, ey[3]=0.0691513
+x[4]=75, y[4]=0.0491121, ex[4]=0, ey[4]=0.00650529
+x[5]=90, y[5]=0.0428002, ex[5]=0, ey[5]=0.010219
+x[6]=125, y[6]=0.0301308, ex[6]=0, ey[6]=0.00702486
+x[7]=200, y[7]=4.345e-13, ex[7]=0, ey[7]=0.166301
+x[8]=350, y[8]=0.0115898, ex[8]=0, ey[8]=0.00907849
+x[9]=725, y[9]=0.0311259, ex[9]=0, ey[9]=0.133367
+ FCN=0.314007 FROM MIGRAD    STATUS=CALL LIMIT   1631 CALLS        1632 TOTAL
+                     EDM=0.000337709    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  29.4 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -1.05989e-01   2.07220e-01  -7.86593e-04  -1.50091e-01
+   2  p1           5.41764e-01   1.89516e+00  -5.26213e-04   8.73426e-03
+   3  p2          -3.43962e+01   6.53147e+01   1.95973e-01  -7.41039e-04
+   4  p3           1.76424e-03   2.34192e-02  -2.86586e-05  -8.68587e-01
+   5  p4          -1.29007e-06   6.07816e-05  -1.41011e-09  -4.61946e+02
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FitP3.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 3 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FuncP4.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0118912, ex[0]=0, ey[0]=0.0270036
+x[1]=45, y[1]=0.00557011, ex[1]=0, ey[1]=0.00861632
+x[2]=55, y[2]=0.163036, ex[2]=0, ey[2]=0.0998237
+x[3]=65, y[3]=0.00803128, ex[3]=0, ey[3]=0.0210418
+x[4]=75, y[4]=0.00285553, ex[4]=0, ey[4]=0.00670193
+x[5]=90, y[5]=0.00645568, ex[5]=0, ey[5]=0.00366314
+x[6]=125, y[6]=0.00310772, ex[6]=0, ey[6]=0.0038189
+x[7]=200, y[7]=0.0134414, ex[7]=0, ey[7]=0.0461375
+x[8]=350, y[8]=0.00166059, ex[8]=0, ey[8]=0.00454834
+x[9]=725, y[9]=3.6038e-05, ex[9]=0, ey[9]=0.0574456
+ FCN=2.96162 FROM MINOS     STATUS=SUCCESSFUL   1324 CALLS        5425 TOTAL
+                     EDM=0.000184655    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -1.79965e-03   9.64704e-03  -9.93171e-03   4.44469e-04
+   2  p1           5.43935e-03   6.20349e-01   1.48178e-35   7.64054e+00
+   3  p2          -9.97930e+01   4.66108e+02  -1.59168e-03  -2.23079e-03
+   4  p3           5.27713e-03   1.45459e-02  -1.32903e-04   1.00773e-01
+   5  p4          -7.29897e-06   5.36736e-05   5.36736e-05   5.37895e+01
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FitP4.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 4 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FuncP5.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.016018, ex[0]=0, ey[0]=0.034891
+x[1]=45, y[1]=0.0140477, ex[1]=0, ey[1]=0.0175653
+x[2]=55, y[2]=0.0140207, ex[2]=0, ey[2]=0.0327389
+x[3]=65, y[3]=0.00521978, ex[3]=0, ey[3]=0.0147051
+x[4]=75, y[4]=0.00729658, ex[4]=0, ey[4]=0.010107
+x[5]=90, y[5]=0.00689403, ex[5]=0, ey[5]=0.00688627
+x[6]=125, y[6]=0.00520665, ex[6]=0, ey[6]=0.00552774
+x[7]=200, y[7]=0.00856443, ex[7]=0, ey[7]=0.119122
+x[8]=350, y[8]=0.00183182, ex[8]=0, ey[8]=0.0062571
+x[9]=725, y[9]=0.200703, ex[9]=0, ey[9]=0.337031
+ FCN=0.445816 FROM MINOS     STATUS=PROBLEMS      192 CALLS        3712 TOTAL
+                     EDM=1.13554e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           5.43182e-02   4.26290e-01   8.06802e-04   8.02506e+01
+   2  p1           8.68149e-01   7.13118e+00  -2.41768e-01  -2.09623e+01
+   3  p2           8.70213e+00   6.94381e+01   2.71865e-02   3.08269e-01
+   4  p3           1.48778e-03   1.14356e-02  -1.53802e-04   5.83750e+02
+   5  p4          -2.23089e-06   3.46038e-05   3.46038e-05  -1.75716e+01
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay0_FitP5.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 5 done 
+icut = 0 done 
+icut = 1 ipbin = 0 20 < p < 40 fit_status = 4000 fit_param = 0.00356282 0.0889625 0.0268089 0.0806742 0.0317981 0.0100195 
+icut = 1 ipbin = 1 40 < p < 50 fit_status = 0 fit_param = 0.0019002 0.044244 0.0179923 0.0655051 0.00893493 0.0107654 
+icut = 1 ipbin = 2 50 < p < 60 fit_status = 0 fit_param = 0.00155035 0.036081 0.0146442 0.0536276 0.00684037 0.00902718 
+icut = 1 ipbin = 3 60 < p < 70 fit_status = 4000 fit_param = 0.000201993 0.25 0.249891 0.0362183 0.0102548 0.0106623 
+icut = 1 ipbin = 4 70 < p < 80 fit_status = 4000 fit_param = 1.94913e-05 0.246577 0.000146002 0.0313532 0.00946242 0.00828731 
+icut = 1 ipbin = 5 80 < p < 100 fit_status = 0 fit_param = 0.000955357 1.28431e-05 0.237071 0.0267877 0.00643484 0.00626355 
+icut = 1 ipbin = 6 100 < p < 150 fit_status = 4 fit_param = 0.844936 0.136372 0.00120906 0.0228517 0.00940622 0.00624392 
+icut = 1 ipbin = 7 150 < p < 250 fit_status = 0 fit_param = 0.000152315 0.122549 0.226526 0.0120847 0.00352871 0.0039655 
+icut = 1 ipbin = 8 250 < p < 450 fit_status = 4000 fit_param = 1.13804e-08 0.188792 0.249774 0.00701651 0.00216211 0.00265921 
+icut = 1 ipbin = 9 450 < p < 1000 fit_status = 4000 fit_param = 0.012555 3.69447e-09 0.249999 0.0354052 5.13178e-05 0.120426 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FuncP0.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.00356282, ex[0]=0, ey[0]=0.0446746
+x[1]=45, y[1]=0.0019002, ex[1]=0, ey[1]=0.0169201
+x[2]=55, y[2]=0.00155035, ex[2]=0, ey[2]=0.010911
+x[3]=65, y[3]=0.000201993, ex[3]=0, ey[3]=0.035637
+x[4]=75, y[4]=1.94913e-05, ex[4]=0, ey[4]=0.188247
+x[5]=90, y[5]=0.000955357, ex[5]=0, ey[5]=0.0262459
+x[6]=125, y[6]=0.844936, ex[6]=0, ey[6]=0.137851
+x[7]=200, y[7]=0.000152315, ex[7]=0, ey[7]=0.0280924
+x[8]=350, y[8]=1.13804e-08, ex[8]=0, ey[8]=0.0790438
+x[9]=725, y[9]=0.012555, ex[9]=0, ey[9]=0.0125281
+ FCN=36.5853 FROM MINOS     STATUS=FAILURE       504 CALLS        2738 TOTAL
+                     EDM=1.13128e-18    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -3.74363e+01   1.00480e+01  -7.57042e-01  -6.67441e-12
+   2  p1           1.05968e+00   1.23352e-01   2.30418e-02  -6.81127e-09
+   3  p2          -6.57455e-03   2.46998e-04  -1.89433e-04   0.00000e+00
+   4  p3           1.42065e-05   3.26650e-07   5.31032e-07  -1.30375e-02
+   5  p4          -9.69592e-09   4.29788e-10   4.29788e-10  -5.72445e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FitP0.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 0 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FuncP1.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0889625, ex[0]=0, ey[0]=0.0824116
+x[1]=45, y[1]=0.044244, ex[1]=0, ey[1]=0.201087
+x[2]=55, y[2]=0.036081, ex[2]=0, ey[2]=0.184808
+x[3]=65, y[3]=0.25, ex[3]=0, ey[3]=0.0574621
+x[4]=75, y[4]=0.246577, ex[4]=0, ey[4]=0.0558886
+x[5]=90, y[5]=1.28431e-05, ex[5]=0, ey[5]=0.0572146
+x[6]=125, y[6]=0.136372, ex[6]=0, ey[6]=0.00367429
+x[7]=200, y[7]=0.122549, ex[7]=0, ey[7]=0.178639
+x[8]=350, y[8]=0.188792, ex[8]=0, ey[8]=0.0904553
+x[9]=725, y[9]=3.69447e-09, ex[9]=0, ey[9]=0.227532
+ FCN=14.878 FROM MINOS     STATUS=SUCCESSFUL    231 CALLS        2789 TOTAL
+                     EDM=0.000138006    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.07946e-03   1.81141e-01   3.39864e-37   3.57875e-07
+   2  p1           8.96911e-01   7.47516e+01  -2.16433e-42  -4.76069e-11
+   3  p2          -1.90231e+02   3.17452e+04  -2.05003e+02  -2.67965e-11
+   4  p3           1.50362e-01   5.73172e-02  -1.28644e-08   4.26720e-01
+   5  p4          -9.67807e-05   2.95956e-04   2.95956e-04   0.00000e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FitP1.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 1 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FuncP2.pdf has been created
+cleaned cnew_0
+Warning in <Fit>: Abnormal termination of minimization.
+x[0]=30, y[0]=0.0268089, ex[0]=0, ey[0]=0.148015
+x[1]=45, y[1]=0.0179923, ex[1]=0, ey[1]=0.0536523
+x[2]=55, y[2]=0.0146442, ex[2]=0, ey[2]=0.0428979
+x[3]=65, y[3]=0.249891, ex[3]=0, ey[3]=0.0572599
+x[4]=75, y[4]=0.000146002, ex[4]=0, ey[4]=0.0573951
+x[5]=90, y[5]=0.237071, ex[5]=0, ey[5]=0.127484
+x[6]=125, y[6]=0.00120906, ex[6]=0, ey[6]=0.00812991
+x[7]=200, y[7]=0.226526, ex[7]=0, ey[7]=0.13123
+x[8]=350, y[8]=0.249774, ex[8]=0, ey[8]=0.0573582
+x[9]=725, y[9]=0.249999, ex[9]=0, ey[9]=0.0574618
+ FCN=29.2038 FROM MIGRAD    STATUS=CALL LIMIT   1634 CALLS        1635 TOTAL
+                     EDM=0.00810203    STRATEGY= 1  ERROR MATRIX UNCERTAINTY   9.2 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -1.22951e+00   3.31450e-01  -1.08103e-02  -6.84537e+00
+   2  p1           4.36466e-02   2.97639e-02  -1.02994e-03  -1.12138e+02
+   3  p2          -1.22802e+01   4.33951e+00   1.93644e-01   1.65857e-01
+   4  p3           6.41197e-01   3.13055e-01   1.64784e-02  -1.40333e+01
+   5  p4          -1.68895e-06   1.76878e-04  -6.28659e-06  -1.47838e+03
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FitP2.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 2 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FuncP3.pdf has been created
+cleaned cnew_0
+Warning in <Fit>: Abnormal termination of minimization.
+x[0]=30, y[0]=0.0806742, ex[0]=0, ey[0]=0.146282
+x[1]=45, y[1]=0.0655051, ex[1]=0, ey[1]=0.0461961
+x[2]=55, y[2]=0.0536276, ex[2]=0, ey[2]=0.0325424
+x[3]=65, y[3]=0.0362183, ex[3]=0, ey[3]=0.0211539
+x[4]=75, y[4]=0.0313532, ex[4]=0, ey[4]=0.0150301
+x[5]=90, y[5]=0.0267877, ex[5]=0, ey[5]=0.0156439
+x[6]=125, y[6]=0.0228517, ex[6]=0, ey[6]=0.0254675
+x[7]=200, y[7]=0.0120847, ex[7]=0, ey[7]=0.00717746
+x[8]=350, y[8]=0.00701651, ex[8]=0, ey[8]=0.00446548
+x[9]=725, y[9]=0.0354052, ex[9]=0, ey[9]=0.052862
+ FCN=0.32445 FROM MIGRAD    STATUS=CALL LIMIT   1631 CALLS        1632 TOTAL
+                     EDM=0.00617259    STRATEGY= 1  ERROR MATRIX UNCERTAINTY  28.2 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -4.47052e-01   6.36719e-01  -2.18968e-02   1.62968e+00
+   2  p1           3.41133e-01   2.59187e-01  -3.90234e-03  -1.98321e+00
+   3  p2          -1.26287e+01   1.30204e+01   2.46206e-01   7.02804e-02
+   4  p3          -2.20018e-02   3.33434e-02  -6.07458e-04  -2.16318e+01
+   5  p4           4.03816e-05   7.00355e-05   5.62972e-07  -4.76015e+03
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FitP3.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 3 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FuncP4.pdf has been created
+cleaned cnew_0
+Warning in <Fit>: Abnormal termination of minimization.
+x[0]=30, y[0]=0.0317981, ex[0]=0, ey[0]=0.222169
+x[1]=45, y[1]=0.00893493, ex[1]=0, ey[1]=0.0207501
+x[2]=55, y[2]=0.00684037, ex[2]=0, ey[2]=0.0145922
+x[3]=65, y[3]=0.0102548, ex[3]=0, ey[3]=0.01371
+x[4]=75, y[4]=0.00946242, ex[4]=0, ey[4]=0.00687798
+x[5]=90, y[5]=0.00643484, ex[5]=0, ey[5]=0.0125927
+x[6]=125, y[6]=0.00940622, ex[6]=0, ey[6]=0.131776
+x[7]=200, y[7]=0.00352871, ex[7]=0, ey[7]=0.00474765
+x[8]=350, y[8]=0.00216211, ex[8]=0, ey[8]=0.00203688
+x[9]=725, y[9]=5.13178e-05, ex[9]=0, ey[9]=0.185839
+ FCN=0.134585 FROM MIGRAD    STATUS=FAILED        419 CALLS         420 TOTAL
+                     EDM=0.00173907    STRATEGY= 1      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -1.46236e-03   7.91894e-02   6.80476e-07  -9.25829e-02
+   2  p1          -3.63041e-02   1.36555e+00   1.89398e-05  -2.51526e-03
+   3  p2          -2.44200e+02   1.36344e+04   1.03605e-01  -2.62268e-06
+   4  p3           5.62681e-03   1.14571e-01   9.11920e-07  -1.15754e-01
+   5  p4          -4.68048e-06   3.12905e-04   2.92913e-09  -6.85618e+01
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FitP4.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 4 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FuncP5.pdf has been created
+cleaned cnew_0
+Warning in <Fit>: Abnormal termination of minimization.
+x[0]=30, y[0]=0.0100195, ex[0]=0, ey[0]=0.102949
+x[1]=45, y[1]=0.0107654, ex[1]=0, ey[1]=0.0300053
+x[2]=55, y[2]=0.00902718, ex[2]=0, ey[2]=0.0222736
+x[3]=65, y[3]=0.0106623, ex[3]=0, ey[3]=0.0115581
+x[4]=75, y[4]=0.00828731, ex[4]=0, ey[4]=0.0082758
+x[5]=90, y[5]=0.00626355, ex[5]=0, ey[5]=0.00884804
+x[6]=125, y[6]=0.00624392, ex[6]=0, ey[6]=0.00623742
+x[7]=200, y[7]=0.0039655, ex[7]=0, ey[7]=0.00436396
+x[8]=350, y[8]=0.00265921, ex[8]=0, ey[8]=0.00265973
+x[9]=725, y[9]=0.120426, ex[9]=0, ey[9]=0.273864
+ FCN=0.219426 FROM MIGRAD    STATUS=CALL LIMIT   1630 CALLS        1631 TOTAL
+                     EDM=0.000179748    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           4.64922e-02   1.39216e-01   1.54178e-03  -2.95625e+00
+   2  p1           6.88597e-02   4.30967e-01   4.38557e-03   1.84104e+00
+   3  p2          -1.35583e+00   7.74918e+01  -5.85455e-01  -1.95641e-03
+   4  p3          -1.80627e-02   6.14423e-02   4.80013e-04  -7.52425e+00
+   5  p4           2.32076e-05   6.61575e-05   6.45368e-07  -1.63367e+03
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay1_FitP5.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 5 done 
+icut = 1 done 
+icut = 2 ipbin = 0 20 < p < 40 fit_status = 0 fit_param = 0.00249946 0.0720871 0.0295589 0.102964 0.0183415 0.012408 
+icut = 2 ipbin = 1 40 < p < 50 fit_status = 4000 fit_param = 0.00250932 0.0558751 0.0225055 0.0735083 0.0114139 0.00932159 
+icut = 2 ipbin = 2 50 < p < 60 fit_status = 0 fit_param = 0.00194985 0.0448462 0.0182321 0.0593055 0.00855598 0.00808921 
+icut = 2 ipbin = 3 60 < p < 70 fit_status = 0 fit_param = 0.00161334 0.0385761 0.015512 0.0502493 0.00728373 0.006358 
+icut = 2 ipbin = 4 70 < p < 80 fit_status = 4000 fit_param = 0.00120688 0.0331565 0.013427 0.0434946 0.00626716 0.00484197 
+icut = 2 ipbin = 5 80 < p < 100 fit_status = 0 fit_param = 0.00108086 0.0283112 0.0112166 0.0369643 0.00553869 0.00384957 
+icut = 2 ipbin = 6 100 < p < 150 fit_status = 0 fit_param = 0.000954704 0.021528 0.00854926 0.0276207 0.00461979 0.00284551 
+icut = 2 ipbin = 7 150 < p < 250 fit_status = 0 fit_param = 0.000813299 0.0143917 0.00577715 0.0180135 0.00340782 0.00186062 
+icut = 2 ipbin = 8 250 < p < 450 fit_status = 0 fit_param = 0.000856262 0.00954151 0.00352834 0.0188386 0.00280352 0.000410739 
+icut = 2 ipbin = 9 450 < p < 1000 fit_status = 4000 fit_param = 0.000386965 0.00475693 0.00182914 0.00824591 0.00128115 0.000315907 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FuncP0.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.00249946, ex[0]=0, ey[0]=0.0995516
+x[1]=45, y[1]=0.00250932, ex[1]=0, ey[1]=0.020654
+x[2]=55, y[2]=0.00194985, ex[2]=0, ey[2]=0.0148522
+x[3]=65, y[3]=0.00161334, ex[3]=0, ey[3]=0.0119071
+x[4]=75, y[4]=0.00120688, ex[4]=0, ey[4]=0.00876645
+x[5]=90, y[5]=0.00108086, ex[5]=0, ey[5]=0.00766106
+x[6]=125, y[6]=0.000954704, ex[6]=0, ey[6]=0.00766895
+x[7]=200, y[7]=0.000813299, ex[7]=0, ey[7]=0.00662252
+x[8]=350, y[8]=0.000856262, ex[8]=0, ey[8]=0.00150969
+x[9]=725, y[9]=0.000386965, ex[9]=0, ey[9]=0.00199428
+ FCN=0.00363908 FROM MINOS     STATUS=FAILURE       505 CALLS        2863 TOTAL
+                     EDM=7.1683e-08    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           1.83756e+00   3.65922e+00  -1.86729e-01   5.40939e-12
+   2  p1          -1.14098e-02   1.65552e-02   4.46112e-03   1.81408e-08
+   3  p2           2.45584e-05   3.63387e-05  -3.14095e-05   1.56939e-05
+   4  p3           7.60435e-09   4.99306e-08   7.85527e-08   1.12699e-02
+   5  p4          -3.28012e-11   5.96230e-11   5.96230e-11  -1.20395e+06
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FitP0.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 0 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FuncP1.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0720871, ex[0]=0, ey[0]=0.140792
+x[1]=45, y[1]=0.0558751, ex[1]=0, ey[1]=0.150536
+x[2]=55, y[2]=0.0448462, ex[2]=0, ey[2]=0.145873
+x[3]=65, y[3]=0.0385761, ex[3]=0, ey[3]=0.0738434
+x[4]=75, y[4]=0.0331565, ex[4]=0, ey[4]=0.0649494
+x[5]=90, y[5]=0.0283112, ex[5]=0, ey[5]=0.0542642
+x[6]=125, y[6]=0.021528, ex[6]=0, ey[6]=0.0427815
+x[7]=200, y[7]=0.0143917, ex[7]=0, ey[7]=0.0264552
+x[8]=350, y[8]=0.00954151, ex[8]=0, ey[8]=0.0084887
+x[9]=725, y[9]=0.00475693, ex[9]=0, ey[9]=0.01039
+ FCN=0.0117895 FROM MINOS     STATUS=SUCCESSFUL    969 CALLS        4603 TOTAL
+                     EDM=0.0196568    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -2.11377e-02   4.09300e-01  -5.35528e-05  -1.64060e-03
+   2  p1           3.23468e-01   3.32601e+00  -4.67573e-04  -1.02817e-03
+   3  p2          -1.16100e+02   2.13608e+03  -1.87894e-02   4.15569e-07
+   4  p3           2.10335e-03   2.78726e-02  -2.99404e-04  -1.61411e-04
+   5  p4          -2.31560e-18   4.05175e-05   4.05175e-05  -4.52825e+09
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FitP1.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 1 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FuncP2.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0295589, ex[0]=0, ey[0]=0.185962
+x[1]=45, y[1]=0.0225055, ex[1]=0, ey[1]=0.0560393
+x[2]=55, y[2]=0.0182321, ex[2]=0, ey[2]=0.0467487
+x[3]=65, y[3]=0.015512, ex[3]=0, ey[3]=0.039459
+x[4]=75, y[4]=0.013427, ex[4]=0, ey[4]=0.0338027
+x[5]=90, y[5]=0.0112166, ex[5]=0, ey[5]=0.0276174
+x[6]=125, y[6]=0.00854926, ex[6]=0, ey[6]=0.0225193
+x[7]=200, y[7]=0.00577715, ex[7]=0, ey[7]=0.0161158
+x[8]=350, y[8]=0.00352834, ex[8]=0, ey[8]=0.00611743
+x[9]=725, y[9]=0.00182914, ex[9]=0, ey[9]=0.00557193
+ FCN=0.000493802 FROM MINOS     STATUS=SUCCESSFUL    391 CALLS        7980 TOTAL
+                     EDM=1.98151e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -2.63671e-03   7.91702e-02   2.15635e-26  -6.67281e-05
+   2  p1           6.15816e-03   1.99640e+00   2.33669e-36  -1.77083e-05
+   3  p2          -3.55736e+02   1.03293e+04  -5.12238e-01   1.51385e-14
+   4  p3           3.62662e-03   7.50880e-02  -2.66149e-04  -8.40417e-11
+   5  p4          -1.19116e-06   8.92344e-05   8.92344e-05   2.29345e-08
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FitP2.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 2 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FuncP3.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.102964, ex[0]=0, ey[0]=0.175937
+x[1]=45, y[1]=0.0735083, ex[1]=0, ey[1]=0.0727797
+x[2]=55, y[2]=0.0593055, ex[2]=0, ey[2]=0.0482511
+x[3]=65, y[3]=0.0502493, ex[3]=0, ey[3]=0.0430922
+x[4]=75, y[4]=0.0434946, ex[4]=0, ey[4]=0.0361084
+x[5]=90, y[5]=0.0369643, ex[5]=0, ey[5]=0.036592
+x[6]=125, y[6]=0.0276207, ex[6]=0, ey[6]=0.0404293
+x[7]=200, y[7]=0.0180135, ex[7]=0, ey[7]=0.0439308
+x[8]=350, y[8]=0.0188386, ex[8]=0, ey[8]=0.125193
+x[9]=725, y[9]=0.00824591, ex[9]=0, ey[9]=0.13768
+ FCN=0.00399395 FROM MINOS     STATUS=SUCCESSFUL   1034 CALLS        4810 TOTAL
+                     EDM=2.5126e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -2.94326e-02   4.75808e-01  7.65814e-151  -1.67157e-09
+   2  p1           8.43904e-01   6.42667e+01 -3.16589e-162   0.00000e+00
+   3  p2          -1.07221e+02   1.73092e+03  -6.59573e+00  -8.07855e-13
+   4  p3           1.40758e-03   8.00086e-02  -1.40932e-03   4.22940e-09
+   5  p4           6.46818e-06   2.47637e-04   2.47637e-04   0.00000e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FitP3.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 3 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FuncP4.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0183415, ex[0]=0, ey[0]=0.14485
+x[1]=45, y[1]=0.0114139, ex[1]=0, ey[1]=0.0330078
+x[2]=55, y[2]=0.00855598, ex[2]=0, ey[2]=0.0215915
+x[3]=65, y[3]=0.00728373, ex[3]=0, ey[3]=0.0187232
+x[4]=75, y[4]=0.00626716, ex[4]=0, ey[4]=0.0158241
+x[5]=90, y[5]=0.00553869, ex[5]=0, ey[5]=0.0159584
+x[6]=125, y[6]=0.00461979, ex[6]=0, ey[6]=0.0168555
+x[7]=200, y[7]=0.00340782, ex[7]=0, ey[7]=0.020448
+x[8]=350, y[8]=0.00280352, ex[8]=0, ey[8]=0.0152213
+x[9]=725, y[9]=0.00128115, ex[9]=0, ey[9]=0.0188411
+ FCN=0.000428191 FROM MINOS     STATUS=SUCCESSFUL    419 CALLS        6714 TOTAL
+                     EDM=1.33294e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -7.50790e-02   2.04047e+00   2.49610e-35  -2.23195e+02
+   2  p1           2.30914e-01   1.87566e+00  5.96008e-103  -6.63179e+28
+   3  p2          -1.56873e+01   2.29203e+02   1.61002e-08  -1.17176e-09
+   4  p3           9.21558e-04   8.68928e-02  -3.45578e-05   0.00000e+00
+   5  p4          -1.51977e-06   1.05889e-04   1.05889e-04   0.00000e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FitP4.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 4 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FuncP5.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.012408, ex[0]=0, ey[0]=0.126258
+x[1]=45, y[1]=0.00932159, ex[1]=0, ey[1]=0.0371283
+x[2]=55, y[2]=0.00808921, ex[2]=0, ey[2]=0.0279245
+x[3]=65, y[3]=0.006358, ex[3]=0, ey[3]=0.0228009
+x[4]=75, y[4]=0.00484197, ex[4]=0, ey[4]=0.0171009
+x[5]=90, y[5]=0.00384957, ex[5]=0, ey[5]=0.0149774
+x[6]=125, y[6]=0.00284551, ex[6]=0, ey[6]=0.0170835
+x[7]=200, y[7]=0.00186062, ex[7]=0, ey[7]=0.0187612
+x[8]=350, y[8]=0.000410739, ex[8]=0, ey[8]=0.00685669
+x[9]=725, y[9]=0.000315907, ex[9]=0, ey[9]=0.0151249
+ FCN=0.00273089 FROM MINOS     STATUS=SUCCESSFUL    371 CALLS        6858 TOTAL
+                     EDM=9.05723e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           2.40643e-02   7.91611e-01   2.38685e-43  -4.48984e-10
+   2  p1           2.99415e-01   7.29030e+00   3.93308e-54   1.29988e-09
+   3  p2           1.26579e+01   6.78660e+02   9.17894e-01  -1.23282e-11
+   4  p3          -7.49310e-04   2.72942e-02  -4.52664e-03  -2.86121e-08
+   5  p4           7.75685e-07   5.07523e-05   5.07523e-05   1.82588e+06
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay2_FitP5.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 5 done 
+icut = 2 done 
+icut = 3 ipbin = 0 20 < p < 40 fit_status = 4000 fit_param = 0.00226962 0.0716081 0.032342 0.0602136 0.0222238 0.0131038 
+icut = 3 ipbin = 1 40 < p < 50 fit_status = 0 fit_param = 0.00255266 0.0359575 0.0158664 0.0605562 0.0111916 0.00920728 
+icut = 3 ipbin = 2 50 < p < 60 fit_status = 4000 fit_param = 0.00243742 0.0309247 0.0137939 0.0517243 0.00944423 0.00686809 
+icut = 3 ipbin = 3 60 < p < 70 fit_status = 4 fit_param = 0.00324646 0.0335812 0.0144687 0.0712818 0.0110409 0.0022007 
+icut = 3 ipbin = 4 70 < p < 80 fit_status = 4000 fit_param = 0.000878445 0.0174284 0.0072022 0.032741 0.00565028 0.00564371 
+icut = 3 ipbin = 5 80 < p < 100 fit_status = 0 fit_param = 0.00128751 0.023244 0.0114042 0.0254532 0.00841119 0.00344677 
+icut = 3 ipbin = 6 100 < p < 150 fit_status = 4000 fit_param = 0.000908774 0.0174167 0.00862476 0.0175595 0.00595891 0.00303855 
+icut = 3 ipbin = 7 150 < p < 250 fit_status = 0 fit_param = 0.000639017 0.0113667 0.00575544 0.0105535 0.00367056 0.0023453 
+icut = 3 ipbin = 8 250 < p < 450 fit_status = 0 fit_param = 0.000398093 0.00715585 0.00356204 0.005796 0.00204454 0.00161503 
+icut = 3 ipbin = 9 450 < p < 1000 fit_status = 4000 fit_param = 0.000231894 0.002562 0.0010946 0.004778 0.000873969 0.000712007 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FuncP0.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.00226962, ex[0]=0, ey[0]=0.0462021
+x[1]=45, y[1]=0.00255266, ex[1]=0, ey[1]=0.0746312
+x[2]=55, y[2]=0.00243742, ex[2]=0, ey[2]=0.161555
+x[3]=65, y[3]=0.00324646, ex[3]=0, ey[3]=0.00611212
+x[4]=75, y[4]=0.000878445, ex[4]=0, ey[4]=0.0317467
+x[5]=90, y[5]=0.00128751, ex[5]=0, ey[5]=0.0142309
+x[6]=125, y[6]=0.000908774, ex[6]=0, ey[6]=0.00900366
+x[7]=200, y[7]=0.000639017, ex[7]=0, ey[7]=0.00590818
+x[8]=350, y[8]=0.000398093, ex[8]=0, ey[8]=0.00315567
+x[9]=725, y[9]=0.000231894, ex[9]=0, ey[9]=0.0207691
+ FCN=0.0180132 FROM MINOS     STATUS=FAILURE       500 CALLS        2671 TOTAL
+                     EDM=8.63615e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.91336e+00   6.17794e+00  -1.40930e+00   1.70414e-11
+   2  p1          -2.72966e-02   6.28910e-02   3.41720e-02   5.44897e-09
+   3  p2           3.68315e-05   1.90225e-04  -2.37415e-04  -1.96678e-06
+   4  p3           7.37887e-08   4.30163e-07   5.87538e-07   2.90988e-03
+   5  p4          -1.13760e-10   4.43329e-10   4.43329e-10  -1.56797e+06
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FitP0.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 0 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FuncP1.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0716081, ex[0]=0, ey[0]=0.208267
+x[1]=45, y[1]=0.0359575, ex[1]=0, ey[1]=0.231188
+x[2]=55, y[2]=0.0309247, ex[2]=0, ey[2]=0.220978
+x[3]=65, y[3]=0.0335812, ex[3]=0, ey[3]=0.0352939
+x[4]=75, y[4]=0.0174284, ex[4]=0, ey[4]=0.153281
+x[5]=90, y[5]=0.023244, ex[5]=0, ey[5]=0.197586
+x[6]=125, y[6]=0.0174167, ex[6]=0, ey[6]=0.0511733
+x[7]=200, y[7]=0.0113667, ex[7]=0, ey[7]=0.0327665
+x[8]=350, y[8]=0.00715585, ex[8]=0, ey[8]=0.0200358
+x[9]=725, y[9]=0.002562, ex[9]=0, ey[9]=0.0542309
+ FCN=0.00937736 FROM MINOS     STATUS=SUCCESSFUL    890 CALLS        6705 TOTAL
+                     EDM=4.79163e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -1.84481e-02   4.03533e-01   8.38968e-60  -6.64108e+51
+   2  p1           1.40599e-01   5.91831e+00  -1.42493e-75   1.39029e-05
+   3  p2          -1.23191e+02   2.44190e+03  -0.00000e+00   0.00000e+00
+   4  p3           3.77033e-03   2.36765e-01   2.15260e-03   2.56691e-05
+   5  p4          -5.27244e-06   2.88524e-04   2.88524e-04   0.00000e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FitP1.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 1 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FuncP2.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.032342, ex[0]=0, ey[0]=0.233746
+x[1]=45, y[1]=0.0158664, ex[1]=0, ey[1]=0.141934
+x[2]=55, y[2]=0.0137939, ex[2]=0, ey[2]=0.232986
+x[3]=65, y[3]=0.0144687, ex[3]=0, ey[3]=0.0280494
+x[4]=75, y[4]=0.0072022, ex[4]=0, ey[4]=0.190984
+x[5]=90, y[5]=0.0114042, ex[5]=0, ey[5]=0.0281769
+x[6]=125, y[6]=0.00862476, ex[6]=0, ey[6]=0.0266253
+x[7]=200, y[7]=0.00575544, ex[7]=0, ey[7]=0.0200708
+x[8]=350, y[8]=0.00356204, ex[8]=0, ey[8]=0.015109
+x[9]=725, y[9]=0.0010946, ex[9]=0, ey[9]=0.0316123
+ FCN=0.0022452 FROM MINOS     STATUS=SUCCESSFUL    473 CALLS        9712 TOTAL
+                     EDM=2.28025e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -1.00351e-02   6.75031e-01   3.45412e-24  -1.96412e-04
+   2  p1          -1.85736e-02   1.94226e+00   2.00153e-30  -1.76211e-04
+   3  p2          -7.19858e+01   4.91102e+03  -2.93059e-01   0.00000e+00
+   4  p3           1.48151e-02   7.04238e-01  -6.73570e-04  -1.75327e-11
+   5  p4           2.48609e-06   7.52048e-04   7.52048e-04  -1.11205e-08
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FitP2.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 2 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FuncP3.pdf has been created
+cleaned cnew_0
+Warning in <Fit>: Abnormal termination of minimization.
+x[0]=30, y[0]=0.0602136, ex[0]=0, ey[0]=0.21862
+x[1]=45, y[1]=0.0605562, ex[1]=0, ey[1]=0.219044
+x[2]=55, y[2]=0.0517243, ex[2]=0, ey[2]=0.196915
+x[3]=65, y[3]=0.0712818, ex[3]=0, ey[3]=0.14132
+x[4]=75, y[4]=0.032741, ex[4]=0, ey[4]=0.183122
+x[5]=90, y[5]=0.0254532, ex[5]=0, ey[5]=0.18555
+x[6]=125, y[6]=0.0175595, ex[6]=0, ey[6]=0.193345
+x[7]=200, y[7]=0.0105535, ex[7]=0, ey[7]=0.0350863
+x[8]=350, y[8]=0.005796, ex[8]=0, ey[8]=0.0161714
+x[9]=725, y[9]=0.004778, ex[9]=0, ey[9]=0.180744
+ FCN=0.0530167 FROM MIGRAD    STATUS=FAILED       1230 CALLS        1231 TOTAL
+                     EDM=1.16036e-05    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -3.64745e-01   1.04323e-01   4.28395e-06  -3.70794e-02
+   2  p1          -2.93384e-02   1.55858e-02   6.52281e-07   9.36032e-02
+   3  p2          -2.10269e+00   1.73344e+01   4.06867e-03   2.92019e-05
+   4  p3           4.63208e-01   1.44393e-01   7.17995e-06  -2.40313e-02
+   5  p4           4.89854e-04   4.35890e-04   2.20114e-08  -5.54099e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FitP3.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 3 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FuncP4.pdf has been created
+cleaned cnew_0
+x[0]=30, y[0]=0.0222238, ex[0]=0, ey[0]=0.0564326
+x[1]=45, y[1]=0.0111916, ex[1]=0, ey[1]=0.182837
+x[2]=55, y[2]=0.00944423, ex[2]=0, ey[2]=0.192209
+x[3]=65, y[3]=0.0110409, ex[3]=0, ey[3]=0.0383236
+x[4]=75, y[4]=0.00565028, ex[4]=0, ey[4]=0.0116698
+x[5]=90, y[5]=0.00841119, ex[5]=0, ey[5]=0.132954
+x[6]=125, y[6]=0.00595891, ex[6]=0, ey[6]=0.0258529
+x[7]=200, y[7]=0.00367056, ex[7]=0, ey[7]=0.0129965
+x[8]=350, y[8]=0.00204454, ex[8]=0, ey[8]=0.00592663
+x[9]=725, y[9]=0.000873969, ex[9]=0, ey[9]=0.00806322
+ FCN=0.0158905 FROM MINOS     STATUS=SUCCESSFUL    905 CALLS       11113 TOTAL
+                     EDM=3.59048e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0          -3.67284e-01   4.45203e+00   2.11584e-03  -1.08602e-03
+   2  p1           3.00747e-01   4.71621e-01   2.16468e-05  -4.53014e-04
+   3  p2          -8.18244e+00   3.53105e+01  -1.40769e-03  -2.93266e-06
+   4  p3          -7.13636e-03   9.72782e-02  -5.52017e-04  -1.46056e-02
+   5  p4           5.48421e-06   9.19621e-05   9.19621e-05  -8.77404e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FitP4.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 4 done 
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FuncP5.pdf has been created
+cleaned cnew_0
+Warning in <Fit>: Abnormal termination of minimization.
+x[0]=30, y[0]=0.0131038, ex[0]=0, ey[0]=0.0515399
+x[1]=45, y[1]=0.00920728, ex[1]=0, ey[1]=0.128325
+x[2]=55, y[2]=0.00686809, ex[2]=0, ey[2]=0.62654
+x[3]=65, y[3]=0.0022007, ex[3]=0, ey[3]=0.021081
+x[4]=75, y[4]=0.00564371, ex[4]=0, ey[4]=0.0333709
+x[5]=90, y[5]=0.00344677, ex[5]=0, ey[5]=0.0331262
+x[6]=125, y[6]=0.00303855, ex[6]=0, ey[6]=0.0169162
+x[7]=200, y[7]=0.0023453, ex[7]=0, ey[7]=0.0100606
+x[8]=350, y[8]=0.00161503, ex[8]=0, ey[8]=0.00560021
+x[9]=725, y[9]=0.000712007, ex[9]=0, ey[9]=0.0430565
+ FCN=0.0105493 FROM MIGRAD    STATUS=CALL LIMIT   1629 CALLS        1630 TOTAL
+                     EDM=6.40467e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  p0           3.10652e+01   1.13373e+03   1.14453e+00  -1.46804e-05
+   2  p1           1.48360e+00   8.08438e+00   5.31861e-03   1.44177e-03
+   3  p2           8.73918e-04   8.92199e-02   4.93942e-06  -8.41463e-02
+   4  p3           3.09385e-03   3.00810e-02  -4.01694e-05  -2.49600e-01
+   5  p4          -4.34447e-06   7.56592e-05   1.30693e-07  -7.76593e+00
+Info in <TCanvas::Print>: pdf file /afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/Plots_Fit_tautau/decay3_FitP5.pdf has been created
+clean cnew
+cleaned cnew
+cleaning up func_0 
+cleaned up func_0 
+cleaning up func_1 
+cleaned up func_1 
+cleaning graph 
+cleaned graph 
+i = 5 done 
+icut = 3 done 

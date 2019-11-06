@@ -1,0 +1,10 @@
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+Running in batch mode ... 
+Adding : root://eosatlas//eos/atlas/user/s/swaban/TauMCGen500M/TauMCGen_147818_1_100.root
+ GetEntries = 406602 nevtot = 406602 nevtdo = 0 ifirst = 0
+Reading from file (1) : root://eosatlas//eos/atlas/user/s/swaban/TauMCGen500M/TauMCGen_147818_1_100.root
+========> ievt = 0 idummy = 0 ndebug = 0 2 4
