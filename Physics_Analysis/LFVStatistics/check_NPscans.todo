@@ -1,0 +1,25 @@
+rm -f check_NPscans
+g++ -g -O2 -fPIC -Wno-deprecated -D__USE_XOPEN2K8 -o check_NPscans check_NPscans.cc  `root-config --cflags --libs --ldflags` -L${ROOTSYS}/lib -lHistFactory -lXMLParser -lRooStats -lRooFit -lRooFitCore -lThread -lMinuit -lFoam -lMathMore -lHtml -lGpad -lm
+chmod +x ./check_NPscans
+
+for im in 130 135 # 125 # 100 105 110 115 120 125 130 135 140 145 150
+do
+
+
+#for pname in ll12_b ll12_v ll12_bv \
+#             lh12_b lh12_v lh12_bv \
+#             hh12_b hh12_v hh12_bv \
+#             tt12_b tt12_v tt12_bv
+#do
+
+for pname in tt12_bv
+do
+
+#  for vname in SigXsecOverSM
+  for vname in `cat tautau1/inspect/${pname}_${im}_combined_AllSys_model.txt | grep -v gamma_ ` 
+  do
+  echo ./check_NPscans ${vname} 1 ${pname} ${im} 0
+       ./check_NPscans ${vname} 1 ${pname} ${im} 0
+  done
+done
+done

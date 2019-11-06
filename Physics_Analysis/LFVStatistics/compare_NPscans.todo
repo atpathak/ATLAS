@@ -1,0 +1,81 @@
+WWWDIR=/afs/cern.ch/user/a/atpathak/afswork/public/Pixel/LFV_Plots/NPscans
+mkdir -vp NPscans_figures_etau
+mkdir -vp ${WWWDIR}
+rm -f compare_NPscans
+g++ -g -O2 -fPIC -Wno-deprecated -D__USE_XOPEN2K8 -o compare_NPscans compare_NPscans.cc  `root-config --cflags --libs --ldflags` -L${ROOTSYS}/lib -lHistFactory -lXMLParser -lRooStats -lRooFit -lRooFitCore -lThread -lMinuit -lFoam -lMathMore -lHtml -lGpad -lm
+chmod +x ./compare_NPscans
+
+im=125
+#for im in 130 135 # 125 # 100 105 110 115 120 125 130 135 140 145 150
+#do
+
+for pname in lfv #comb # tt12_bv # comb # # mu # # tautau12_b tautau12_v # tt12_bv tt12_b tt12_v # 
+do
+
+  if [ ${pname} == mu ] ; then
+    iname=tt12_bv
+  fi
+  if [ ${pname} == comb ] ; then
+    iname=tt12_bv
+  fi
+  if [ ${pname} == tautau12_bv ] ; then
+    iname=tt12_bv
+  fi
+  if [ ${pname} == tautau12_b ] ; then
+    iname=tt12_b
+  fi
+  if [ ${pname} == tautau12_v ] ; then
+    iname=tt12_v
+  fi
+
+  if [ ${pname} == tt12_bv ] ; then
+    iname=tt12_bv
+  fi
+  if [ ${pname} == tt12_b ] ; then
+    iname=tt12_b
+  fi
+  if [ ${pname} == tt12_v ] ; then
+    iname=tt12_v
+  fi
+
+  if [ ${pname} == tt12 ] ; then
+    iname=tt12_bv_rCR
+  fi
+  if [ ${pname} == lh12 ] ; then
+    iname=lh12_bv
+  fi
+  if [ ${pname} == hh12 ] ; then
+    iname=hh12_bv_rCR
+  fi
+  if [ ${pname} == ll ] ; then
+    iname=ll_bv
+  fi
+  if [ ${pname} == lh ] ; then
+    iname=lh_bv
+  fi
+  if [ ${pname} == tt ] ; then
+    iname=tt_bv_rCR
+  fi
+  if [ ${pname} == lfv ] ; then
+    iname=lh_etau_mva
+  fi
+  #rm -f NPscans_figures/*_ObsData_${pname}_${im}.pdf
+#  echo
+#  echo tautau1/inspect/${iname}_${im}_combined_AllSys_model.txt 
+#  echo
+#  for vname in SigXsecOverSM
+#  for vname in `cat tautau1/inspect/${iname}_${im}_combined_AllSys_model.txt | grep -v gamma_ ` # | grep SigXsecOverSM
+   #for vname in `cat nplist/${iname}.txt | grep btag`
+  #for vname in `cat nplist/${iname}.txt`
+  #do
+  #echo ./compare_NPscans ${vname} 1 ${pname} ${im}
+  #     ./compare_NPscans ${vname} 1 ${pname} ${im}
+  #done
+  ./compare_NPscans SigXsecOverSM 1 ${pname} ${im}
+ # rm -f ${WWWDIR}/${pname}_${im}_ObsData.pdf
+  #gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=${WWWDIR}/${pname}_${im}_ObsData.pdf NPscans_figures/*_ObsData_${pname}_${im}.pdf
+done
+#done
+
+# mu for all mH
+# cd ~/www/Htautau/Summer2014/9Oct2014/NPscans ; rm -f mu_allmH_ObsData.pdf ; gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=mu_allmH_ObsData.pdf mu_*_ObsData.pdf ; cd -
