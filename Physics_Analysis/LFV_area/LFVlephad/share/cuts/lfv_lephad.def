@@ -1,0 +1,159 @@
+# -*- mode:tqfolder -*-
+
++CutBase{
+  <.cutExpression = "1.", .weightExpression = "{$(isData) ? 1. : [ScaleFactor_$(weightvariation)]}", .title = "Baseline">
+  +CutChannel{
+    <.cutExpression = "$(fitsChannel)", .title = "Channel">
+    +CutHadTau{
+      <.cutExpression = "{$(isSignal) ? (tau_0_truth_isHadTau == 1.) : 1.}", .title = "Had Tau">
+      +CutTrigger{
+        <.cutExpression = "[Trigger] == 1", .title = "Trigger" >
+        +CutNPVX{
+          <.cutExpression = "n_pvx > 0", .title = "NPVX">
+	  +CutLepQual{
+            <.cutExpression = "lep_0_id_medium == 1 && lep_0_iso_Gradient == 1", .title = "LepQual">
+            +CutTauQual{
+              <.cutExpression = "n_taus > 0 && abs(tau_0_q) == 1 && abs(tau_0_eta) < 2.4", .title = "TauQual">
+              +CutOS{
+                #<.cutExpression = "{$(isFailID) ? (lephad_qxq == 1) : (lephad_qxq == -1)}", .title = "OS+SS">
+                <.cutExpression = "lephad_qxq == -1", .title = "OS">
+                +CutTauAntiTau{
+                #<.cutExpression = "n_taus_medium == 1 && tau_0_jet_bdt_medium == 1", .title = "Tau-AntiTau" >
+                <.cutExpression = "{$(isFailID) ? (n_taus_medium == 0 && tau_0_jet_bdt_medium == 0 && tau_0_jet_bdt_score > 0.35) : (n_taus_medium == 1 && tau_0_jet_bdt_medium == 1)}", .title = "TauAntiTau">
+	          +CutNoJetFake{
+	            <.cutExpression = "1.", .title = "NoJetFake" >
+                    #<.cutExpression = "{$(isData) ? 1. : !(abs(tau_0_truth_pdgId) < 7 || tau_0_truth_pdgId == 21)}", .title = "NoJetFake">
+                    +CutLepPt{
+                      <.cutExpression = "lep_0_pt > 27.", .title = "MuonPt">
+                      +CutTauPt{
+                        <.cutExpression = "tau_0_pt > 25.", .title = "TauPt">
+                        +CutZVeto{
+		          <.cutExpression = "{$(isETAU) ? tau_0_ele_BDTEleScoreTrans_run2 > 0.15 : 1.}", .title = "ZVeto">
+		          #<.cutExpression = "lephad_vis_mass < 80. || lephad_vis_mass > 100.", .title = "ZVeto">
+                          +CutPreselection1{
+		            <.cutExpression = "1.", .title = "Preselection", .weightExpression = "{$(isFailID) ? [fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+		            #<.cutExpression = "1.", .title = "Preselection">
+		            +CutPreselection2{
+                              <.cutExpression = "1.", .title = "Preselection", .weightExpression = "{ ( $(isFailID) && [taumet_transverse_mass] < 30. ) ? [fakeFactorPreselectionSR1_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+                              +CutPreselection{
+                                <.cutExpression = "1.", .title = "Preselection", .weightExpression = "{ ( $(isFailID) && [taumet_transverse_mass] > 30. ) ? [fakeFactorPreselectionSR2_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+			      }
+			    }
+			  }
+			}
+		      }
+		    }
+		  }
+		}
+	      }
+            }
+	  }
+	}
+      }
+    }
+  }
+}
+
+# Signal region 1
+@*/CutPreselection {		 
+  +CutDEtaSR1{
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2.", .title = "SR1 DEta">  
+    +CutLepMTSR1{
+      #<.cutExpression = "lepmet_transverse_mass > 40.", .title = "SR1 LepMET MT">
+      <.cutExpression = "lephad_mt_lep0_met > 40.", .title = "SR1 LepMET MT">
+      +CutTauMTSR1{
+        <.cutExpression = "taumet_transverse_mass < 30.", .title = "SR1 TauMET MT">
+        +CutNjetSR1{
+          <.cutExpression = "1.", .title = "SR1 Njet">
+          +CutNbjetSR1{
+	    <.cutExpression = "n_bjets == 0", .title = "SR1 Nbjet">
+            #<.cutExpression = "n_bjets == 0", .title = "SR1 Nbjet", .weightExpression = "{$(isFailID) ? [fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+          }
+	}
+      }
+    }
+  }
+}
+
+# Signal region 2
+@*/CutPreselection {
+  +CutDEtaSR2{
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2.", .title = "SR2 DEta">
+    +CutLepMTSR2{
+      #<.cutExpression = "lepmet_transverse_mass < 40.", .title = "SR2 LepMET MT">
+      <.cutExpression = "lephad_mt_lep0_met < 40.", .title = "SR2 LepMET MT">
+      +CutTauMTSR2{
+        <.cutExpression = "taumet_transverse_mass < 60.", .title = "SR2 TauMET MT">
+        +CutNjetSR2{
+          <.cutExpression = "1.", .title = "SR2 Njet">
+          +CutNbjetSR2{
+            <.cutExpression = "n_bjets == 0", .title = "SR2 Nbjet">
+          }
+        }
+      }
+    }
+  }
+}
+
+# W control region
+@*/CutPreselection {
+  +CutDEtaWCR{
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2.", .title = "WCR DEta">
+    +CutLepMTWCR{
+      #<.cutExpression = "lepmet_transverse_mass > 60.", .title = "WCR LepMET MT">
+      <.cutExpression = "lephad_mt_lep0_met > 60.", .title = "WCR LepMET MT">
+      +CutTauMTWCR{
+        <.cutExpression = "taumet_transverse_mass > 40.", .title = "WCR TauMET MT">
+        +CutNjetWCR{
+          <.cutExpression = "1.", .title = "WCR Njet">
+          +CutNbjetWCR{
+            <.cutExpression = "n_bjets == 0", .title = "WCR Nbjet">
+          }
+        }
+      }
+    }
+  }
+}
+
+# Top control region
+@*/CutPreselection {
+  +CutDEtaTopCR{
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2.", .title = "TopCR DEta">
+    +CutLepMTTopCR{
+      <.cutExpression = "1.", .title = "TopCR LepMET MT">
+      +CutTauMTTopCR{
+        <.cutExpression = "1.", .title = "TopCR TauMET MT">
+        +CutNjetTopCR{
+          <.cutExpression = "n_jets > 1.", .title = "TopCR Njet">
+          +CutNbjetTopCR{
+            <.cutExpression = "n_bjets > 0", .title = "TopCR Nbjet">
+          }
+        } 
+      }
+    }
+  }
+}
+
+
+@*/CutPreselection {
+  # QCD control region
+  +CutQCDCR{
+    <.cutExpression = "taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) > 2.", .title = "QCDCR">
+  }
+  #+CutQCDCR2{
+  #  <.cutExpression = "tau_0_pt < 45. && lepmet_transverse_mass < 40. && taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) > 2.", .title = "QCDCR2">
+  #}
+  # Ztautau control region
+  #+CutZttCR{
+  #  <.cutExpression = "tau_0_pt < 45. && lepmet_transverse_mass < 40. && taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) < 2.", .title = "ZttCR">
+  #}
+}
+
+# Zll control region
+@*/CutTauAntiTau{
+  +CutZllCR{
+    <.cutExpression = "( ( (n_muons == 2 && n_electrons == 0) || (n_muons == 1 && n_electrons == 2) ) && n_taus == 1 && n_pvx > 0) && lep_0_pt > 27. && tau_0_pt > 27. && di_lepton_vis_mass > 80. && di_lepton_vis_mass < 100.", .title = "ZllCR">
+  }
+}
+
+

@@ -1,0 +1,17 @@
+# -*- mode:tqfolder -*-
+
+.name="Data", .path="/data/$(lepch)", .isData=true, title = "Data", isHistogram = false, histLineColor = 1, histMarkerStyle = 20, histMarkerSize = 1.2
+.name="Z\rightarrow \tau\tau", .path="/bkg/$(lepch)/[ZttSh+ZttEWSh]", .isBackground=true, title = "Z\rightarrow \tau\tau", histFillStyle=1001, histFillColor = kAzure+8, .showRaw = false
+.name="Top", .path="/bkg/$(lepch)/Top", .isBackground=true,title = "Top", histFillStyle=1001, histFillColor = kBlue, .showRaw = false
+.name="DiBoson", .path="/bkg/$(lepch)/Diboson", .isBackground=true,title = "DiBoson", histFillStyle=1001, histFillColor = kYellow, .showRaw = false
+.name="Z\rightarrow ll", .path="/bkg/$(lepch)/[ZllSh+ZllEWSh]", .isBackground=true, title = "Z\rightarrow ll", histFillStyle=1001, histFillColor = kOrange, .showRaw = false
+#.name="Z\rightarrow ll", .path="bkg/$(lepch)/eFake", .isBackground=true, title = "Z\rightarrow ll", histFillStyle=1001, histFillColor = kOrange, .showRaw = false
+#.name="W+jets", .path="/bkg/$(lepch)/[WjetsSh+WjetsEWSh]" , .isBackground=true, histFillColor=kMagenta, histFillStyle=1001, title="W+jets", .showRaw = false
+.name="Fake", .path="/bkg/$(lepch)/[Fake+WjetsSh+WjetsEWSh]", .isBackground=true, title = "Fakes", histFillStyle=1001, histFillColor = kGreen
+.name="SM Higgs", .path="/bkg/$(lepch)/htt", .isBackground=true, title = "SM Higgs", histFillStyle=1001, histFillColor = kCyan, .showRaw = false
+.name="Signal", .path="10.*sig/$(lepch)/[VBFH+ggH]", .isSignal=true, title = "Signal[ggF+VBF] x 10", histLineStyle = 1, histLineWidth = 2, histLineColor = kRed, .showRaw = false
+
+#.name="Z1", .path="/bkg/$(lepch)/Fake", .isBackground=true, title = "Z1", histFillStyle=1001, histFillColor = kOrange, .showRaw = false
+#.name="Z2", .path="/bkg/$(lepch)/Fake/data", .isBackground=true, title = "Z2", histFillStyle=1001, histFillColor = kBlue, .showRaw = false
+#.name="Z3", .path="/bkg/$(lepch)/Fake/mc", .isBackground=true, title = "Z3", histFillStyle=1001, histFillColor = kGreen, .showRaw = false
+#.name="Z4", .path="/bkg/$(lepch)/eFake", .isBackground=true, title = "Z4", histFillStyle=1001, histFillColor = kRed, .showRaw = false

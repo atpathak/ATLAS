@@ -1,0 +1,85 @@
+\begingroup
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=10em, inner sep=2.5pt, text centered, rounded corners, minimum height=2em]
+\tikzstyle{job} = [rectangle, draw, fill=red!20, inner sep=2.5pt, rounded corners, font={\tiny}]
+\tikzstyle{line} = [draw, -latex']
+
+\begin{tikzpicture}[]
+\node [block] (cutbase) {Baseline};
+\node [block, below=of cutbase] (cutchannel) {Channel};
+\node [block, below=of cutchannel] (cuthadtau) {Had Tau};
+\node [block, below=of cuthadtau] (cutvbffilter) {VBF Filter};
+\node [block, below=of cutvbffilter] (cuttrigger) {Trigger};
+\node [block, below=of cuttrigger] (cutnpvx) {NPVX};
+\node [block, below=of cutnpvx] (cutlepqual) {LepQual};
+\node [block, below=of cutlepqual] (cuttauqual) {TauQual};
+\node [block, below=of cuttauqual] (cutos) {OS};
+\node [block, below=of cutos] (cuttauantitau) {TauAntiTau};
+\node [block, below=of cuttauantitau] (cutnojetfake) {NoJetFake};
+\node [block, below=of cutnojetfake] (cutleppt) {MuonPt};
+\node [block, below=of cutleppt] (cuttaupt) {TauPt};
+\node [block, below=of cuttaupt] (cutzveto) {ZVeto};
+\node [block, below=of cutzveto] (cutfake) {Preselection};
+\node [block, below=of cutfake] (cutcosdphi) {CosDPhi};
+\node [block, below=of cutcosdphi] (cutdeta) {MuonPt};
+\node [block, below=of cutdeta] (cutnbjets) {MuonPt};
+\node [block, below=of cutnbjets] (cutefake) {Preselection};
+\node [block, below=of cutefake] (cutpreselection) {Preselection};
+\node [block, below=of cutpreselection] (cuttauptsr) {SR1 DEta};
+\node [block, below=of cuttauptsr] (cutlepmtsr2) {SR1 LepMET MT};
+\node [block, below=of cutlepmtsr2] (cuttaumtsr2) {SR1 TauMET MT};
+\node [block, below=of cuttaumtsr2] (cuttaumtsr2mvis) {SR1 TauMET MT};
+\node [block, below=of cuttaumtsr2mvis] (cuttaumtsr2vbf) {SR1 TauMET MT};
+\path [line] (node cs:name=cuttaumtsr2mvis, anchor=south) -| (node cs:name=cuttaumtsr2vbf, anchor=north);
+\path [line] (node cs:name=cuttaumtsr2, anchor=south) -| (node cs:name=cuttaumtsr2mvis, anchor=north);
+\path [line] (node cs:name=cutlepmtsr2, anchor=south) -| (node cs:name=cuttaumtsr2, anchor=north);
+\path [line] (node cs:name=cuttauptsr, anchor=south) -| (node cs:name=cutlepmtsr2, anchor=north);
+\node [block, right=1*0.1cm+0*(10em+2*2.5pt) of cutlepmtsr2] (cutlepmtsr1) {SR1 LepMET MT};
+\node [block, below=of cutlepmtsr1] (cuttaumtsr1) {SR1 TauMET MT};
+\node [block, below=of cuttaumtsr1] (cuttaumtsr1vbf) {SR1 TauMET MT};
+\path [line] (node cs:name=cuttaumtsr1, anchor=south) -| (node cs:name=cuttaumtsr1vbf, anchor=north);
+\path [line] (node cs:name=cutlepmtsr1, anchor=south) -| (node cs:name=cuttaumtsr1, anchor=north);
+\path [line] (node cs:name=cuttauptsr, anchor=east) -| (node cs:name=cutlepmtsr1, anchor=north);
+\path [line] (node cs:name=cutpreselection, anchor=south) -| (node cs:name=cuttauptsr, anchor=north);
+\node [block, right=2*0.1cm+1*(10em+2*2.5pt) of cuttauptsr] (cutlepptsr3) {SR1 DEta};
+\node [block, below=of cutlepptsr3] (cuttauptsr3) {SR1 TauMET MT};
+\node [block, below=of cuttauptsr3] (cuttauptsr3vbf) {SR1 TauMET MT};
+\path [line] (node cs:name=cuttauptsr3, anchor=south) -| (node cs:name=cuttauptsr3vbf, anchor=north);
+\path [line] (node cs:name=cutlepptsr3, anchor=south) -| (node cs:name=cuttauptsr3, anchor=north);
+\path [line] (node cs:name=cutpreselection, anchor=east) -| (node cs:name=cutlepptsr3, anchor=north);
+\path [line] (node cs:name=cutefake, anchor=south) -| (node cs:name=cutpreselection, anchor=north);
+\path [line] (node cs:name=cutnbjets, anchor=south) -| (node cs:name=cutefake, anchor=north);
+\path [line] (node cs:name=cutdeta, anchor=south) -| (node cs:name=cutnbjets, anchor=north);
+\path [line] (node cs:name=cutcosdphi, anchor=south) -| (node cs:name=cutdeta, anchor=north);
+\path [line] (node cs:name=cutfake, anchor=south) -| (node cs:name=cutcosdphi, anchor=north);
+\node [block, right=3*0.1cm+2*(10em+2*2.5pt) of cutcosdphi] (cuteleff) {Preselection};
+\node [block, below=of cuteleff] (cuteleff1) {Preselection};
+\node [block, below=of cuteleff1] (cuttopcr) {TopCR};
+\path [line] (node cs:name=cuteleff1, anchor=south) -| (node cs:name=cuttopcr, anchor=north);
+\node [block, right=1*0.1cm+0*(10em+2*2.5pt) of cuttopcr] (cutwcr) {WCR};
+\path [line] (node cs:name=cuteleff1, anchor=east) -| (node cs:name=cutwcr, anchor=north);
+\node [block, right=1*0.1cm+0*(10em+2*2.5pt) of cutwcr] (cutqcdcr) {QCDCR};
+\path [line] (node cs:name=cuteleff1, anchor=east) -| (node cs:name=cutqcdcr, anchor=north);
+\node [block, right=1*0.1cm+0*(10em+2*2.5pt) of cutqcdcr] (cutzttcr) {ZttCR};
+\path [line] (node cs:name=cuteleff1, anchor=east) -| (node cs:name=cutzttcr, anchor=north);
+\node [block, right=1*0.1cm+0*(10em+2*2.5pt) of cutzttcr] (cutqcdcr2) {QCDCR2};
+\path [line] (node cs:name=cuteleff1, anchor=east) -| (node cs:name=cutqcdcr2, anchor=north);
+\node [block, right=1*0.1cm+0*(10em+2*2.5pt) of cutqcdcr2] (cutvbf) {VBFSR};
+\path [line] (node cs:name=cuteleff1, anchor=east) -| (node cs:name=cutvbf, anchor=north);
+\path [line] (node cs:name=cuteleff, anchor=south) -| (node cs:name=cuteleff1, anchor=north);
+\path [line] (node cs:name=cutfake, anchor=east) -| (node cs:name=cuteleff, anchor=north);
+\path [line] (node cs:name=cutzveto, anchor=south) -| (node cs:name=cutfake, anchor=north);
+\path [line] (node cs:name=cuttaupt, anchor=south) -| (node cs:name=cutzveto, anchor=north);
+\path [line] (node cs:name=cutleppt, anchor=south) -| (node cs:name=cuttaupt, anchor=north);
+\path [line] (node cs:name=cutnojetfake, anchor=south) -| (node cs:name=cutleppt, anchor=north);
+\path [line] (node cs:name=cuttauantitau, anchor=south) -| (node cs:name=cutnojetfake, anchor=north);
+\path [line] (node cs:name=cutos, anchor=south) -| (node cs:name=cuttauantitau, anchor=north);
+\path [line] (node cs:name=cuttauqual, anchor=south) -| (node cs:name=cutos, anchor=north);
+\path [line] (node cs:name=cutlepqual, anchor=south) -| (node cs:name=cuttauqual, anchor=north);
+\path [line] (node cs:name=cutnpvx, anchor=south) -| (node cs:name=cutlepqual, anchor=north);
+\path [line] (node cs:name=cuttrigger, anchor=south) -| (node cs:name=cutnpvx, anchor=north);
+\path [line] (node cs:name=cutvbffilter, anchor=south) -| (node cs:name=cuttrigger, anchor=north);
+\path [line] (node cs:name=cuthadtau, anchor=south) -| (node cs:name=cutvbffilter, anchor=north);
+\path [line] (node cs:name=cutchannel, anchor=south) -| (node cs:name=cuthadtau, anchor=north);
+\path [line] (node cs:name=cutbase, anchor=south) -| (node cs:name=cutchannel, anchor=north);
+\end{tikzpicture}
+\endgroup

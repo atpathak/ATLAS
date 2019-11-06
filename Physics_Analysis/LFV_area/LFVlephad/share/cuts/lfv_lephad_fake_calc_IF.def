@@ -1,0 +1,176 @@
+# -*- mode:tqfolder -*-
+
++CutBase{
+  <.cutExpression = "1.", .weightExpression = "{$(isData) ? 1. : [ScaleFactor_$(weightvariation)]}", .title = "Baseline">
+  +CutChannel{
+    <.cutExpression = "$(fitsChannel)", .title = "Channel">
+    +CutHadTau{
+      <.cutExpression = "{$(isSignal) ? (abs(tau_0_truth_pdgId)==15) : 1.}", .title = "Had Tau">
+      +CutVBFFilter{
+        <.cutExpression = "{$(isData) ? 1 : (truth_passedVBFFilter == 0)}", .title = "VBF Filter">
+        +CutTrigger{
+          <.cutExpression = "[Trigger] == 1", .title = "Trigger" >
+          +CutNPVX{
+            <.cutExpression = "n_pvx > 0", .title = "NPVX">
+            +CutLepQual{
+	      <.cutExpression = "{$(isETAU) ? lep_0_id_medium == 1 && lep_0_iso_Gradient == 1 && fabs(lep_0_eta) < 2.47 && !(fabs(lep_0_eta)>1.37 && fabs(lep_0_eta)<1.52) : lep_0_id_medium == 1 && lep_0_iso_Gradient == 1 && fabs(lep_0_eta) < 2.5}", .title = "LepQual">
+              +CutTauQual{
+                <.cutExpression = "n_taus > 0 && abs(tau_0_q) == 1 && abs(tau_0_eta) < 2.4 && !(fabs(tau_0_eta)>1.37 && fabs(tau_0_eta)<1.52)", .title = "TauQual">
+                +CutOS{
+                  <.cutExpression = "lephad_qxq == -1", .title = "OS">
+                  +CutTauAntiTau{
+		    <.cutExpression = "{$(isFailID) ? (tau_0_jet_bdt_tight == 0 && tau_0_jet_bdt_score > 0.5) : (tau_0_jet_bdt_tight == 1)}", .title = "TauAntiTau">
+                    +CutNoJetFake{
+                      <.cutExpression = "1.", .title = "NoJetFake" >
+                      #<.cutExpression = "{$(isData) ? 1. : !(abs(tau_0_truth_pdgId) < 6 || tau_0_truth_pdgId == 21)}", .title = "NoJetFake">
+                      +CutLepPt{
+                        <.cutExpression = "lep_0_pt > 27.3", .title = "MuonPt">
+                        +CutTauPt{
+                          <.cutExpression = "tau_0_pt > 25.", .title = "TauPt">
+                          +CutZVeto{
+                            <.cutExpression = "{$(isETAU) ? (tau_0_n_tracks==1 && tau_0_ele_BDTEleScoreTrans_run2 > 0.15) || (tau_0_n_tracks==3 && tau_0_ele_BDTEleScoreTrans_run2 > 0.05) : 1.}", .title = "ZVeto">
+			    +CutPreselection{
+                              <.cutExpression = "1.", .title = "CosDPhi", region = "SR">
+			    }
+			  }
+			}
+		      }
+		    }
+		  }
+		}
+	      }
+            }
+	  }
+	}
+      }
+    }
+  }
+}
+
+@*/CutPreselection{
+  +CutPreselectionSSP{
+    <.cutExpression = "$(SS) == 1", .title = "PreselectionSSPP", sign = "SSP">	
+  }
+}
+
+
+@*/CutPreselection* {		 
+  +CutSR0$(sign){
+    <.cutExpression = "( cos($(dPhiTauMET)) + cos($(dPhiLepMET)) ) > -0.35 && abs(lep_0_eta - tau_0_eta) < 2. && n_bjets == 0", .title = "SR1 TauMET MT", category = "SR0">
+  }
+  +CutSR1$(sign){
+    <.cutExpression = "( cos($(dPhiTauMET)) + cos($(dPhiLepMET)) ) > -0.35 && abs(lep_0_eta - tau_0_eta) < 2. && n_bjets == 0 && tau_0_pt > 45. && lephad_mt_lep0_met > 40. && taumet_transverse_mass < 30.", .title = "SR1 TauMET MT", category = "SR1">
+  }
+  +CutSR2$(sign){
+    <.cutExpression = "( cos($(dPhiTauMET)) + cos($(dPhiLepMET)) ) > -0.35 && abs(lep_0_eta - tau_0_eta) < 2. && n_bjets == 0 && tau_0_pt > 45. && lephad_mt_lep0_met < 40. && taumet_transverse_mass < 60. && lephad_vis_mass > 100.", .title = "SR1 TauMET MT", category = "SR2">
+  }
+  +CutSR3$(sign){
+    <.cutExpression = "( cos($(dPhiTauMET)) + cos($(dPhiLepMET)) ) > -0.35 && abs(lep_0_eta - tau_0_eta) < 2. && n_bjets == 0 && tau_0_pt < 45. && lep_0_pt > 45. && lephad_mt_lep0_met > 40. && taumet_transverse_mass < 30.", .title = "SR1 TauMET MT", category = "SR3">
+  }
+# && lephad_mt_lep0_met > 40. && taumet_transverse_mass < 30.
+  +CutSRVBF$(sign){
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2. && n_bjets == 0 && n_jets > 1 && jet_0_pt > 40. && jet_1_pt > 30. && fabs(jets_delta_eta) > 3. && jets_visible_mass > 400.", .title = "VBFSR", category = "SRVBF">
+  }
+  +CutSRW$(sign){
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2. && lephad_mt_lep0_met > 60. && taumet_transverse_mass > 40. && n_bjets == 0", .title = "WCR", category = "SRW">
+  }
+  +CutSRTop$(sign){
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2. && n_jets > 1 && n_bjets > 0", .title = "TopCR", category = "SRTop">
+  }
+  +CutSRQCD$(sign){
+    <.cutExpression = "taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) > 2.", .title = "QCDCR", category = "SRQCD">
+  }
+  +CutSRQCD2$(sign){
+    <.cutExpression = "tau_0_pt < 45. && lephad_mt_lep0_met < 40. && taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) > 2.", .title = "QCDCR2", category = "SRQCD2">
+  }
+  +CutSRZtt$(sign){
+    <.cutExpression = "tau_0_pt < 45. && lephad_mt_lep0_met < 40. && taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) < 2.", .title = "ZttCR", category = "SRZtt">
+  }
+}
+
+
+
+
+@*/CutSR* {
+  +Cut$(category)ISO(sign){
+    <.cutExpression = "lep_0_iso_Gradient == 1", .title = "PreselectionISO1Prong">
+    +Cut$(category)ISOTrueLep$(sign){
+      <.cutExpression = "{$(isData) ? 1. : (abs(lep_0_matched_pdgId) == 11  || abs(lep_0_matched_pdgId) == 13)}", .title = "PreselectionNoJet">
+      +Cut$(category)ISOTrueLep1Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 1", .title = "PreselectionNoJet1Prong">
+        +Cut$(category)ISOTrueLep1ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet1ProngSLT">
+      }
+    }
+      +Cut$(category)ISOTrueLep3Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 3", .title = "PreselectionNoJet3Prong">
+        +Cut$(category)ISOTrueLep3ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet3ProngSLT">
+        }
+     }
+   }
+  }
+}
+
+@*/CutSR* {
+  +Cut$(category)ANTIISO(sign){
+    <.cutExpression = "lep_0_iso_Gradient == 0", .title = "PreselectionISO1Prong">
+    +Cut$(category)ANTIISOTrueLep$(sign){
+      <.cutExpression = "{$(isData) ? 1. : (abs(lep_0_matched_pdgId) == 11  || abs(lep_0_matched_pdgId) == 13)}", .title = "PreselectionNoJet">
+      +Cut$(category)ANTIISOTrueLep1Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 1", .title = "PreselectionNoJet1Prong">
+        +Cut$(category)ANTIISOTrueLep1ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet1ProngSLT">
+      }
+    }
+      +Cut$(category)ANTIISOTrueLep3Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 3", .title = "PreselectionNoJet3Prong">
+        +Cut$(category)ANTIISOTrueLep3ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet3ProngSLT">
+        }
+     }
+   }
+  }
+}
+
+
+@*/CutPreselection* {
+  +CutPreselectionISO$(sign){
+    <.cutExpression = "lep_0_iso_Gradient == 1", .title = "PreselectionISO1Prong">
+    +CutPreselectionISOTrueLep$(sign){
+      <.cutExpression = "{$(isData) ? 1. : (abs(lep_0_matched_pdgId) == 11  || abs(lep_0_matched_pdgId) == 13)}", .title = "PreselectionNoJet">
+      +CutPreselectionISOTrueLep1Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 1", .title = "PreselectionNoJet1Prong">
+        +CutPreselectionISOTrueLep1ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet1ProngSLT">
+        }
+      }
+      +CutPreselectionISOTrueLep3Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 3", .title = "PreselectionNoJet3Prong">
+        +CutPreselectionISOTrueLep3ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet3ProngSLT">
+        }
+      }
+    }
+  }
+}
+@*/CutPreselection* {
+  +CutPreselectionANTIISO$(sign){
+    <.cutExpression = "lep_0_iso_Gradient == 0", .title = "PreselectionISO1Prong">
+    +CutPreselectionANTIISOTrueLep$(sign){
+      <.cutExpression = "{$(isData) ? 1. : !(abs(tau_0_truth_pdgId) < 6 || tau_0_truth_pdgId == 21)}", .title = "PreselectionNoJet">
+      +CutPreselectionANTIISOTrueLep1Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 1", .title = "PreselectionNoJet1Prong">
+        +CutPreselectionANTIISOTrueLep1ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet1ProngSLT">
+        }
+      }
+      +CutPreselectionANTIISOTrueLep3Prong$(sign){
+        <.cutExpression = "tau_0_n_tracks == 3", .title = "PreselectionNoJet3Prong">
+        +CutPreselectionANTIISOTrueLep3ProngSLT$(sign){
+          <.cutExpression = "$(isSLT) == 1", .title = "PreselectionNoJet3ProngSLT">
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+# -*- mode: config -*-
+# name of the output file
+makeSampleFile.sampleFile:  input/lfv_lephad.root:samples
+# use the following to run over standard nTuples
+# run over mc
+#makeSampleFile.mcPaths: root://eosuser//eos/user/n/ndang/lfv_data/mc/:NOMINAL
+makeSampleFile.mcPaths: /nfs/dust/atlas/user/ndang/lfv_data/2017-03//mc/:NOMINAL
+makeSampleFile.mcFilenameSuffix: */*.root*
+makeSampleFile.mcFilenamePrefix: *
+# run over data
+#makeSampleFile.dataPaths: /eos/atlas/user/a/ademaria/February_Production/data/:NOMINAL
+makeSampleFile.dataPaths: /nfs/dust/atlas/user/ndang/lfv_data/2017-03/data/:NOMINAL
+makeSampleFile.dataFilePattern:  *data*/*.root*
+# input cross section files (and map)
+makeSampleFile.XsecFiles: XSec/xsecs_pmg.txt
+#makeSampleFile.XsecFiles: XSec/xsecs_pmg.txt
+makeSampleFile.XsecMap: maps/lfv_lephad.map
+makeSampleFile.channelPlaceholder: channel
+# where to get the normalization from
+makeSampleFile.initializer.verbose: True
+makeSampleFile.initializer.useCountHistogram: True
+makeSampleFile.initializer.countHistogramName: h_metadata
+makeSampleFile.initializer.countHistogramBinNumber: 8
+makeSampleFile.initializer.minSamples: 1
+makeSampleFile.printSamplesFailed: True
+# channels to run over
+makeSampleFile.channels: mtau,etau
+# energy and luminosity
+#makeSampleFile.luminosity: 3.21296
+#makeSampleFile.luminosity: 33.24299
+makeSampleFile.luminosity: 36.45595
+makeSampleFile.luminosityUnit: fb
+makeSampleFile.energy: 13
+makeSampleFile.style: styles/lfv_lephad_tags.txt
+
+###
+config.Include: definitions/lfv_lephad_aliases.cfg
+runAnalysis.maxEvents: 1
+runAnalysis.inputFile:   input/lfv_lephad.root:samples
+runAnalysis.outputFile:  output/lfv_lephad.root:samples
+#runAnalysis.weightSystematicsFile: systematics/weightsystematics
+#runAnalysis.kinematicSystematicsFile: systematics/kinematicsystematics
+#runAnalysis.fakeSystematicsFile: systematics/fakesystematics
+runAnalysis.addObservables: Trigger,ScaleFactor,fakeFactor
+runAnalysis.cuts: cuts/lfv_lephad.def
+runAnalysis.doData: true #false
+runAnalysis.channels: mtau
+runAnalysis.histograms: definitions/lfv_lephad_histograms.txt
+#runAnalysis.ntuples: definitions/htt_lephad_ntuples.txt
+
+###
+
+#readAnalysis.nfConfig:  normalization/norm.txt
+readAnalysis.inputFile:  output/lfv_lephad.root:samples
+readAnalysis.outputDir:  results/lfv_lephad
+readAnalysis.logScale: False
+readAnalysis.makePlots: *
+readAnalysis.makeCutflows: True
+readAnalysis.channels: mtau,etau
+readAnalysis.plotter.style.showEventYields: False
+#readAnalysis.plotter.style.showOptScan: True
+readAnalysis.plotter.labels.process: "H#rightarrow e#tau_{had}"
+readAnalysis.histogramProcesses: styles/lfv_lephad_processes.txt
+readAnalysis.cutflowProcessFiles: styles/lfv_lephad_cutprocesses.txt
+readAnalysis.cutflowCutFiles: styles/lfv_lephad_cuts.txt
+#readAnalysis.cutprinter.standalone: True
+readAnalysis.plotformat: pdf
+readAnalysis.systematics: "systematics/systematics_november.root:systematics>>::somename"
+readAnalysis.plotter.errors.showSys: "somename"
+readAnalysis.plotter.labels.atlas: "Work in Progress"
+readAnalysis.plotter.labels.atlas.scale: 0.9
+readAnalysis.plotter.labels.drawATLAS.scale: 1.21
+readAnalysis.plotter.labels.drawInfo: True
+readAnalysis.plotter.style.forceRatioLimits: True
+readAnalysis.plotter.style.ratioMin: 0.6
+readAnalysis.plotter.style.ratioMax: 1.4
+#readAnalysis.plotter.labels.totalBkg: "Z MC Fakes"
+#readAnalysis.plotter.labels.data: "Z MC"
+readAnalysis.plotter.style.legend.textSize: 0.022
+readAnalysis.plotter.style.ratio.nYdiv: 4
+readAnalysis.plotter.labels.totalBkg: "Bkg"
+readAnalysis.plotter.style.showUnderflow: True
+readAnalysis.plotter.style.showOverflow: True
+readAnalysis.plotter.style.heatmap: True
+#readAnalysis.plotter.style.logMinMin: 10
+readAnalysis.plotter.style.overrideTotalBkgRequirement: true
+
+#createSystematics.weightSystematicsFile: systematics/plot.systematics
+#createSystematics.inputDir: output/lephad
+#createSystematics.nominalFile: nominal.root
+#createSystematics.sampleFolder: :samples
+#createSystematics.channel: lephad
+#createSystematics.cuts: CutVBFCBSR,CutBOOSTCBSR,CutVBFMVASR,CutBOOSTMVASR
+#createSystematics.outputDir: systematics
+#createSystematics.outputFile: systematics_lephad.root
+#createSystematics.tableName: systematics_table_lephad

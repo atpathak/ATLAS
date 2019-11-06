@@ -1,0 +1,107 @@
+#!/bin/bash
+
+PYBIN=$(which python2)
+
+if [ -z "$TMPDIR" ]; then
+    TMPDIR=/tmp/$(whoami)
+	mkdir -p $TMPDIR
+fi
+
+if [[ $PYTHONPATH != *$TQPATH* ]]; then
+	export PYTHONPATH=$PYTHONPATH:$TQPATH/res/python2
+fi
+
+fname=$TMPDIR/tqpy.py
+rm -f $fname
+export PYTHONSTARTUP=$fname
+
+filecnt=0
+
+for arg in "$@"; do
+	case $arg in 
+    "-sf")  loadSampleFolders=true ;;
+    "-f")   loadFolders=true ;;
+	"-sfr") loadSampleFolders=true; makeReaders=true ;;
+	"-s")	loadStatisticsLibrary=true ;;
+	"-w")	openWritable=true ;;
+	"-qq")	silent=true ;;
+	"-q")	quiet=true ;;
+	*)      files[$filecnt]=$arg; filecnt=$( expr $filecnt + 1 ) ;;
+	esac
+done
+
+echo 'from QFramework import *' >> $fname
+echo 'from ROOT import *' >> $fname
+echo '_files = TList();' >> $fname
+if [ $filecnt -gt 1 ]; then
+	multifile=true
+else
+	multifile=false
+fi
+
+filecnt=0
+
+for file in ${files[*]}; do
+	if [ -f $file ]; then
+		if [[ $file == */* ]]; then
+			dirname=$(cd ${file%/*} > /dev/null; pwd)
+		else
+			dirname=$(pwd)
+		fi
+		infilename=${file##*/}
+		infile=$dirname/$infilename
+	else
+		echo "sorry, no such file: "$file
+		continue
+	fi
+	if [[ $file == *.root ]]; then
+		if $openWritable; then
+			echo '_files.Add(TFile.Open("'$infile'","UPDATE"));' >> $fname
+		else
+			echo '_files.Add(TFile.Open("'$infile'","READ"));' >> $fname
+		fi
+		echo 'print("attached file '$infile' as _files['$filecnt']")' >> $fname
+		if $loadSampleFolders; then
+			macrocall=$TQPATH/macros/ListSampleFolders.C\(\"$infile\"\)
+			sflist=$(cd $TQPATH/macros &>/dev/null; root -b -q -l  $macrocall 2>/dev/null | tail -n +2)
+			for sf in $sflist; do
+				if $multifile ; then
+					sfname=${sf}_${filecnt}
+				else
+					sfname=$sf
+				fi
+	   			echo $sfname' = TQSampleFolder.loadLazySampleFolder("'$infile':'$sf'");' >> $fname
+				if $makeReaders; then
+					echo 'r_'$sfname' = TQSampleDataReader('$sf');' >> $fname
+	   				echo 'print("\tattached TQSampleFolder '$sfname' with reader r_'$sfname'")' >> $fname
+				else
+	   				echo 'print("\tattached TQSampleFolder '$sfname'")' >> $fname
+				fi
+			done
+		fi
+		if $loadFolders; then
+			macrocall=$TQPATH/macros/ListFolders.C\(\"$infile\"\)
+			flist=$(cd $TQPATH/macros &>/dev/null; root -b -q -l  $macrocall 2>/dev/null | tail -n +2)
+			for sf in $flist; do
+				if $multifile ; then
+					sfname=${sf}_${filecnt}
+				else
+					sfname=$sf
+				fi
+	   			echo $sfname' = TQFolder.loadFolder("'$infile':'$sf'")' >> $fname
+	   			echo 'print("\tattached TQFolder '$sfname'")' >> $fname
+			done
+		fi
+		filecnt=$(expr $filecnt + 1)
+	fi
+	if $loadFolders && [[ $file == *.txt ]]; then
+		filename=${file##*/}
+		filenamebase=${file%.*}
+		foldername=$(echo $filenamebase | sed 's/[^a-zA-Z0-9]//g')
+		echo $foldername' = TQFolder.loadFromTextFile("'$infile'",True);' >> $fname
+	   	echo 'if '$foldername': print("\tloaded TQFolder '$foldername' from '$file'")' >> $fname
+	fi
+done
+
+
+$PYBIN 

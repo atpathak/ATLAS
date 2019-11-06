@@ -1,0 +1,12 @@
+# List of tree systematics. The file format is:
+# NAME  TREE   [mcPaths-replacement]
+#
+# A line starting with # or consisting only of whitespaces is ignored.
+# The optional column mcPaths-replacments contain be a string of the form
+# A->B. For each unique replacment rule, submit.py will submit individual
+# makeSample jobs and adjust the input file for runAnalysis jobs.
+
+mu_es_id_low                                    MUON_ID_1down                                  
+mu_es_id_high                                   MUON_ID_1up                                    
+mu_es_ms_low                                    MUON_MS_1down                                  
+mu_es_ms_high                                   MUON_MS_1up

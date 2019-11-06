@@ -1,0 +1,5 @@
+#define SVNVERSION "813035"
+#define ROOTVERSION "6.04/16"
+#define GCCVERSION "4.9.3"
+#define TQPATH "/afs/cern.ch/work/a/atpathak/public/LFV_area_26Apr2018/QFramework"
+#define LIBXMLPATH "/usr/lib64/libxml2.so"

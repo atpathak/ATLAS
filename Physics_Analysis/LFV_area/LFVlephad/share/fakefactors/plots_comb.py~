@@ -1,0 +1,25 @@
+#!/usr/bin/env python2
+
+from ROOT import *
+from ROOT import TMath
+from ROOT import TTree, TFile, AddressOf, gROOT
+
+
+channel_list = ["SR1","SR2","SR3"]
+prong_list = ["1Prong","3Prong"]
+#ff_root_file = "FF_fake.root"
+#r_root_file = "R_fake.root"
+
+ff = TFile("FF_fake.root")
+hist_list = []
+gROOT.SetBatch(True)
+gStyle.SetOptStat(0)
+c1 = TCanvas("c1")
+for channel in channel_list:
+    for prong in prong_list:
+        histo = ff.Get("QCD_"+channel+"_"+prong+"_SLT_2016")
+        histo_list.append(histo)
+        
+hist.SetTitle("FF_mtau_QCD_SR1_1Prong_SLT_2016")
+hist.Draw()
+c1.SaveAs("mtau_QCD_SR1_1Prong_SLT_2016.pdf")

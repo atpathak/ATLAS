@@ -1,0 +1,32 @@
+# -*- mode:tqfolder -*-
+
+TH1F('leptonPt'   ,'', 16, 20,100)   <<   ( lep_0_pt : "p_{T}^{lep} [GeV]");
+TH1F('tauPt'   ,'', 16, 20, 100)   <<   ( tau_0_pt : "p_{T}^{\#tau} [GeV]" );
+TH1F('met'   ,'', 10, 0,100)   <<   ( met_reco_et : "E_{T}^{miss} [GeV]" );
+TH1F('collMass'   ,'', 25, 50,300)   <<   ( coll_approx_lfv_m : "m_{coll} [GeV]" );
+TH1F('collMassBL','', 25, 50, 300)   << ( Blind(coll_approx_lfv_m, $(isData) && !$(isFailID) && !$(isEFake) && coll_approx_lfv_m > 100 && coll_approx_lfv_m < 150) : "m_{coll} [GeV]" );
+TH1F('totmomtrans','', 21, 90, 300) << ($(totmomtrans) : "p_{T}^{tot} [GeV]");
+
+#########################################################################################
+
+@CutPreselection:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutTauMTSR1_VBF:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutTauMTSR2_VBF:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutTauPtSR3_VBF:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+
+@CutTauMTSR1_3p:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutTauMTSR2_3p:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutTauPtSR3_3p:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+
+@CutTauMTSR1_1p:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutTauMTSR2_1p:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutTauPtSR3_1p:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+
+@CutVBF:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutVBF1:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+@CutVBF2:leptonPt,tauPt,met,collMassBL,collMass,totmomtrans;
+
+
+
+
+

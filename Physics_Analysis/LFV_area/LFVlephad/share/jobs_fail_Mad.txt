@@ -1,0 +1,6 @@
+# commented lines currently don't have any samples attached
+
+
+/bkg/?/eFake/mc/Fake/data/?/data5/
+/bkg/?/ZllSh/Zee/2/
+/bkg/?/Fake/mc/ZllSh/Zee/2/

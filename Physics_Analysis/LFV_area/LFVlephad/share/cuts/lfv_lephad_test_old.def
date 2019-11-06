@@ -1,0 +1,173 @@
+# -*- mode:tqfolder -*-
+
++CutBase{
+  <.cutExpression = "1.", .weightExpression = "{$(isData) ? 1. : [ScaleFactor_$(weightvariation)]}", .title = "Baseline">
+  +CutChannel{
+    <.cutExpression = "$(fitsChannel)", .title = "Channel">
+    +CutHadTau{
+      #<.cutExpression = "{$(isSignal) ? (tau_0_truth_isHadTau == 1.) : 1.}", .title = "Had Tau">
+      <.cutExpression = "{$(isSignal) ? (abs(tau_0_truth_pdgId)==15) : 1.}", .title = "Had Tau">
+      +CutTrigger{
+        <.cutExpression = "[Trigger] == 1", .title = "Trigger" >
+        +CutNPVX{
+          <.cutExpression = "n_pvx > 0", .title = "NPVX">
+	  +CutLepQual{
+            <.cutExpression = "{$(isETAU) ? lep_0_id_medium == 1 && lep_0_iso_Gradient == 1 && fabs(lep_0_eta) < 2.47 && !(fabs(lep_0_eta)>1.37 && fabs(lep_0_eta)<1.52) : lep_0_id_medium == 1 && lep_0_iso_Gradient == 1 && fabs(lep_0_eta) < 2.47}", .title = "LepQual">
+            +CutTauQual{
+              <.cutExpression = "n_taus > 0 && abs(tau_0_q) == 1 && abs(tau_0_eta) < 2.4", .title = "TauQual">
+              +CutOS{
+                <.cutExpression = "lephad_qxq == -1", .title = "OS">
+                +CutTauAntiTau{
+                  <.cutExpression = "{$(isFailID) ? (n_taus_medium == 0 && tau_0_jet_bdt_medium == 0  && tau_0_jet_bdt_score > 0.5) : (n_taus_medium == 1 && tau_0_jet_bdt_medium == 1)}", .title = "TauAntiTau">
+		  #<.cutExpression = "{$(isFailID) ? (n_taus_tight == 0 && tau_0_jet_bdt_tight == 0  && tau_0_jet_bdt_score > 0.5) : (n_taus_tight == 1 && tau_0_jet_bdt_tight == 1)}", .title = "TauAntiTau">
+	          +CutNoJetFake{
+	            #<.cutExpression = "1.", .title = "NoJetFake" >
+                    <.cutExpression = "{$(isData) ? 1. : !(abs(tau_0_truth_pdgId) < 6 || tau_0_truth_pdgId == 21)}", .title = "NoJetFake">
+                    +CutLepPt{
+                      <.cutExpression = "lep_0_pt > 27.3", .title = "MuonPt">
+                      +CutTauPt{
+                        <.cutExpression = "tau_0_pt > 25.", .title = "TauPt">
+                        +CutZVeto{
+		          <.cutExpression = "{$(isETAU) ? (tau_0_n_tracks==1 && tau_0_ele_BDTEleScoreTrans_run2 > 0.15) || (tau_0_n_tracks==3 && tau_0_ele_BDTEleScoreTrans_run2 > 0.05) : 1.}", .title = "ZVeto">
+			  #<.cutExpression = "1.", .title = "CosDPhi">
+			  +CutFake{
+                            <.cutExpression = "1.", .title = "Preselection", .weightExpression = "{$(isFailID) ? [fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+			    +CutCosDPhi{
+                              <.cutExpression = "( cos($(dPhiTauMET)) + cos($(dPhiLepMET)) ) > -0.35", .title = "CosDPhi">
+			      +CutDEta{
+			        <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2.", .title = "MuonPt">
+			        +CutNbjets{
+                                  <.cutExpression = "n_bjets == 0", .title = "MuonPt">
+                                  +CutPreselection{
+                                    #<.cutExpression = "1.", .title = "Preselection", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSR0_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+				    <.cutExpression = "1.", .title = "Preselection">
+# lephad_vis_mass < 85. || lephad_vis_mass > 95.
+			    	  }
+				}
+			      }
+			    }
+			  }
+			}
+		      }
+		    }
+		  }
+		}
+	      }
+            }
+	  }
+	}
+      }
+    }
+  }
+}
+
+# Signal region 1
+@*/CutPreselection {		 
+  +CutTauPtSR{
+    <.cutExpression = "tau_0_pt > 45.", .title = "SR1 DEta">  
+    +CutLepMTSR1{
+      <.cutExpression = "lephad_mt_lep0_met > 40.", .title = "SR1 LepMET MT">
+      +CutTauMTSR1{
+        <.cutExpression = "taumet_transverse_mass < 30.", .title = "SR1 TauMET MT", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSR1_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+      }
+    }
+    +CutLepMTSR2{
+      <.cutExpression = "lephad_mt_lep0_met < 40.", .title = "SR1 LepMET MT">
+      +CutTauMTSR2_1{
+        <.cutExpression = "taumet_transverse_mass < 60.", .title = "SR1 TauMET MT", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSR2_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+	+CutTauMTSR2_2{
+          <.cutExpression = "1.", .title = "SR1 TauMET MT">
+	  +CutTauMTSR2{
+            <.cutExpression = "lephad_vis_mass > 100.", .title = "SR1 TauMET MT", >
+	  }
+	}
+      }
+    }
+  }
+}
+
+
+@*/CutPreselection {
+  +CutLepPtSR3{
+    <.cutExpression = "lep_0_pt > 45.", .title = "SR1 DEta",.weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSR3_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+    +CutTauPtSR3{
+      <.cutExpression = "tau_0_pt < 45.", .title = "SR1 TauMET MT">
+# && lephad_mt_lep0_met > 40. && taumet_transverse_mass < 30.
+    }
+  }
+}
+
+@*/CutFake {
+  +CutVBF{
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2. && n_bjets == 0 && n_jets > 1 && jet_0_pt > 30. && jet_1_pt > 30. && fabs(jets_delta_eta) > 2. && jets_visible_mass > 400.", .title = "VBFSR", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSRVBF_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+  }
+}
+
+
+#@*/CutTauMTSR1 {
+#  +CutTauMTSR1_1{
+#     <.cutExpression = "tau_0_n_tracks==1", .title = "SR1 TauMET MT">
+#  }
+#  +CutTauMTSR1_3{
+#     <.cutExpression = "tau_0_n_tracks==3", .title = "SR1 TauMET MT">
+#  }
+#}
+
+#@*/CutTauMTSR2 {
+#  +CutTauMTSR2_1{
+#     <.cutExpression = "tau_0_n_tracks==1", .title = "SR1 TauMET MT">
+#  }
+#  +CutTauMTSR2_3{
+#     <.cutExpression = "tau_0_n_tracks==3", .title = "SR1 TauMET MT">
+#  }
+#}
+
+#@*/CutTauPtSR3 {
+#  +CutTauPtSR3_1{
+#     <.cutExpression = "tau_0_n_tracks==1", .title = "SR1 TauMET MT">
+#  }
+#  +CutTauPtSR3_3{
+#     <.cutExpression = "tau_0_n_tracks==3", .title = "SR1 TauMET MT">
+#  }
+#}
+
+@*/CutFake {
+  +CutWCR{
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2. && lephad_mt_lep0_met > 60. && taumet_transverse_mass > 40. && n_bjets == 0", .title = "WCR", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSRW_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+  }
+  +CutTopCR{
+    <.cutExpression = "abs(lep_0_eta - tau_0_eta) < 2. && n_jets > 1 && n_bjets > 0 && lephad_mt_lep0_met > 100.", .title = "TopCR", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSRTop_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+  }
+  +CutQCDCR{
+    <.cutExpression = "taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) > 2.", .title = "QCDCR", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSRQCD_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+  }
+}
+
+@*/CutFake {
+  +CutQCDCR2{
+    <.cutExpression = "tau_0_pt < 45. && lephad_mt_lep0_met < 40. && taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) > 2.", .title = "QCDCR2", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSRQCD2_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+  }
+  +CutZttCR{
+    <.cutExpression = "tau_0_pt < 45. && lephad_mt_lep0_met < 40. && taumet_transverse_mass < 60. && n_bjets == 0 && abs(lep_0_eta - tau_0_eta) < 2.", .title = "ZttCR", .weightExpression = "{ ( $(isFailID) ) ? [fakeFactorPreselectionSRZtt_$(fakevariation)]/[fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+  }
+}
+
+
+@*/CutBase{
+  +CutAdd1{
+    <.cutExpression = "[Trigger] == 1", .weightExpression = "{ $(isFailID) ? 0. : 1.}".title = "Add cut">
+    +CutAdd2{
+      <.cutExpression = "lep_0_id_medium == 1 && lep_0_iso_Gradient == 1 && abs(tau_0_q) == 1 && abs(tau_0_eta) < 2.4 && lephad_qxq == -1 && n_taus_medium == 1 && tau_0_jet_bdt_medium == 1", .title = "Add cut">
+      +CutZllCR{
+        <.cutExpression = "( ( (n_muons == 2 && n_electrons == 0) || (n_muons == 0 && n_electrons == 2) ) && n_taus == 1 && n_pvx > 0) && lep_0_pt > 27. && tau_0_pt > 27. && di_lepton_vis_mass > 80. && di_lepton_vis_mass < 100.", .title = "ZllCR">
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

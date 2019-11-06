@@ -1,0 +1,47 @@
+[?1034hxAOD::Init                INFO    Environment initialised for data access
+[1mINFO[0m: reading configuration for 'createSystematics' from file 'config/lfv_lephad_kine0.cfg'
+[1mINFO[0m: including configuration file 'definitions/lfv_lephad_aliases.cfg'
+
+[1mINFO[0m: get kinematic systematics
+[]
+[]
+[]
+['mu_es_id_low', 'mu_es_id_high', 'mu_es_ms_low', 'mu_es_ms_high']
+CutPreselection
+CutTauMTSR1
+CutTauMTSR1_VBF
+CutTauMTSR2
+CutTauMTSR2_Mvis
+CutTauMTSR2_VBF
+CutTauPtSR3
+CutTauPtSR3_VBF
+CutTopCR
+CutWCR
+CutQCDCR
+CutQCDCR2
+CutZttCR
+CutVBF
+[1mNominal[0m
+	output/lfv_lephad_all.root:samples	
+[1mmu_es_id_high[0m
+	output/lfv_lephad_kine0.root:samples	bkg/_mu_es_id_high/[Diboson+ZllSh+ZttSh+ZllEWSh+ZttEWSh+Top+Fake]
+[1mmu_es_id_low[0m
+	output/lfv_lephad_kine0.root:samples	bkg/_mu_es_id_low/[Diboson+ZllSh+ZttSh+ZllEWSh+ZttEWSh+Top+Fake]
+[1mmu_es_ms_high[0m
+	output/lfv_lephad_kine0.root:samples	bkg/_mu_es_ms_high/[Diboson+ZllSh+ZttSh+ZllEWSh+ZttEWSh+Top+Fake]
+[1mmu_es_ms_low[0m
+	output/lfv_lephad_kine0.root:samples	bkg/_mu_es_ms_low/[Diboson+ZllSh+ZttSh+ZllEWSh+ZttEWSh+Top+Fake]
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutPreselection'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTauMTSR1'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTauMTSR1_VBF'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTauMTSR2'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTauMTSR2_Mvis'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTauMTSR2_VBF'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTauPtSR3'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTauPtSR3_VBF'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutTopCR'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutWCR'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutQCDCR'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutQCDCR2'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutZttCR'![0m
+[1;31mERROR[0m[1m: [0m[1munable to locate nominal for cut 'CutVBF'![0m

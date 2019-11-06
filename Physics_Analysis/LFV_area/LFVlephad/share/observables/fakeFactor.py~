@@ -1,0 +1,76 @@
+from QFramework import *
+from ROOT import *
+
+def addObservables(config):
+
+    ff_root_file = "input/FF_november.root"
+    r_root_file = "input/R_november.root"
+
+    mc = "" #TopMC, ZMC, WMC, has to be empty for standard Fakes!!!
+
+    fakeSystematicsPath = config.getTagStringDefault("fakeSystematicsFile","False")
+    fakeSystematics = []
+    if str(fakeSystematicsPath).lower() != "false":
+        with open(str(fakeSystematicsPath)) as fakeSystematicsFile:
+            for line in fakeSystematicsFile:
+                line = line.strip()
+                if not line.startswith("#") and len(line) > 0:
+                    fakeSystematics.append(line)
+                    
+    namesPreselectionSR = ["fakeFactorPreselectionSR", "fakeFactorPreselectionSR_nominal"]
+    namesPreselectionSR += ["fakeFactorPreselectionSR_%s" % w for w in fakeSystematics]
+    for name in namesPreselectionSR:
+        myFakeFactorPreselectionSR = fakeFactor(name,ff_root_file,r_root_file,"Preselection","SR",mc)
+        if not TQTreeObservable.addObservable(myFakeFactorPreselectionSR):
+            INFO("failed to add myFakeFactorPreselectionSR observable named as " + name)
+            return False
+
+    namesPreselectionSR1 = ["fakeFactorPreselectionSR1", "fakeFactorPreselectionSR1_nominal"]
+    namesPreselectionSR1 += ["fakeFactorPreselectionSR1_%s" % w for w in fakeSystematics]
+    for name in namesPreselectionSR1:
+        myFakeFactorPreselectionSR1 = fakeFactor(name,ff_root_file,r_root_file,"SR1","SR",mc)
+        if not TQTreeObservable.addObservable(myFakeFactorPreselectionSR1):
+            INFO("failed to add myFakeFactorPreselectionSR observable named as " + name)
+            return False
+
+    namesPreselectionSR2 = ["fakeFactorPreselectionSR2", "fakeFactorPreselectionSR2_nominal"]
+    namesPreselectionSR2 += ["fakeFactorPreselectionSR2_%s" % w for w in fakeSystematics]
+    for name in namesPreselectionSR2:
+        myFakeFactorPreselectionSR2 = fakeFactor(name,ff_root_file,r_root_file,"SR2","SR",mc)
+        if not TQTreeObservable.addObservable(myFakeFactorPreselectionSR2):
+            INFO("failed to add myFakeFactorPreselectionSR observable named as " + name)
+            return False
+
+    namesPreselectionQCDCR = ["fakeFactorPreselectionQCDCR", "fakeFactorPreselectionQCDCR_nominal"]
+    namesPreselectionQCDCR += ["fakeFactorPreselectionQCDCR_%s" % w for w in fakeSystematics]
+    for name in namesPreselectionQCDCR:
+        myFakeFactorPreselectionQCDCR = fakeFactor(name,ff_root_file,r_root_file,"Preselection","QCDCR",mc)
+        if not TQTreeObservable.addObservable(myFakeFactorPreselectionQCDCR):
+            INFO("failed to add myFakeFactorPreselectionQCDCR observable named as " + name)
+            return False
+
+#    namesPreselectionTopCR = ["fakeFactorPreselectionTopCR", "fakeFactorPreselectionTopCR_nominal"]
+#    namesPreselectionTopCR += ["fakeFactorPreselectionTopCR_%s" % w for w in fakeSystematics]
+#    for name in namesPreselectionTopCR:
+#        myFakeFactorPreselectionTopCR = fakeFactor(name,ff_root_file,r_root_file,"Preselection","TopCR",mc)
+#        if not TQTreeObservable.addObservable(myFakeFactorPreselectionTopCR):
+#            INFO("failed to add myFakeFactorPreselectionTopCR observable named as " + name)
+#            return False
+
+    namesPreselectionWCR = ["fakeFactorPreselectionWCR", "fakeFactorPreselectionWCR_nominal"]
+    namesPreselectionWCR += ["fakeFactorPreselectionWCR_%s" % w for w in fakeSystematics]
+    for name in namesPreselectionWCR:
+        myFakeFactorPreselectionWCR = fakeFactor(name,ff_root_file,r_root_file,"Preselection","WCR",mc)
+        if not TQTreeObservable.addObservable(myFakeFactorPreselectionWCR):
+            INFO("failed to add myFakeFactorPreselectionWCR observable named as " + name)
+            return False
+        
+#    namesPreselectionZCR = ["fakeFactorPreselectionZCR", "fakeFactorPreselectionZCR_nominal"]
+#    namesPreselectionZCR += ["fakeFactorPreselectionZCR_%s" % w for w in fakeSystematics]
+#    for name in namesPreselectionZCR:
+#        myFakeFactorPreselectionZCR = fakeFactor(name,ff_root_file,r_root_file,"Preselection","ZCR",mc)
+#        if not TQTreeObservable.addObservable(myFakeFactorPreselectionZCR):
+#            INFO("failed to add myFakeFactorPreselectionZCR observable named as " + name)
+#            return False
+
+    return True

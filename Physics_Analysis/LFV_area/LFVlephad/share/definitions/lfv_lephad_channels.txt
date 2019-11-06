@@ -1,0 +1,4 @@
+name path latex
+etau    etau$(variation)                     e\tau
+mtau    mtau$(variation)                     \mu\tau
+lephad  [mtau$(variation)+etau$(variation)]  \mu\tau+e\tau

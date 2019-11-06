@@ -1,0 +1,94 @@
+# -*- mode:tqfolder -*-
+
+TH1F('leptonPt'   ,'', 12, 15,100)   <<   ( lep_0_pt : "p_{T}^{lep} [GeV]");
+TH1F('leptonEta'   ,'', 16, -2.5,2.5)   <<   ( lep_0_eta : "\#eta^{lep}" );
+TH1F('diLepMass'   ,'', 100, 0,200)   <<   ( di_lepton_vis_mass : "m_{ll} [GeV]" );
+TH1F('higgsPt'   ,'', 10, 0,500)   <<   ( HpT : "p_{T}^{H} [GeV]" );
+TH1F('Jet1Pt'   ,'', 20, 0,200)   <<   ( jet_0_pt : "p_{T}^{1. Jet} [GeV]" );
+TH1F('Jet2Pt'   ,'', 7, 30,100)   <<   ( jet_1_pt : "p_{T}^{2. Jet} [GeV]" );
+TH1F('dEtaJets'   ,'', 10, 3,7)   <<   ( jets_delta_eta : "\#Delta\#eta_{jj}" );
+TH1F('massJets'   ,'', 20, 0,2000)   <<   ( jets_visible_mass : "m_{jj} [GeV]" );
+
+#TH1F('MMClh_mlm', '', 60, 30, 230)   <<   ( lephad_mmc_mlm_m : "m^{mlm}_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('MMClfv_mlm', '', 60, 30, 230)   <<   ( lephad_lfv_mmc_mlm_m : "m^{mlm}_{\#mu\#tau}^{MMC} [GeV]" );
+#TH1F('MMClh_mlnu3p', '', 60, 30, 230)   <<   ( lephad_mmc_mlnu3p_m : "m^{mlnu3p}_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('MMClfv_mlnu3p', '', 60, 30, 230)   <<   ( lephad_lfv_mmc_mlnu3p_m : "m^{mlnu3p}_{\#mu\#tau}^{MMC} [GeV]" );
+#TH1F('MMClh_maxw', '', 60, 30, 230)   <<   ( lephad_mmc_maxw_m : "m^{maxw}_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('MMClfv_maxw', '', 60, 30, 230)   <<   ( lephad_lfv_mmc_maxw_m : "m^{maxw}_{\#mu\#tau}^{MMC} [GeV]" );
+#TH1F('visibleMass'   ,'', 60, 30,230)   <<   ( lephad_vis_mass : "m_{vis} [GeV]" );
+#TH1F('collMasslh'   ,'', 60, 30,230)   <<   ( lephad_coll_approx_m : "m_{coll} [GeV]" );
+#TH1F('collMasslfv'   ,'', 60, 30,230)   <<   ( coll_approx_lfv_m : "m_{coll} [GeV]" );
+
+TH1F('visibleMass'   ,'', 20, 30,230)   <<   ( lephad_vis_mass : "m_{vis} [GeV]" );
+#TH1F('MMC', '', 20, 30, 230)   <<   ( lephad_lfv_mmc_maxw_m : "m^{maxw}_{\#mu\#tau}^{MMC} [GeV]" );
+#TH1F('collMass'   ,'', 20, 30,230)   <<   ( coll_approx_lfv_m : "m_{coll} [GeV]" );
+
+TH1F('met'   ,'', 12, 0,150)   <<   ( met_reco_et : "E_{T}^{miss} [GeV]" );
+TH1F('tauPt'   ,'', 18, 20, 200)   <<   ( tau_0_pt : "p_{T}^{\#tau} [GeV]" );
+TH1F('tauEta'   ,'', 20,-2.5,2.5)   <<   ( tau_0_eta : "\#eta^{\#tau}" );
+#TH1F('transverseMassLepMET'   ,'', 25, 0,250)   <<   ( lepmet_transverse_mass : "m_{T}(l,MET) [GeV]" );
+TH1F('transverseMassTauMET'   ,'', 25, 0,250)   <<   ( taumet_transverse_mass : "m_{T}(\#tau,MET) [GeV]" );
+#TH2F('lepMET_tauMET', '', 25, 0, 250, 25, 0, 250) << ( lepmet_transverse_mass : "m_{T}(l,MET) [GeV]", taumet_transverse_mass : "m_{T}(\#tau,MET) [GeV]");
+TH1F('nTaus'   ,'', 5, 0,5)   <<   ( n_taus : "nTaus" );
+TH1F('mu'   ,'', 50, 0,50) << (n_avg_int_cor : "<\#mu>");
+TH1F('dPhiTauMET','', 32, 0, 3.2) << ($(dPhiTauMET) : "\#Delta\#phi(\#tau,MET)");
+TH1F('dPhiTauLep','', 32, 0, 3.2) << ($(dPhiTauLep) : "\#Delta\#phi(l,\#tau)");
+TH1F('nProngs'    ,'',  4 , 0, 4)   <<   ( tau_0_n_tracks : "nProngs" );
+TH1F('collx0','',50,-5,5) << ( lephad_coll_approx_x0 : "x_{0}");
+TH1F('collx1','',50,-5,5) << ( lephad_coll_approx_x1 : "x_{1}");
+TH1F('nJets'   ,'', 5, 0,5)   <<   ( n_jets : "nJets" );
+TH1F('nBJets'   ,'', 5, 0,5)   <<   ( n_bjets : "nBJets" );
+TH1F('ratioPt'   ,'', 30, 0, 15)   <<   ( ($(ratioPt)) : "p_{T}^{lep} / p_{T}^{\#tau}" );
+#TH1F('HpT'   ,'', 50, 0, 500) << ( HpT : "H_{T}" );
+
+TH1F('dilepMass'   ,'', 20, 30,230)   <<   ( di_lepton_vis_mass : "m_{ll} [GeV]" );
+
+#TH1F('MMCBL', '', 20, 30, 230)   << ( Blind(lephad_mmc_mlm_m, $(isData) && !$(isFailID) && lephad_mmc_mlm_m > 100 && lephad_mmc_mlm_m < 150) : "m_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('MMCfineBL', '', 60, 30, 230)   << ( Blind(lephad_mmc_mlm_m, $(isData) && !$(isFailID) && lephad_mmc_mlm_m > 100 && lephad_mmc_mlm_m < 150) : "m_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('visibleMassLepHadBL'   ,'', 17, 0,170)   <<   ( Blind(lephad_vis_mass, $(isData) && !$(isFailID) && lephad_vis_mass > 70 && lephad_vis_mass < 90) : "m_{vis} [GeV]" );
+TH2F('dPhiTauLep_dMET', '', 12, 0, 3.2, 50, -50, 50) << ( $(dPhiTauLep) : "\#Delta\#phi(\#tau,l)", $(dMET) : "(E_{T}^{miss,reco}-E_{T}^{miss,truth}) [GeV]");
+TH2F('dPhiTauLep_sumET', '', 12, 0, 3.2, 50, 0, 50) << ( $(dPhiTauLep) : "\#Delta\#phi(\#tau,l)", $(sqrtSET) : "\#sqrt\#Sigma E_T");
+TH2F('dPhiTauLep_ratio', '', 12, 0, 3.2, 50, 0, 50) << ( $(dPhiTauLep) : "\#Delta\#phi(\#tau,l)", $(dMET)/(5.9+0.26*$(sqrtSET)+0.02*$(sqrtSET)*$(sqrtSET)) : "\#sqrt\#Sigma E_T");
+TH2F('sqrtSET_dMET', '', 15, 10, 25, 50, -100, 100) << ( $(sqrtSET) : "\#sqrt\#Sigma E_T", $(dMET) : "(E_{T}^{miss,reco}-E_{T}^{miss,truth}) [GeV]");
+
+#TH1F('collx','',50,0,2) << ( coll_approx_lfv_x : "x");
+#TH1F('collMasslfv1'   ,'', 60, 30,230)   <<   ( lephad_vis_mass/coll_approx_lfv_x : "m_{coll} [GeV]" );
+
+#@CutBase/*: tauPt;
+
+@CutPreselection: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,collMass;
+
+@CutNbjetSR1: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,MMCfine,collMass;
+
+@CutNbjetSR2: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,MMCfine,collMass;
+
+@CutNbjetWCR: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,MMCfine,collMass;
+
+@CutNbjetTopCR: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,MMCfine,collMass;
+
+#@CutLeptons/*: MMClh_mlm,MMClfv_mlm,MMClh_mlnu3p,MMClfv_mlnu3p,MMClh_maxw,MMClfv_maxw,visibleMass,collMasslh,collMasslfv,collMasslfv1,collx;
+
+#@CutLeptons/*: dPhiTauLep_dMET,dPhiTauLep_sumET,sqrtSET_dMET,dPhiTauLep_ratio,dPhiTauLep;
+
+@CutQCDCR: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,collMass,dilepMass;
+
+@CutQCDCR2: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,collMass,dilepMass;
+
+@CutZmmCR: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,collMass,dilepMass;
+
+@CutZttCR: leptonPt,leptonEta,higgsPt,Jet1Pt,Jet2Pt,dEtaJets,massJets,met,tauPt,tauEta,transverseMassLepMET,transverseMassTauMET,lepMET_tauMET,visibleMass,nTaus,HpT,mu,collx0,collx1,nJets,nBJets,ratioPt,MMC,collMass,dilepMass;
+
+#@Cutbin1:dPhiTauLep_dMET,dPhiTauLep_sumET,sqrtSET_dMET,dPhiTauLep_ratio,dPhiTauLep;
+#@Cutbin2:dPhiTauLep_dMET,dPhiTauLep_sumET,sqrtSET_dMET,dPhiTauLep_ratio,dPhiTauLep;
+
+
+
+
+
+
+
+
+
+
+
+

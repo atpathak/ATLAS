@@ -1,0 +1,26 @@
+#runAnalysis.aliases.isMTAU: (n_muons == 1 && n_electrons == 0)
+#runAnalysis.aliases.isETAU: (n_muons == 0 && n_electrons == 1)
+runAnalysis.aliases.fitsChannel: "( $(isMTAU) ? (n_muons == 1 && n_electrons == 0) : (n_muons == 0 && n_electrons == 1) )"
+
+runAnalysis.aliases.isSLT: 1.
+runAnalysis.aliases.isTLT: 0.
+
+runAnalysis.aliases.isVBFCB: (jet_0_pt > 40 && jet_1_pt > 30 && met_reco_et > 20 && fabs(jets_delta_eta) > 3 && jet_0_eta * jet_1_eta < 0 && jets_visible_mass > 300 && is_dijet_lephad_centrality == 1 && lephad_dr < 3. && abs(lephad_deta) < 1.5)
+runAnalysis.aliases.isVBFTightCB: ($(isVBFCB) == 1 && jets_visible_mass > 500. && HpT > 100. && lephad_vis_mass > 40. && tau_0_pt > 30.)
+runAnalysis.aliases.isVBFLooseCB: ($(isVBFCB) == 1 && $(isVBFTightCB) == 0)
+
+runAnalysis.aliases.isBoostedCB: ($(isVBFCB) == 0 && met_reco_et > 20 && HpT > 100 && lephad_dr < 2.5 && abs(lephad_deta) < 1.5 && tau_0_pt > 30.)
+runAnalysis.aliases.isBoostedHighCB: ($(isBoostedCB) == 1 && HpT > 140. && lephad_dr < 1.5)
+runAnalysis.aliases.isBoostedLowCB: ($(isBoostedCB) == 1 && $(isBoostedHighCB) == 0)
+
+runAnalysis.aliases.isVBFMVA: (jet_0_pt > 50 && jet_1_pt > 30 && fabs(jets_delta_eta) > 3. && lephad_vis_mass > 40) 
+runAnalysis.aliases.isBoostedMVA: (HpT > 100 &&  $(isVBFMVA) == 0)
+
+runAnalysis.aliases.dPhiTauMET: abs(TVector2::Phi_mpi_pi(tau_0_phi - met_reco_phi))
+runAnalysis.aliases.dPhiLepMET: abs(TVector2::Phi_mpi_pi(lep_0_phi - met_reco_phi))
+runAnalysis.aliases.dPhiTauLep: abs(TVector2::Phi_mpi_pi(lep_0_phi - tau_0_phi))
+runAnalysis.aliases.dMET: (met_reco_et - met_truth_et)
+runAnalysis.aliases.sigma: ( 1.875+8.914*log( sqrt(met_reco_sumet) + 8.53 ) )
+runAnalysis.aliases.sqrtSET: sqrt(met_reco_sumet)
+
+runAnalysis.aliases.ratioPt: lep_0_pt/tau_0_pt

@@ -1,0 +1,288 @@
+# -*- mode: tqfolder -*-
+<channel = "mtau", cand = "MTAU", isMTAU=true, isETAU=false> @ ?/mtau; 
+<channel = "etau", cand = "ETAU", isMTAU=false, isETAU=true> @ ?/etau;
+
+<usemcweights=false> @/.;
+# <usemcweights=false> @/.;
+<isData=false> @/.;
+<isSignal=false> @/.;
+<isFailData=false> @/.;
+<isFailID=false> @/.;
+<isSherpa=false> @/.;
+<isZll=false> @/.;
+<isFiltSig=false> @/.;
+<isEFakeData=false> @/.;
+<isEFake=false> @/.;
+<applySigSyst=false> @/.;
+<applyZttSyst=false> @/.;
+
+<.init.countHistogram.bin = 8> @/.;
+<.init.countHistogram.bin = 14> @/sig/?/ggH;
+<.init.countHistogram.bin = 14> @/bkg/?/htt/ggH;
+<.init.countHistogram.bin = 15> @/sig/?/VBFH;
+<.init.countHistogram.bin = 15> @/bkg/?/htt/VBFH;
+<.init.countHistogram.bin = 15> @/bkg/?/htt/WH;
+<.init.countHistogram.bin = 15> @/bkg/?/htt/ZH;
+
+<use2015=true> @/.;
+<use2016=true> @/.;
+
+<useSLT=true> @/.;
+<useTLT=false> @/.;
+
+#<scale2015=11.3465> @/.;
+#<scale2016=1.0967> @/.;
+
+# 10-fold data splitting
+$create(path="data/?/data0",type="sf");
+$create(path="data/?/data1",type="sf");
+$create(path="data/?/data2",type="sf");
+$create(path="data/?/data3",type="sf");
+$create(path="data/?/data4",type="sf");
+$create(path="data/?/data5",type="sf");
+$create(path="data/?/data6",type="sf");
+$create(path="data/?/data7",type="sf");
+$create(path="data/?/data8",type="sf");
+$create(path="data/?/data9",type="sf");
+
+#$move("data/mtau/*0._* >> data/mtau/data0");
+#$move("data/mtau/*1._* >> data/mtau/data1");
+#$move("data/mtau/*2._* >> data/mtau/data2");
+#$move("data/mtau/*3._* >> data/mtau/data3");
+#$move("data/mtau/*4._* >> data/mtau/data4");
+#$move("data/mtau/*5._* >> data/mtau/data5");
+#$move("data/mtau/*6._* >> data/mtau/data6");
+#$move("data/mtau/*7._* >> data/mtau/data7");
+#$move("data/mtau/*8._* >> data/mtau/data8");
+#$move("data/mtau/*9._* >> data/mtau/data9");
+
+#$move("data/etau/*0._* >> data/etau/data0");
+#$move("data/etau/*1._* >> data/etau/data1");
+#$move("data/etau/*2._* >> data/etau/data2");
+#$move("data/etau/*3._* >> data/etau/data3");
+#$move("data/etau/*4._* >> data/etau/data4");
+#$move("data/etau/*5._* >> data/etau/data5");
+#$move("data/etau/*6._* >> data/etau/data6");
+#$move("data/etau/*7._* >> data/etau/data7");
+#$move("data/etau/*8._* >> data/etau/data8");
+#$move("data/etau/*9._* >> data/etau/data9");
+
+$move("data/mtau/*0.out* >> data/mtau/data0");
+$move("data/mtau/*1.out* >> data/mtau/data1");
+$move("data/mtau/*2.out* >> data/mtau/data2");
+$move("data/mtau/*3.out* >> data/mtau/data3");
+$move("data/mtau/*4.out* >> data/mtau/data4");
+$move("data/mtau/*5.out* >> data/mtau/data5");
+$move("data/mtau/*6.out* >> data/mtau/data6");
+$move("data/mtau/*7.out* >> data/mtau/data7");
+$move("data/mtau/*8.out* >> data/mtau/data8");
+$move("data/mtau/*9.out* >> data/mtau/data9");
+$move("data/mtau/284154* >> data/mtau/data9");
+
+$move("data/etau/*0.out* >> data/etau/data0");
+$move("data/etau/*1.out* >> data/etau/data1");
+$move("data/etau/*2.out* >> data/etau/data2");
+$move("data/etau/*3.out* >> data/etau/data3");
+$move("data/etau/*4.out* >> data/etau/data4");
+$move("data/etau/*5.out* >> data/etau/data5");
+$move("data/etau/*6.out* >> data/etau/data6");
+$move("data/etau/*7.out* >> data/etau/data7");
+$move("data/etau/*8.out* >> data/etau/data8");
+$move("data/etau/*9.out* >> data/etau/data9");
+$move("data/etau/284154* >> data/etau/data9");
+
+#$move("bkg/mtau/Top/410000/*._00000* >> bkg/mtau/Top/410000_1");
+#$move("bkg/mtau/Top/410000/*._00001* >> bkg/mtau/Top/410000_2");
+#$move("bkg/mtau/Top/410000/*._00002* >> bkg/mtau/Top/410000_3");
+#$move("bkg/mtau/Top/410000/*._00003* >> bkg/mtau/Top/410000_4");
+#$move("bkg/mtau/Top/410000/*._00004* >> bkg/mtau/Top/410000_4");
+
+#$move("bkg/etau/Top/410000/*._00000* >> bkg/etau/Top/410000_1");
+#$move("bkg/etau/Top/410000/*._00001* >> bkg/etau/Top/410000_2");
+#$move("bkg/etau/Top/410000/*._00002* >> bkg/etau/Top/410000_3");
+#$move("bkg/etau/Top/410000/*._00003* >> bkg/etau/Top/410000_4");
+#$move("bkg/etau/Top/410000/*._00004* >> bkg/etau/Top/410000_4");
+
+$create(path="bkg/?/Fake/data",type="sf");
+$create(path="bkg/?/Fake/mc",type="sf");
+
+$create(path="bkg/?/eFake/data",type="sf");
+$create(path="bkg/?/eFake/mc",type="sf");
+
+$copy("data/mtau/ >> bkg/mtau/Fake/data");
+#$copy("bkg/mtau/ZttSh >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/ZttMG >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/ZllSh >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/WjetsSh >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/Top >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/Diboson >> bkg/mtau/Fake/mc");
+#$copy("bkg/mtau/ZttEWSh >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/ZllEWSh >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/WjetsEWSh >> bkg/mtau/Fake/mc");
+$copy("bkg/mtau/htt >> bkg/mtau/Fake/mc");
+
+$copy("data/etau/ >> bkg/etau/Fake/data");
+#$copy("bkg/etau/ZttSh >> bkg/etau/Fake/mc");
+$copy("bkg/etau/ZttMG >> bkg/etau/Fake/mc");
+$copy("bkg/etau/ZllSh >> bkg/etau/Fake/mc");
+$copy("bkg/etau/WjetsSh >> bkg/etau/Fake/mc");
+$copy("bkg/etau/Top >> bkg/etau/Fake/mc");
+$copy("bkg/etau/Diboson >> bkg/etau/Fake/mc");
+#$copy("bkg/etau/ZttEWSh >> bkg/etau/Fake/mc");
+$copy("bkg/etau/ZllEWSh >> bkg/etau/Fake/mc");
+$copy("bkg/etau/WjetsEWSh >> bkg/etau/Fake/mc");
+$copy("bkg/etau/htt >> bkg/etau/Fake/mc");
+
+$copy("data/etau/ >> bkg/etau/eFake/data");
+#$copy("bkg/etau/ZttSh >> bkg/etau/eFake/mc");
+$copy("bkg/etau/ZttMG >> bkg/etau/eFake/mc");
+#$copy("bkg/etau/ZllSh >> bkg/etau/eFake/mc");
+$copy("bkg/etau/WjetsSh >> bkg/etau/eFake/mc");
+$copy("bkg/etau/Top >> bkg/etau/eFake/mc");
+$copy("bkg/etau/Diboson >> bkg/etau/eFake/mc");
+#$copy("bkg/etau/ZttEWSh >> bkg/etau/eFake/mc");
+#$copy("bkg/etau/ZllEWSh >> bkg/etau/eFake/mc");
+$copy("bkg/etau/WjetsEWSh >> bkg/etau/eFake/mc");
+$copy("bkg/etau/htt >> bkg/etau/eFake/mc");
+$copy("bkg/etau/Fake >> bkg/etau/eFake/mc");
+
+$modify(tag='.xsp.xSecScale', operator='=',value=1.,path='bkg/?/Fake/mc/?',filter='sf',create=true,override=false);
+$modify(tag='.xsp.xSecScale', operator='*',value=-1.,path='bkg/?/Fake/mc/?',filter='sf',create=true);
+
+$modify(tag='.xsp.xSecScale', operator='=',value=1.,path='bkg/?/eFake/mc/?',filter='sf',create=true,override=false);
+$modify(tag='.xsp.xSecScale', operator='*',value=-1.,path='bkg/?/eFake/mc/?',filter='sf',create=true);
+
+$modify(tag='.xsp.xSecScale', operator='=',value=1.,path='bkg/?/eFake/mc/Fake/mc/?',filter='sf',create=true,override=false);
+#$modify(tag='.xsp.xSecScale', operator='*',value=-1.,path='bkg/?/eFake/mc/Fake/mc/?',filter='sf',create=true);
+
+# do not apply sherpa weights in november production
+# <isSherpa=true> @/bkg/?/ZttSh;
+# <isSherpa=true> @/bkg/?/ZllSh;
+# <isSherpa=true> @/bkg/?/WjetsSh;
+
+<isFailID=true> @/bkg/?/Fake;
+<isData=true> @/data;
+<isSignal=true> @/sig;
+<isData=true> @/bkg/?/Fake/data;
+<isFailData=true> @/bkg/?/Fake/data;
+<isZll=true> @/bkg/?/ZllSh;
+<isZll=true> @/bkg/?/ZllEWSh;
+<isFiltSig=true> @/sig/?/VBFH;
+<isFiltSig=true> @/sig/?/ggH;
+<isFiltSig=true> @/bkg/?/htt;
+
+<isEFake=true> @/bkg/?/eFake;
+<isData=true> @/bkg/?/eFake/data;
+<isEFakeData=true> @/bkg/?/eFake/data;
+<isFailData=true> @/bkg/?/eFake/mc/Fake/data;
+<isFailID=true> @/bkg/?/eFake/mc/Fake;
+<isData=true> @/bkg/?/eFake/mc/Fake/data;
+
+<usemcweights=true> @/bkg/?/Fake/mc;
+<usemcweights=true> @/bkg/?/eFake/mc;
+<usemcweights=true> @/bkg;
+<usemcweights=true> @/sig;
+
+<applySigSyst=true> @/sig/?/ggH;
+<applySigSyst=true> @/sig/?/VBFH;
+#<applyZttSyst=true> @/bkg/?/ZttSh;
+#<applyZttSyst=true> @/bkg/?/Fake/mc/ZttSh;
+<applyZttSyst=true> @/bkg/?/ZttMG;
+<applyZttSyst=true> @/bkg/?/Fake/mc/ZttMG;
+
+<applyd0Syst=false> @/.;
+#<applyd0Syst=true> @/bkg/?/ZttSh/;
+<applyd0Syst=true> @/bkg/?/ZttMG/;
+#<applyd0Syst=true> @/bkg/?/Fake/mc/ZttSh/;
+<applyd0Syst=true> @/bkg/?/htt;
+
+
+
+# pooling
+<.aj.pool.histograms=True> @/sig/?/ggH;
+<.aj.pool.histograms=True> @/sig/?/VBFH;
+<.aj.pool.histograms=True> @/sig/?/ttH;
+<.aj.pool.histograms=True> @/sig/?/WH;
+<.aj.pool.histograms=True> @/sig/?/ZH;
+<.aj.pool.histograms=True> @/bkg/?/Top;
+<.aj.pool.histograms=True> @/bkg/?/Diboson;
+<.aj.pool.histograms=True> @/bkg/?/WjetsSh;
+<.aj.pool.histograms=True> @/bkg/?/ZllSh;
+#<.aj.pool.histograms=True> @/bkg/?/ZttSh;
+<.aj.pool.histograms=True> @/bkg/?/ZttMG;
+<.aj.pool.histograms=True> @/bkg/?/WjetsEWSh;
+<.aj.pool.histograms=True> @/bkg/?/ZllEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/ZttEWSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/Top;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/Diboson;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/WjetsSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZllSh;
+#<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZttSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZttMG;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/WjetsEWSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZllEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZttEWSh;
+
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/Top;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/Diboson;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/WjetsSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZllSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZttSh;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZttMG;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/WjetsEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZllEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZttEWSh;
+
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/Top;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/Diboson;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/WjetsSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZllSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZttSh;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZttMG;
+<.aj.pool.histograms=True> @/bkg/?/eFake/mc/WjetsEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZllEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/eFake/mc/ZttEWSh;
+
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data0;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data1;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data2;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data3;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data4;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data5;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data6;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data7;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data8;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data9;
+
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data0;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data1;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data2;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data3;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data4;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data5;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data6;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data7;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data8;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data9;
+
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data0;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data1;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data2;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data3;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data4;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data5;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data6;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data7;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data8;
+<.aj.pool.histograms=True> @/bkg/?/eFake/data/?/data9;
+
+<.aj.pool.histograms=True> @/data/?/data0;
+<.aj.pool.histograms=True> @/data/?/data1;
+<.aj.pool.histograms=True> @/data/?/data2;
+<.aj.pool.histograms=True> @/data/?/data3;
+<.aj.pool.histograms=True> @/data/?/data4;
+<.aj.pool.histograms=True> @/data/?/data5;
+<.aj.pool.histograms=True> @/data/?/data6;
+<.aj.pool.histograms=True> @/data/?/data7;
+<.aj.pool.histograms=True> @/data/?/data8;
+<.aj.pool.histograms=True> @/data/?/data9;

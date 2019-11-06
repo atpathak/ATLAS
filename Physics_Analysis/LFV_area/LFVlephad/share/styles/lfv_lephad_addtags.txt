@@ -1,0 +1,112 @@
+# -*- mode: tqfolder -*-
+<channel = "mtau", cand = "MTAU", isMTAU=true, isETAU=false> @ ?/mtau; 
+<channel = "etau", cand = "ETAU", isMTAU=false, isETAU=true> @ ?/etau;
+
+<usemcweights=false> @/.;
+<usemcweights=false> @/.;
+<isData=false> @/.;
+<isSignal=false> @/.;
+<isFailData=false> @/.;
+<isFailID=false> @/.;
+<isSherpa=false> @/.;
+
+<.init.countHistogram.bin = 8> @/.;
+<.init.countHistogram.bin = 14> @/bkg/?/htt/ggH;
+<.init.countHistogram.bin = 15> @/bkg/?/htt/VBFH;
+<.init.countHistogram.bin = 15> @/bkg/?/htt/WH;
+<.init.countHistogram.bin = 15> @/bkg/?/htt/ZH;
+
+<use2015=true> @/.;
+<use2016=true> @/.;
+
+<useSLT=true> @/.;
+<useTLT=false> @/.;
+
+#<scale2015=11.3465> @/.;
+#<scale2016=1.0967> @/.;
+
+# 10-fold data splitting
+
+$move("bkg/mtau/Top/410000/*._00001* >> bkg/mtau/Top/410000_1");
+$move("bkg/mtau/Top/410000/*._00002* >> bkg/mtau/Top/410000_2");
+$move("bkg/mtau/Top/410000/*._00003* >> bkg/mtau/Top/410000_3");
+$move("bkg/mtau/Top/410000/*._00004* >> bkg/mtau/Top/410000_4");
+$move("bkg/mtau/Top/410000/*._00005* >> bkg/mtau/Top/410000_5");
+#$move("bkg/mtau/Top/410000/*._00006* >> bkg/mtau/Top/410000_5");
+
+$move("bkg/etau/Top/410000/*._00001* >> bkg/etau/Top/410000_1");
+$move("bkg/etau/Top/410000/*._00002* >> bkg/etau/Top/410000_2");
+$move("bkg/etau/Top/410000/*._00003* >> bkg/etau/Top/410000_3");
+$move("bkg/etau/Top/410000/*._00004* >> bkg/etau/Top/410000_4");
+$move("bkg/etau/Top/410000/*._00005* >> bkg/etau/Top/410000_5");
+#$move("bkg/etau/Top/410000/*._00006* >> bkg/etau/Top/410000_5");
+
+
+$copy("bkg/mtau/Top >> bkg/mtau/Fake/mc");
+
+$copy("bkg/etau/Top >> bkg/etau/Fake/mc");
+
+#$modify(tag='.xsp.xSecScale', operator='=',value=1.,path='bkg/?/Fake/mc/?',filter='sf',create=true,override=false);
+#$modify(tag='.xsp.xSecScale', operator='*',value=-1.,path='bkg/?/Fake/mc/?',filter='sf',create=true);
+
+
+# do not apply sherpa weights in november production
+# <isSherpa=true> @/bkg/?/ZttSh;
+# <isSherpa=true> @/bkg/?/ZllSh;
+# <isSherpa=true> @/bkg/?/WjetsSh;
+
+<isFailID=true> @/bkg/?/Fake;
+<isData=true> @/data;
+<isSignal=true> @/sig;
+<isData=true> @/bkg/?/Fake/data;
+<isFailData=true> @/bkg/?/Fake/data;
+<usemcweights=true> @/bkg/?/Fake/mc;
+<usemcweights=true> @/bkg;
+<usemcweights=true> @/sig;
+
+# pooling
+<.aj.pool.histograms=True> @/sig/?/ggH;
+<.aj.pool.histograms=True> @/sig/?/VBFH;
+<.aj.pool.histograms=True> @/sig/?/ttH;
+<.aj.pool.histograms=True> @/sig/?/WH;
+<.aj.pool.histograms=True> @/sig/?/ZH;
+<.aj.pool.histograms=True> @/bkg/?/Top;
+<.aj.pool.histograms=True> @/bkg/?/Diboson;
+<.aj.pool.histograms=True> @/bkg/?/WjetsSh;
+<.aj.pool.histograms=True> @/bkg/?/ZllSh;
+<.aj.pool.histograms=True> @/bkg/?/ZttSh;
+<.aj.pool.histograms=True> @/bkg/?/WjetsEWSh;
+<.aj.pool.histograms=True> @/bkg/?/ZllEWSh;
+<.aj.pool.histograms=True> @/bkg/?/ZttEWSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/Top;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/Diboson;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/WjetsSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZllSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZttSh;
+<.aj.pool.histograms=True> @/bkg/?/Fake/mc/WjetsEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZllEWSh;
+#<.aj.pool.histograms=True> @/bkg/?/Fake/mc/ZttEWSh;
+
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data0;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data1;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data2;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data3;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data4;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data5;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data6;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data7;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data8;
+<.aj.pool.histograms=True> @/bkg/?/Fake/data/?/data9;
+
+<.aj.pool.histograms=True> @/data/?/data0;
+<.aj.pool.histograms=True> @/data/?/data1;
+<.aj.pool.histograms=True> @/data/?/data2;
+<.aj.pool.histograms=True> @/data/?/data3;
+<.aj.pool.histograms=True> @/data/?/data4;
+<.aj.pool.histograms=True> @/data/?/data5;
+<.aj.pool.histograms=True> @/data/?/data6;
+<.aj.pool.histograms=True> @/data/?/data7;
+<.aj.pool.histograms=True> @/data/?/data8;
+<.aj.pool.histograms=True> @/data/?/data9;
+
+<.aj.pool.histograms=True> @/bkg/?/Top/410000/1;

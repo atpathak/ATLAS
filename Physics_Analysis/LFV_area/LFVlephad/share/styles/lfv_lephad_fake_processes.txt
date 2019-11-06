@@ -1,0 +1,11 @@
+# -*- mode:tqfolder -*-
+
+.name="Data", .path="/bkg/$(lepch)/Fake/data", .isData=true, title = "Data", isHistogram = false, histLineColor = 1, histMarkerStyle = 20, histMarkerSize = 1.2
+.name="Z\rightarrow \tau\tau", .path="/bkg/$(lepch)/Fake/mc/[ZttSh+ZttEWSh]", .isBackground=true, title = "Z\rightarrow \tau\tau", histFillStyle=1001, histFillColor = kAzure+8, .showRaw = false
+.name="Top", .path="/bkg/$(lepch)/Fake/mc/Top", .isBackground=true,title = "Top", histFillStyle=1001, histFillColor = kBlue, .showRaw = false
+.name="DiBoson", .path="/bkg/$(lepch)/Fake/mc/Diboson", .isBackground=true,title = "DiBoson", histFillStyle=1001, histFillColor = kYellow, .showRaw = false
+.name="Z\rightarrow ll", .path="/bkg/$(lepch)/Fake/mc/[ZllSh+ZllEWSh]", .isBackground=true, title = "Z\rightarrow ll", histFillStyle=1001, histFillColor = kOrange, .showRaw = false
+.name="W+jets", .path="/bkg/$(lepch)/Fake/mc/WjetsSh" , .isBackground=true, histFillColor=kMagenta, histFillStyle=1001, title="W+jets", .showRaw = false
+#.name="Fake", .path="/bkg/$(lepch)/[Fake+WjetsSh+WjetsEWSh]", .isBackground=true, title = "Fakes", histFillStyle=1001, histFillColor = kGreen
+#.name="SM Higgs", .path="/bkg/$(lepch)/Fake/mc/htt", .isBackground=true, title = "SM Higgs", histFillStyle=1001, histFillColor = kCyan, .showRaw = false
+#.name="Signal", .path="20.*sig/$(lepch)/Fake/mc/[VBFH+ggH]", .isSignal=true, title = "Signal[ggF+VBF] x 20", histLineStyle = 1, histLineWidth = 2, histLineColor = kRed, .showRaw = false

@@ -1,0 +1,13 @@
+# List of tree systematics. The file format is:
+# NAME  TREE   [mcPaths-replacement]
+#
+# A line starting with # or consisting only of whitespaces is ignored.
+# The optional column mcPaths-replacments contain be a string of the form
+# A->B. For each unique replacment rule, submit.py will submit individual
+# makeSample jobs and adjust the input file for runAnalysis jobs.
+
+jet_jes_etaintercalibration_nonclosure_low      JET_EtaIntercalibration_NonClosure_1down        nom->sys2
+jet_jes_etaintercalibration_nonclosure_high     JET_EtaIntercalibration_NonClosure_1up          nom->sys2
+jet_jes_etaintercalibration_totalstat_low       JET_EtaIntercalibration_TotalStat_1down         nom->sys2
+jet_jes_etaintercalibration_totalstat_high      JET_EtaIntercalibration_TotalStat_1up           nom->sys2
+

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+FILES=()
+ARGS=()
+nextopt=false
+nextout=false
+
+TMPDIR=/tmp/$(whoami)/tqsafemerge
+mkdir -p $TMPDIR
+rm -rf $TMPDIR/*
+
+if [[ -z "$@" ]]; then
+    $TQPATH/share/tqmerge -h
+    exit
+fi
+
+OUTPUT="samples_merged.root"
+
+for var in "$@"; do
+    if $nextout; then
+        OUTPUT=$var
+        nextout=false
+    else
+        if [[ "$var" == -* ]]; then
+            if [[ "$var" != "-o" ]]; then
+                ARGS+=("$var")
+                nextopt=true
+            else 
+                nextout=true
+            fi
+        else        
+            if $nextopt; then
+                ARGS+=("$var")
+            else
+                FILES+=("$var")
+            fi
+            nextopt=false
+        fi
+    fi
+done
+
+while [ ${#FILES[@]} -gt 1 ]; do
+    TMPOUT=$TMPDIR/tmp${#FILES[@]}.root
+    $TQPATH/share/tqmerge "${ARGS[@]}" ${FILES[0]} ${FILES[1]} -o $TMPOUT
+    FILES=("${FILES[@]:2}")
+    FILES+=($TMPOUT)
+done
+
+mv $TMPDIR/tmp2.root $OUTPUT
+
+echo "DONE MERGING $OUTPUT"

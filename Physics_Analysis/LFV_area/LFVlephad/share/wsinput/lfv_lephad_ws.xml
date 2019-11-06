@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transformation>
+  <sequence name="systematics" pick="$(-batch-index)">
+    <item>nominal</item>
+    <!--load txt="systematics/kinematicsystematics" as="sys"-->
+    <!--load txt="systematics/weightsystematics" as="sys">
+    <load txt="systematics/fakesystematics" as="sys">
+    <item>$(sys)</item>
+    </load-->
+  </sequence>
+
+  <sequence name="processes">
+    <item base="bkg" sf="Diboson" ws_name="VV" />
+    <item base="bkg" sf="Top" ws_name="Top" />
+    <item base="bkg" sf="[ZllSh+ZllEWSh]" ws_name="Zll" />
+    <!--item base="bkg" sf="eFake" ws_name="Zll" /-->
+    <!--item base="bkg" sf="ZllEWSh" ws_name="ZllEWK" /-->
+    <item base="bkg" sf="[ZttSh+ZttEWSh]" ws_name="Ztt" />
+    <!--item base="bkg" sf="ZttEWSh" ws_name="ZttEWK" /-->
+    <item base="bkg" sf="[Fake+WjetsSh+WjetsEWSh]" ws_name="Fake" />
+    <!--item base="bkg" sf="[WjetsSh+WjetsEWSh]" ws_name="Wjets" /-->
+    <item base="bkg" sf="htt" ws_name="Htt" />
+    <item base="sig" sf="ggH" ws_name="ggH" />
+    <item base="sig" sf="VBFH" ws_name="VBFH" />
+    <item base="data" sf="" ws_name="Data" />
+  </sequence>
+
+  <sequence name="categories">
+    <item cut="TauMT" ws_dir="sr1_vbf" ws_type="signal" ana_type="cba" region="SR1_VBF" />
+    <item cut="TauMT" ws_dir="sr2_vbf" ws_type="signal" ana_type="cba" region="SR2_VBF" />
+    <item cut="TauPt" ws_dir="sr3_vbf" ws_type="signal" ana_type="cba" region="SR3_VBF" />
+    <item cut="" ws_dir="vbf" ws_type="signal" ana_type="cba" region="VBF" />
+    </sequence>
+
+  <sequence name="channels">
+    <item cut="mtau" ws_dir="mtau">muon</item>
+    <!--item cut="etau" ws_dir="etau">electron</item-->
+  </sequence>
+
+  <for each="systematics" as="systematic" drop-high-low="drop-high-low" unique="unique">
+    <if expression="$(systematic)" equals="nominal">
+        <!--input path="/afs/cern.ch/work/n/ndang/LFV_area/LFVlephad/share/output/systematics/merge_nominal.root" sample-folder="samples" /-->
+	<input path="/afs/cern.ch/work/a/atpathak/public/LFV_area_26Apr2018/LFVlephad/share/output/lfv_lephad_Sherpa_test3_new.root" sample-folder="samples" />
+    </if>
+    <if expression="$(systematic)" not-equals="nominal">
+        <!--input path="/afs/cern.ch/work/n/ndang/LFV_area/LFVlephad/share/output/systematics/lfv_weight_2.root" sample-folder="samples" /-->
+	<!--input path="/afs/cern.ch/work/n/ndang/LFV_area/LFVlephad/share/output/systematics/lfv_sys.root" sample-folder="samples" /-->
+    </if>
+  </for>
+
+  <for each="systematics" as="systematic">
+    <output path="/afs/cern.ch/work/a/atpathak/public/LFV_area_26Apr2018/LFVlephad/share/output/lfv_lephad_ws_nominal_test.root">
+      <for each="categories" as="category">
+        <for each="channels" as="channel">
+          <if expression="$(systematic)" equals="nominal">
+            <TH1F>
+              <destination>$(channel.ws_dir)_$(category.ana_type)_$(category.ws_dir)_$(category.ws_type)/lumiininvpb</destination>
+              <min>0</min>
+              <max>1</max>
+              <load qconfig="config/lfv_lephad_nominal_Sherpa.cfg" option="makeSampleFile.luminosity" as="lumi-fb">
+                <eval expression="str(float($(lumi-fb)) * 1000)" as="lumipb">
+                  <bin>$(lumipb)</bin>
+                </eval>
+              </load>
+            </TH1F>
+          </if>
+
+          <eval expression="'$(systematic)'.replace('jet_jes_effectivenp', 'jet_jes_effectivenp_')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('jet_jer', 'jet_jer_high')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('jet_jes_effectivenp_6', 'jet_jes_effectivenp_6restterm')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('jet_jes_flavour_composition', 'jet_jes_flavor_composition')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('jet_jes_flavour_response', 'jet_jes_flavor_response')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('met_scale', 'met_softtrk_scale')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('met_resopara', 'met_softtrk_resopara_high')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('met_resoperp', 'met_softtrk_resoperp_high')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('mu_eff_trigstat', 'mu_eff_trigger_stat')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('mu_eff_trigsys', 'mu_eff_trigger_sys')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('Rvar', 'lh_fake_rvar')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('fake_stat', 'lh_fake_stat')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('z_theory_fac', 'theory_ztt_fac')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('z_theory_ren', 'theory_ztt_ren')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('z_theory_qsf', 'theory_ztt_qsf')" as="systematic_ws">
+          <eval expression="'$(systematic_ws)'.replace('z_theory_ckk', 'theory_ztt_ckk')" as="systematic_ws">
+
+          <for each="processes" as="process">
+            <!-- mc -->
+            <if expression="$(process.ws_name)" not-equals="Data">
+                <duplicate>
+                  <!-- nonimal exceptions -->
+                  <!-- The channel folder must not be postfixed with nominal -->
+                  <if expression="$(systematic)" equals="nominal">
+                      <source>/$(process.base)/$(channel.cut)/$(process.sf)</source>
+                  </if>
+                  <if expression="$(systematic)" not-equals="nominal">
+                    <source>/$(process.base)/$(channel.cut)_$(systematic)/$(process.sf)</source>
+                  </if>
+                  <!-- - - -->
+                  <cut>Cut$(category.cut)$(category.region)</cut>
+                  <if expression="$(category.ws_type)" equals="signal">
+                    <if expression="$(category.ana_type)" equals="cba">
+                    <histogram>collMassBL</histogram>
+		    <!--histogram>BDT2j_BL_mtau</histogram-->
+                    </if>
+                  </if>
+                  <if expression="$(category.ws_type)" equals="top">
+                  <histogram>collMassBL</histogram>
+		  <!--histogram>BDT2j_BL_mtau</histogram-->
+                  </if>
+                  <destination>$(channel.ws_dir)_$(category.ana_type)_$(category.ws_dir)_$(category.ws_type)/$(process.ws_name)/$(systematic_ws)</destination>
+                </duplicate>
+              </if>
+
+            <!-- data only for nominal-->
+              <if expression="$(systematic)--$(process.ws_name)" equals="nominal--Data">
+                <duplicate>
+                  <source>/$(process.base)/$(channel.cut)</source>
+                  <cut>Cut$(category.cut)$(category.region)</cut>
+                  <if expression="$(category.ws_type)" equals="signal">
+                      <histogram>collMassBL</histogram>
+                  </if>
+                  <if expression="$(category.ws_type)" equals="top">
+                      <histogram>collMassBL</histogram>
+                  </if>
+                  <destination>$(channel.ws_dir)_$(category.ana_type)_$(category.ws_dir)_$(category.ws_type)/$(process.ws_name)/$(systematic_ws)</destination>
+                </duplicate>
+              </if>
+          </for>
+
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+         </eval>
+
+       </for>
+      </for>
+    </output>
+  </for>
+</transformation>

@@ -1,0 +1,12 @@
+# commented lines currently don't have any samples attached
+
+/bkg/?/Top/410000/
+
+/bkg/?/Fake/mc/WjetsSh/Wtn/3/
+
+/data/?/data7/
+/data/?/data8/
+/data/?/data9/
+
+/sig/?
+

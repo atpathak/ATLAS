@@ -1,0 +1,210 @@
+# -*- mode:tqfolder -*-
+
+# Signal PowhegPythia
+#344084 /sig/mtau/ggH/tm
+#344085 /sig/mtau/VBFH/tm
+#344088 /sig/etau/ggH/te
+#344089 /sig/etau/VBFH/te
+
+345077 /sig/etau/VBFH/te
+345078 /sig/mtau/VBFH/tm
+345124 /sig/etau/ggH/te
+345125 /sig/mtau/ggH/tm
+
+#Htt PowhegPythia
+345074 /bkg/$(channel)/htt/VBFH
+345075 /bkg/$(channel)/htt/VBFH
+345121 /bkg/$(channel)/htt/ggH
+345122 /bkg/$(channel)/htt/ggH
+345211 /bkg/$(channel)/htt/WH
+345212 /bkg/$(channel)/htt/WH
+345217 /bkg/$(channel)/htt/ZH
+
+#Diboson Sherpa
+363355 /bkg/$(channel)/Diboson/1
+363356 /bkg/$(channel)/Diboson/1
+363357 /bkg/$(channel)/Diboson/1
+363358 /bkg/$(channel)/Diboson/1
+363359 /bkg/$(channel)/Diboson/1
+363360 /bkg/$(channel)/Diboson/1
+363489 /bkg/$(channel)/Diboson/2
+363490 /bkg/$(channel)/Diboson/2
+363491 /bkg/$(channel)/Diboson/2
+363492 /bkg/$(channel)/Diboson/2
+363493 /bkg/$(channel)/Diboson/2
+363494 /bkg/$(channel)/Diboson/2
+
+#Diboson Sherpa
+#361063 /bkg/$(channel)/Diboson/1
+#361064 /bkg/$(channel)/Diboson/1
+#361065 /bkg/$(channel)/Diboson/1
+#361066 /bkg/$(channel)/Diboson/1
+#361067 /bkg/$(channel)/Diboson/1
+#361068 /bkg/$(channel)/Diboson/1
+#361091 /bkg/$(channel)/Diboson/2
+#361092 /bkg/$(channel)/Diboson/2
+#361093 /bkg/$(channel)/Diboson/2
+#361094 /bkg/$(channel)/Diboson/2
+#361095 /bkg/$(channel)/Diboson/2
+#361096 /bkg/$(channel)/Diboson/2
+#361097 /bkg/$(channel)/Diboson/2
+#361088 /bkg/$(channel)/Diboson/2
+#361089 /bkg/$(channel)/Diboson/2
+
+#Zee EW Sherpa
+344442 /bkg/$(channel)/ZllEWSh/Zee
+
+#Zee Sherpa
+364114 /bkg/$(channel)/ZllSh/Zee/1
+364115 /bkg/$(channel)/ZllSh/Zee/1
+364116 /bkg/$(channel)/ZllSh/Zee/1
+364117 /bkg/$(channel)/ZllSh/Zee/1
+364118 /bkg/$(channel)/ZllSh/Zee/2
+364119 /bkg/$(channel)/ZllSh/Zee/2
+364120 /bkg/$(channel)/ZllSh/Zee/2
+364121 /bkg/$(channel)/ZllSh/Zee/2
+364122 /bkg/$(channel)/ZllSh/Zee/3
+364123 /bkg/$(channel)/ZllSh/Zee/3
+364124 /bkg/$(channel)/ZllSh/Zee/3
+364125 /bkg/$(channel)/ZllSh/Zee/3
+364126 /bkg/$(channel)/ZllSh/Zee/3
+364127 /bkg/$(channel)/ZllSh/Zee/3
+
+#Zee lowmass Sherpa
+364204 /bkg/$(channel)/ZllSh/Zee/low
+364205 /bkg/$(channel)/ZllSh/Zee/low
+364206 /bkg/$(channel)/ZllSh/Zee/low
+364207 /bkg/$(channel)/ZllSh/Zee/low
+364208 /bkg/$(channel)/ZllSh/Zee/low
+364209 /bkg/$(channel)/ZllSh/Zee/low
+
+#Zee VBF filter Sherpa
+345101 /bkg/$(channel)/ZllSh/Zee/vbf
+345102 /bkg/$(channel)/ZllSh/Zee/vbf
+
+#Zmm EW Sherpa
+344441 /bkg/$(channel)/ZllEWSh/Zmm
+
+#Zmm Sherpa
+364100 /bkg/$(channel)/ZllSh/Zmm/1
+364101 /bkg/$(channel)/ZllSh/Zmm/1
+364102 /bkg/$(channel)/ZllSh/Zmm/1
+364103 /bkg/$(channel)/ZllSh/Zmm/1
+364104 /bkg/$(channel)/ZllSh/Zmm/2
+364105 /bkg/$(channel)/ZllSh/Zmm/2
+364106 /bkg/$(channel)/ZllSh/Zmm/2
+364107 /bkg/$(channel)/ZllSh/Zmm/2
+364108 /bkg/$(channel)/ZllSh/Zmm/3
+364109 /bkg/$(channel)/ZllSh/Zmm/3
+364110 /bkg/$(channel)/ZllSh/Zmm/3
+364111 /bkg/$(channel)/ZllSh/Zmm/3
+364112 /bkg/$(channel)/ZllSh/Zmm/3
+364113 /bkg/$(channel)/ZllSh/Zmm/3
+
+#Zmm lowmass Sherpa
+364198 /bkg/$(channel)/ZllSh/Zmm/low
+364199 /bkg/$(channel)/ZllSh/Zmm/low
+364200 /bkg/$(channel)/ZllSh/Zmm/low
+364201 /bkg/$(channel)/ZllSh/Zmm/low
+364202 /bkg/$(channel)/ZllSh/Zmm/low
+364203 /bkg/$(channel)/ZllSh/Zmm/low
+
+#Zmm VBF filter Sherpa
+345099 /bkg/$(channel)/ZllSh/Zmm/vbf
+345100 /bkg/$(channel)/ZllSh/Zmm/vbf
+
+#Ztt EW Sherpa
+344443 /bkg/$(channel)/ZttEWSh
+
+#Ztt Sherpa
+364137 /bkg/$(channel)/ZttSh/1
+364138 /bkg/$(channel)/ZttSh/1
+364139 /bkg/$(channel)/ZttSh/1
+364140 /bkg/$(channel)/ZttSh/2
+364141 /bkg/$(channel)/ZttSh/2
+
+#Ztt lowmass Sherpa
+364210 /bkg/$(channel)/ZttSh/low
+364211 /bkg/$(channel)/ZttSh/low
+364212 /bkg/$(channel)/ZttSh/low
+364213 /bkg/$(channel)/ZttSh/low
+364214 /bkg/$(channel)/ZttSh/low
+364215 /bkg/$(channel)/ZttSh/low
+
+#Ztt VBF filter Sherpa
+344772 /bkg/$(channel)/ZttSh/vbf
+344774 /bkg/$(channel)/ZttSh/vbf
+344776 /bkg/$(channel)/ZttSh/vbf
+344778 /bkg/$(channel)/ZttSh/vbf
+344780 /bkg/$(channel)/ZttSh/vbf
+344781 /bkg/$(channel)/ZttSh/vbf
+
+#Wjets EW Sherpa
+344438 /bkg/$(channel)/WjetsEWSh/Wmn
+344439 /bkg/$(channel)/WjetsEWSh/Wen
+344440 /bkg/$(channel)/WjetsEWSh/Wtn
+
+#Wjets Sherpa
+
+#Wmunujets Sherpa
+364156 /bkg/$(channel)/WjetsSh/Wmn/1
+364157 /bkg/$(channel)/WjetsSh/Wmn/1
+364158 /bkg/$(channel)/WjetsSh/Wmn/1
+364159 /bkg/$(channel)/WjetsSh/Wmn/1
+364160 /bkg/$(channel)/WjetsSh/Wmn/2
+364161 /bkg/$(channel)/WjetsSh/Wmn/2
+364162 /bkg/$(channel)/WjetsSh/Wmn/2
+364163 /bkg/$(channel)/WjetsSh/Wmn/2
+364164 /bkg/$(channel)/WjetsSh/Wmn/3
+364165 /bkg/$(channel)/WjetsSh/Wmn/3
+364166 /bkg/$(channel)/WjetsSh/Wmn/3
+364167 /bkg/$(channel)/WjetsSh/Wmn/3
+364168 /bkg/$(channel)/WjetsSh/Wmn/3
+364169 /bkg/$(channel)/WjetsSh/Wmn/3
+
+#Wenujets Sherpa
+364170 /bkg/$(channel)/WjetsSh/Wen/1
+364171 /bkg/$(channel)/WjetsSh/Wen/1
+364172 /bkg/$(channel)/WjetsSh/Wen/1
+364173 /bkg/$(channel)/WjetsSh/Wen/1
+364174 /bkg/$(channel)/WjetsSh/Wen/2
+364175 /bkg/$(channel)/WjetsSh/Wen/2
+364176 /bkg/$(channel)/WjetsSh/Wen/2
+364177 /bkg/$(channel)/WjetsSh/Wen/2
+364178 /bkg/$(channel)/WjetsSh/Wen/3
+364179 /bkg/$(channel)/WjetsSh/Wen/3
+364180 /bkg/$(channel)/WjetsSh/Wen/3
+364181 /bkg/$(channel)/WjetsSh/Wen/3
+364182 /bkg/$(channel)/WjetsSh/Wen/3
+364183 /bkg/$(channel)/WjetsSh/Wen/3
+
+#Wtaunujets Sherpa
+364184 /bkg/$(channel)/WjetsSh/Wtn/1
+364185 /bkg/$(channel)/WjetsSh/Wtn/1
+364186 /bkg/$(channel)/WjetsSh/Wtn/1
+364187 /bkg/$(channel)/WjetsSh/Wtn/1
+364188 /bkg/$(channel)/WjetsSh/Wtn/2
+364189 /bkg/$(channel)/WjetsSh/Wtn/2
+364190 /bkg/$(channel)/WjetsSh/Wtn/2
+364191 /bkg/$(channel)/WjetsSh/Wtn/2
+364192 /bkg/$(channel)/WjetsSh/Wtn/3
+364193 /bkg/$(channel)/WjetsSh/Wtn/3
+364194 /bkg/$(channel)/WjetsSh/Wtn/3
+364195 /bkg/$(channel)/WjetsSh/Wtn/3
+364196 /bkg/$(channel)/WjetsSh/Wtn/3
+364197 /bkg/$(channel)/WjetsSh/Wtn/3
+
+#Top PowhegPythia
+410000 /bkg/$(channel)/Top
+#410000_1 /bkg/$(channel)/Top
+#410000_2 /bkg/$(channel)/Top
+#410000_3 /bkg/$(channel)/Top
+#410000_4 /bkg/$(channel)/Top
+#410000_5 /bkg/$(channel)/Top
+410007 /bkg/$(channel)/Top/1
+410011 /bkg/$(channel)/Top/1
+410012 /bkg/$(channel)/Top/1
+410013 /bkg/$(channel)/Top/1
+410014 /bkg/$(channel)/Top/1
+410025 /bkg/$(channel)/Top/1
+410026 /bkg/$(channel)/Top/1

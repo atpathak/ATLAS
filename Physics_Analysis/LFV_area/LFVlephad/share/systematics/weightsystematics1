@@ -1,0 +1,11 @@
+# List of weight systematics. The tag 'weightvariation' will be filled with
+# the systematics name. Use custom observales which adjust scale factors etc.
+# using the information form the 'weightvariation'-tag.
+#
+# A line starting with # or consisting only of whitespaces is ignored.
+
+jet_jvteff_low
+jet_jvteff_high
+
+pu_prw_high
+pu_prw_low

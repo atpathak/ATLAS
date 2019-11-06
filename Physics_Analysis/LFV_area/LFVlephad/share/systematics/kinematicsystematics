@@ -1,0 +1,94 @@
+# List of tree systematics. The file format is:
+# NAME  TREE   [mcPaths-replacement]
+#
+# A line starting with # or consisting only of whitespaces is ignored.
+# The optional column mcPaths-replacments contain be a string of the form
+# A->B. For each unique replacment rule, submit.py will submit individual
+# makeSample jobs and adjust the input file for runAnalysis jobs.
+
+mu_es_id_low                                    MUONS_ID_1down                                  nom->sys1
+mu_es_id_high                                   MUONS_ID_1up                                    nom->sys1
+mu_es_ms_low                                    MUONS_MS_1down                                  nom->sys1
+mu_es_ms_high                                   MUONS_MS_1up                                    nom->sys1
+mu_es_scale_low                                 MUONS_SCALE_1down                               nom->sys1
+mu_es_scale_high                                MUONS_SCALE_1up                                 nom->sys1
+mu_es_sagitta_resbias_high                      MUON_SAGITTA_RESBIAS_1down                      nom->sys1
+mu_es_sagitta_resbias_low                       MUON_SAGITTA_RESBIAS_1up                        nom->sys1
+mu_es_sagitta_rho_high                          MUON_SAGITTA_RHO_1up                            nom->sys1
+mu_es_sagitta_rho_low                           MUON_SAGITTA_RHO_1down                          nom->sys1
+
+el_es_res_low                                   EG_RESOLUTION_ALL_1down                         nom->sys1
+el_es_res_high                                  EG_RESOLUTION_ALL_1up                           nom->sys1
+el_es_scale_low                                 EG_SCALE_ALLCORR_1down                          nom->sys1
+el_es_scale_high                                EG_SCALE_ALLCORR_1up                            nom->sys1
+
+el_es_scale_e4scintillator_low                  EG_SCALE_E4SCINTILLATOR_1down                   nom->sys1
+el_es_scale_e4scintillator_high                 EG_SCALE_E4SCINTILLATOR_1up                     nom->sys1
+
+el_es_scale_larcalib_low                        EG_SCALE_LARCALIB_EXTRA2015PRE_1down            nom->sys1
+el_es_scale_larcalib_high                       EG_SCALE_LARCALIB_EXTRA2015PRE_1up              nom->sys1
+el_es_scale_lartemperature_extra2015pre_low     EG_SCALE_LARTEMPERATURE_EXTRA2015PRE_1down      nom->sys1
+el_es_scale_lartemperature_extra2015pre_high    EG_SCALE_LARTEMPERATURE_EXTRA2015PRE_1up        nom->sys1
+el_es_scale_lartemperature_extra2016pre_low     EG_SCALE_LARTEMPERATURE_EXTRA2016PRE_1down      nom->sys1
+el_es_scale_lartemperature_extra2016pre_high    EG_SCALE_LARTEMPERATURE_EXTRA2016PRE_1up        nom->sys1
+
+tau_tes_detector_low                            TAUS_TRUEHADTAU_SME_TES_DETECTOR_1down          nom->sys1
+tau_tes_detector_high                           TAUS_TRUEHADTAU_SME_TES_DETECTOR_1up            nom->sys1
+tau_tes_insitu_low                              TAUS_TRUEHADTAU_SME_TES_INSITU_1down            nom->sys1
+tau_tes_insitu_high                             TAUS_TRUEHADTAU_SME_TES_INSITU_1up              nom->sys1
+tau_tes_model_low                               TAUS_TRUEHADTAU_SME_TES_MODEL_1down             nom->sys1
+tau_tes_model_high                              TAUS_TRUEHADTAU_SME_TES_MODEL_1up               nom->sys1
+
+met_scale_low                                   MET_SoftTrk_ScaleDown                           nom->sys1
+met_scale_high                                  MET_SoftTrk_ScaleUp                             nom->sys1
+met_resopara                                    MET_SoftTrk_ResoPara                            nom->sys1
+met_resoperp                                    MET_SoftTrk_ResoPerp                            nom->sys1
+
+#jet_jes_bjes_response_low                       JET_BJES_Response_1down                         nom->sys2
+#jet_jes_bjes_response_high                      JET_BJES_Response_1up                           nom->sys2
+
+#jet_jes_effectivenp1_low                        JET_EffectiveNP_1_1down                         nom->sys2
+#jet_jes_effectivenp1_high                       JET_EffectiveNP_1_1up                           nom->sys2
+#jet_jes_effectivenp2_low                        JET_EffectiveNP_2_1down                         nom->sys2
+#jet_jes_effectivenp2_high                       JET_EffectiveNP_2_1up                           nom->sys2
+#jet_jes_effectivenp3_low                        JET_EffectiveNP_3_1down                         nom->sys2
+#jet_jes_effectivenp3_high                       JET_EffectiveNP_3_1up                           nom->sys2
+#jet_jes_effectivenp4_low                        JET_EffectiveNP_4_1down                         nom->sys2
+#jet_jes_effectivenp4_high                       JET_EffectiveNP_4_1up                           nom->sys2
+#jet_jes_effectivenp5_low                        JET_EffectiveNP_5_1down                         nom->sys2
+#jet_jes_effectivenp5_high                       JET_EffectiveNP_5_1up                           nom->sys2
+#jet_jes_effectivenp6_low                        JET_EffectiveNP_6_1down                         nom->sys2
+#jet_jes_effectivenp6_high                       JET_EffectiveNP_6_1up                           nom->sys2
+#jet_jes_effectivenp_7_low                       JET_EffectiveNP_7_1down                         nom->sys2
+#jet_jes_effectivenp_7_high                      JET_EffectiveNP_7_1down                         nom->sys2
+#jet_jes_effectivenp_8restterm_low               JET_EffectiveNP_8restTerm_1down                 nom->sys2
+#jet_jes_effectivenp_8restterm_high              JET_EffectiveNP_8restTerm_1up                   nom->sys2
+
+#jet_jes_etaintercalibration_modelling_low       JET_EtaIntercalibration_Modelling_1down         nom->sys2
+#jet_jes_etaintercalibration_modelling_high      JET_EtaIntercalibration_Modelling_1up           nom->sys2
+#jet_jes_etaintercalibration_nonclosure_low      JET_EtaIntercalibration_NonClosure_1down        nom->sys2
+#jet_jes_etaintercalibration_nonclosure_high     JET_EtaIntercalibration_NonClosure_1up          nom->sys2
+#jet_jes_etaintercalibration_totalstat_low       JET_EtaIntercalibration_TotalStat_1down         nom->sys2
+#jet_jes_etaintercalibration_totalstat_high      JET_EtaIntercalibration_TotalStat_1up           nom->sys2
+
+#jet_jes_flavour_composition_low                 JET_Flavor_Composition_1down                    nom->sys2
+#jet_jes_flavour_composition_high                JET_Flavor_Composition_1up                      nom->sys2
+#jet_jes_flavour_response_low                    JET_Flavor_Response_1down                       nom->sys2
+#jet_jes_flavour_response_high                   JET_Flavor_Response_1up                         nom->sys2
+
+#jet_jer                                         JET_JER_SINGLE_NP_1up                           nom->sys2
+
+#jet_jes_pileup_offsetmu_low                     JET_Pileup_OffsetMu_1down                       nom->sys2
+#jet_jes_pileup_offsetmu_high                    JET_Pileup_OffsetMu_1up                         nom->sys2
+#jet_jes_pileup_offsetnpv_low                    JET_Pileup_OffsetNPV_1down                      nom->sys2
+#jet_jes_pileup_offsetnpv_high                   JET_Pileup_OffsetNPV_1up                        nom->sys2
+#jet_jes_pileup_ptterm_low                       JET_Pileup_PtTerm_1down                         nom->sys2
+#jet_jes_pileup_ptterm_high                      JET_Pileup_PtTerm_1up                           nom->sys2
+#jet_jes_pileup_rhotopology_low                  JET_Pileup_RhoTopology_1down                    nom->sys2
+#jet_jes_pileup_rhotopology_high                 JET_Pileup_RhoTopology_1up                      nom->sys2
+
+#jet_jes_punchthrough_mc15_low                   JET_PunchThrough_MC15_1down                     nom->sys2
+#jet_jes_punchthrough_mc15_high                  JET_PunchThrough_MC15_1up                       nom->sys2
+
+#jet_jes_singleparticle_highpt_low               JET_SingleParticle_HighPt_1down                 nom->sys2
+#jet_jes_singleparticle_highpt_high              JET_SingleParticle_HighPt_1up                   nom->sys2

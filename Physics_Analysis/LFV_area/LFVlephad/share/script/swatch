@@ -1,0 +1,2 @@
+#!/bin/bash
+watch -n 5 "squeue -u `whoami` --format='%.8i %.9P %.43j %.8u %.2t %.10M %.6D %R' 2>&1"

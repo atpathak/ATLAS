@@ -1,0 +1,29 @@
+# -*- mode:tqfolder -*-
+#.path = "|"
+#.name="Signal", .path="sig/$(lepch)/[VBFH+ggH]", .isSignal=true, title = "Signal[ggF+VBF]", .showRaw = false
+.name="ggF", .path="sig/$(lepch)/ggH", .isSignal=true, title = "ggH", .showRaw = false
+.name="VBF", .path="sig/$(lepch)/VBFH", .isSignal=true, title = "VBFH", .showRaw = false
+.path = "|"
+.name="Top", .path="/bkg/$(lepch)/Top", .isBackground=true,title = "Top", .showRaw = false
+.name="Z\rightarrow \tau\tau", .path="/bkg/$(lepch)/[ZttSh+ZttEWSh]", .isBackground=true, title = "Z\rightarrow \tau\tau", .showRaw = false
+.name="Z\rightarrow ll", .path="/bkg/$(lepch)/[ZllSh+ZllEWSh]", .isBackground=true, title = "Z\rightarrow ll", .showRaw = false
+#.name="Z\rightarrow ll", .path="bkg/$(lepch)/eFake", .isBackground=true, title = "Z\rightarrow ll", .showRaw = false
+.name="DiBoson", .path="/bkg/$(lepch)/Diboson", .isBackground=true,title = "DiBoson", .showRaw = false
+#.name="W+jets", .path="/bkg/$(lepch)/[WjetsSh+WjetsEWSh]" , .isBackground=true, title="W+jets", .showRaw = false
+.name="Fakes", .path="/bkg/$(lepch)/[Fake+WjetsSh+WjetsEWSh]", .isBackground=true, title = "Fakes", .showRaw = false
+.name="SM Higgs", .path="/bkg/$(lepch)/htt", .isBackground=true, title = "SM Higgs", .showRaw = false
+.name="Total Bkg.", .path="/bkg/$(lepch)", .isBackground=true, title = "Total Bkg.", .showRaw = false
+.path = "|"
+.name="Data", .path="/data/$(lepch)", .isData=true, title = "Data"
+.title = "Data/Bkg", .path1 = "/data/$(lepch)", .path2="/bkg/$(lepch)", .special="ratio"
+
+
+#.name="Z1", .path="/bkg/$(lepch)/Fake", .isBackground=true, title = "Z1", .showRaw = false
+#.name="Z2", .path="/bkg/$(lepch)/Fake/data", .isBackground=true, title = "Z2", .showRaw = false
+#.name="Z3", .path="/bkg/$(lepch)/Fake/mc", .isBackground=true, title = "Z3", .showRaw = false
+#.name="Z4", .path="/bkg/$(lepch)/eFake", .isBackground=true, title = "Z4", .showRaw = false
+#.name="Z5", .path="/bkg/$(lepch)/eFake/data", .isBackground=true, title = "Z5", .showRaw = false
+#.name="Z6", .path="/bkg/$(lepch)/eFake/mc", .isBackground=true, title = "Z6", .showRaw = false
+#.name="Z7", .path="/bkg/$(lepch)/eFake/mc/Fake", .isBackground=true, title = "Z7", .showRaw = false
+#.name="Z8", .path="/bkg/$(lepch)/eFake/mc/Fake/data", .isBackground=true, title = "Z8", .showRaw = false
+#.name="Z9", .path="/bkg/$(lepch)/eFake/mc/Fake/mc", .isBackground=true, title = "Z9", .showRaw = false

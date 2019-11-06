@@ -1,0 +1,3 @@
+TH1F("testhisto","",10,0,10) << ("some variable" : "some title");
+
+TH1F("binlabels","",10,0,10) << ("some variable" : "some title" : {"bin1","bin2","bin3"} );

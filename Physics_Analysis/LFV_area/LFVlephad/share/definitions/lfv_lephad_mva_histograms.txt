@@ -1,0 +1,109 @@
+# -*- mode:tqfolder -*-
+
+TH1F('leptonPt'   ,'', 16, 20,100)   <<   ( lep_0_pt : "p_{T}^{lep} [GeV]");
+TH1F('leptonEta'   ,'', 15, -2.5,2.5)   <<   ( lep_0_eta : "\#eta^{lep}" );
+TH1F('tauPt'   ,'', 16, 20, 100)   <<   ( tau_0_pt : "p_{T}^{\#tau} [GeV]" );
+TH1F('tauEta'   ,'', 15,-2.5,2.5)   <<   ( tau_0_eta : "\#eta^{\#tau}" );
+TH2F('lepPt_tauPt', '', {25,35,45,55,65,77,85,100}, {25,35,45,55,65,77,85,100}) << ( lep_0_pt : "p_{T}^{lep} [GeV]", tau_0_pt : "p_{T}^{\#tau} [GeV]");
+
+TH1F('met'   ,'', 10, 0,100)   <<   ( met_reco_et : "E_{T}^{miss} [GeV]" );
+TH1F('transverseMassLepMET'   ,'', 20, 0,200)   <<   ( lephad_mt_lep0_met : "m_{T}(l,MET) [GeV]" );
+TH1F('transverseMassTauMET'   ,'', 20, 0,200)   <<   ( taumet_transverse_mass : "m_{T}(\#tau,MET) [GeV]" );
+TH1F('sumPT'   ,'', 20, 0,200)   <<   ( lephad_vect_sum_pt : "\#Sigma p_{T} [GeV]" );
+TH2F('lepMET_tauMET', '', 25, 0, 250, 25, 0, 250) << ( lephad_mt_lep0_met : "m_{T}(l,MET) [GeV]", taumet_transverse_mass : "m_{T}(\#tau,MET) [GeV]");
+
+TH1F('dPhiTauMET','', 16, 0, 3.2) << ($(dPhiTauMET) : "\#Delta\#phi(\#tau,MET)");
+TH1F('dPhiLepMET','', 16, 0, 3.2) << ($(dPhiLepMET) : "\#Delta\#phi(l,MET)");
+TH1F('dPhiTauLep','', 16, 0, 3.2) << ($(dPhiTauLep) : "\#Delta\#phi(l,\#tau)");
+TH1F('dEtaTauLep','', 16, 0, 3.2) << ($(dEtaTauLep) : "\#Delta\#eta(l,\#tau)");
+TH1F('dRTauMET','', 20, 0, 4) << ( sqrt( $(dPhiTauMET)*$(dPhiTauMET) + tau_0_eta*tau_0_eta ) : "\#Delta R(\#tau,MET)");
+TH1F('dRLepMET','', 20, 0, 4) << ( sqrt( $(dPhiLepMET)*$(dPhiLepMET) + lep_0_eta*lep_0_eta ) : "\#Delta R(l,MET)");
+TH1F('dRTauLep','', 20, 0, 4) << ( sqrt( $(dPhiTauLep)*$(dPhiTauLep) + $(dEtaTauLep)*$(dEtaTauLep) ) : "\#Delta R(l,\#tau)");
+TH1F('cosDPhi','', 25, -2.5, 2.5) << ( cos($(dPhiTauMET)) + cos($(dPhiLepMET)) : "\#sum cos(\#Delta\#phi)");
+TH1F('dAlpha','', 20, -5., 5.) << ( $(dAlpha) : "\#Delta\#alpha");
+
+TH1F('collMass'   ,'', 25, 50,300)   <<   ( coll_approx_lfv_m : "m_{coll} [GeV]" );
+TH1F('visibleMass'   ,'', 25, 50,300)   <<   ( lephad_vis_mass : "m_{vis} [GeV]" );
+TH1F('MMC', '', 25, 50, 300)   <<   ( lephad_lfv_mmc_maxw_m : "m^{maxw}_{l\#tau}^{MMC} [GeV]" );
+TH1F('diLepMass'   ,'', 100, 0,200)   <<   ( di_lepton_vis_mass : "m_{ll} [GeV]" );
+#TH1F('MXLG', '', 25, 50, 300)   <<   ( [MXLG] : "m^{maxw}_{l\#tau}^{MXLG} [GeV]" );
+
+TH1F('nTaus'   ,'', 5, 0,5)   <<   ( n_taus : "nTaus" );
+TH1F('mu'   ,'', 50, 0,50) << (n_avg_int_cor : "<\#mu>");
+TH1F('nProngs'    ,'',  4 , 0, 4)   <<   ( tau_0_n_tracks : "nProngs" );
+TH1F('ratioPt'   ,'', 30, 0, 15)   <<   ( ($(ratioPt)) : "p_{T}^{lep} / p_{T}^{\#tau}" );
+TH1F('higgsPt'   ,'', 10, 0,500)   <<   ( HpT : "p_{T}^{H} [GeV]" );
+
+TH1F('nJets'   ,'', 5, 0,5)   <<   ( n_jets : "nJets" );
+TH1F('nBJets'   ,'', 5, 0,5)   <<   ( n_bjets : "nBJets" );
+TH1F('Jet1Pt'   ,'', 20, 0,200)   <<   ( jet_0_pt : "p_{T}^{1. Jet} [GeV]" );
+TH1F('Jet2Pt'   ,'', 7, 30,100)   <<   ( jet_1_pt : "p_{T}^{2. Jet} [GeV]" );
+TH1F('dEtaJets'   ,'', 14, 0,7)   <<   ( jets_delta_eta : "\#Delta\#eta_{jj}" );
+TH1F('massJets'   ,'', 20, 0,2000)   <<   ( jets_visible_mass : "m_{jj} [GeV]" );
+
+TH1F('MMCBL','', 25, 50, 300)   << ( Blind(lephad_lfv_mmc_maxw_m, $(isData) && !$(isFailID) && !$(isEFake) && lephad_lfv_mmc_maxw_m > 100 && lephad_lfv_mmc_maxw_m < 150) : "m^{maxw}_{l\#tau}^{MMC} [GeV]" );
+TH1F('collMassBL','', 25, 50, 300)   << ( Blind(coll_approx_lfv_m, $(isData) && !$(isFailID) && !$(isEFake) && coll_approx_lfv_m > 100 && coll_approx_lfv_m < 150) : "m_{coll} [GeV]" );
+#TH1F('MXLGBL', '', 25, 50, 300)   <<   ( Blind([MXLG], $(isData) && !$(isFailID) && [MXLG] > 100. && [MXLG] < 150.) : "m^{maxw}_{l\#tau}^{MXLG} [GeV]" );
+
+#TH1F('MMClh_mlm', '', 60, 30, 230)   <<   ( lephad_mmc_mlm_m : "m^{mlm}_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('MMClfv_mlm', '', 60, 30, 230)   <<   ( lephad_lfv_mmc_mlm_m : "m^{mlm}_{\#mu\#tau}^{MMC} [GeV]" );
+#TH1F('MMClh_mlnu3p', '', 60, 30, 230)   <<   ( lephad_mmc_mlnu3p_m : "m^{mlnu3p}_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('MMClfv_mlnu3p', '', 60, 30, 230)   <<   ( lephad_lfv_mmc_mlnu3p_m : "m^{mlnu3p}_{\#mu\#tau}^{MMC} [GeV]" );
+#TH1F('MMClh_maxw', '', 60, 30, 230)   <<   ( lephad_mmc_maxw_m : "m^{maxw}_{\#tau\#tau}^{MMC} [GeV]" );
+#TH1F('MMClfv_maxw', '', 60, 30, 230)   <<   ( lephad_lfv_mmc_maxw_m : "m^{maxw}_{\#mu\#tau}^{MMC} [GeV]" );
+#TH2F('dPhiTauLep_dMET', '', 12, 0, 3.2, 50, -50, 50) << ( $(dPhiTauLep) : '\#Delta\#phi(\#tau,l)', $(dMET) : '(E_{T}^{miss,reco}-E_{T}^{miss,truth}) [GeV]');
+#TH2F('dPhiTauLep_sumET', '', 12, 0, 3.2, 50, 0, 50) << ( $(dPhiTauLep) : "\#Delta\#phi(\#tau,l)", $(sqrtSET) : "\#sqrt\#Sigma E_T");
+#TH2F('dPhiTauLep_ratio', '', 12, 0, 3.2, 50, 0, 50) << ( $(dPhiTauLep) : "\#Delta\#phi(\#tau,l)", $(dMET)/(5.9+0.26*$(sqrtSET)+0.02*$(sqrtSET)*$(sqrtSET)) : "\#sqrt\#Sigma E_T");
+#TH2F('sqrtSET_dMET', '', 15, 10, 25, 50, -100, 100) << ( $(sqrtSET) : "\#sqrt\#Sigma E_T", $(dMET) : "(E_{T}^{miss,reco}-E_{T}^{miss,truth}) [GeV]");
+TH2F('BDTscore_2D', '', 20, 0, 1, 20, 0, 1) << ( tau_0_jet_bdt_score : "\#tau-jet BDT", tau_0_ele_BDTEleScoreTrans_run2 : "\#tau-ele BDT");
+TH2F('lepMET_tauPt', '', 25, 0, 250, 16, 20, 100) << ( lephad_mt_lep0_met : "m_{T}(l,MET) [GeV]", tau_0_pt : "p_{T}^{\#tau} [GeV]");
+TH2F('tauMET_tauPt', '', 25, 0, 250, 16, 20, 100) << ( taumet_transverse_mass : "m_{T}(\#tau,MET) [GeV]", tau_0_pt : "p_{T}^{\#tau} [GeV]");
+
+
+#TH1F('tauTruthID'   ,'', 40, 0.5, 40.5)   <<   ( abs(tau_0_truth_pdgId) : "|tauTruthID|" );
+TH1F('weight_mc'   ,'', 10, 0, 10)   <<   ( weight_mc : "weight_mc" );
+TH1F('tau_0_jet_bdt_score'   ,'', 20, 0, 1)   <<   ( tau_0_jet_bdt_score : "tau_0_jet_bdt_score" );
+TH1F('tau_0_ele_BDTEleScoreTrans_run2'   ,'', 20, 0, 1)   <<   ( tau_0_ele_BDTEleScoreTrans_run2 : "tau_0_ele_BDTEleScoreTrans_run2" );
+
+#########################################################################################
+
+#TH1F('BDT_BL', '', 20, -1, 1)  <<  (Filter((fmod([event_number], 10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_1.weights.xml]: (fmod([event_number], 10) == 1 #?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_3.weights.xml]: (fmod([event_number], 10) == 3 #?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_5.weights.xml]: (fmod([event_number], 10) == 5 #?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_8.weights.xml]: (fmod([event_number], 10) == 7 #?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_9.weights.xml]: (fmod([event_number], 10) == 9 #?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_0.weights.xml]: -999)))))))))) , !$(isData) || $(isFailID) || (fmod([event_number],10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_1.weights.xml]: #(fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_3.weights.xml]: #(fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_5.weights.xml]: #(fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_8.weights.xml]: #(fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_9.weights.xml]: #(fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_Preselection_0.weights.xml]: -999)))))))))) < 0.5) : "BDT Score");
+
+TH1F('BDT2j_BL_mtau', '', 20, -1, 1)  <<  (Filter((fmod([event_number], 10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_0.weights.xml]: -999)))))))))) , !$(isData) || $(isFailID) || (fmod([event_number],10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut2jet_0.weights.xml]: -999)))))))))) < 0.5) : "BDT Score");
+
+TH1F('BDT2j_BL_etau', '', 20, -1, 1)  <<  (Filter((fmod([event_number], 10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_0.weights.xml]: -999)))))))))) , !$(isData) || $(isFailID) || (fmod([event_number],10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut2jet_0.weights.xml]: -999)))))))))) < 0.5) : "BDT Score");
+
+TH1F('BDT1j_BL_mtau', '', 20, -1, 1)  <<  (Filter((fmod([event_number], 10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_0.weights.xml]: -999)))))))))) , !$(isData) || $(isFailID) || (fmod([event_number],10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_mtau_Cut01jet_0.weights.xml]: -999)))))))))) < 0.5) : "BDT Score");
+
+TH1F('BDT1j_BL_etau', '', 20, -1, 1)  <<  (Filter((fmod([event_number], 10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_0.weights.xml]: -999)))))))))) , !$(isData) || $(isFailID) || (fmod([event_number],10) == 0 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_1.weights.xml]: (fmod([event_number], 10) == 1 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_2.weights.xml]: (fmod([event_number], 10) == 2 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_3.weights.xml]: (fmod([event_number], 10) == 3 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_4.weights.xml]: (fmod([event_number], 10) == 4 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_5.weights.xml]: (fmod([event_number], 10) == 5 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_6.weights.xml]: (fmod([event_number], 10) == 6 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 7 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_8.weights.xml]: (fmod([event_number], 10) == 8 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_9.weights.xml]: (fmod([event_number], 10) == 9 ?[MVA:weights/runMVA_LFVlephad_BDT_etau_Cut01jet_0.weights.xml]: -999)))))))))) < 0.5) : "BDT Score");
+
+TH1F('BDT1_BL','', 20, -1, 1)   << ( $(BDT) : "BDT Score" );
+
+
+#########################################################################################
+
+#@CutBase: leptonPt,leptonEta,tauPt,tauEta,met,transverseMassLepMET,transverseMassTauMET,nJets,nBJets,MMC,collMass,visibleMass,dEtaTauLep,cosDPhi,MXLG;
+
+#@CutFake1: leptonPt,leptonEta,tauPt,tauEta,met,transverseMassLepMET,transverseMassTauMET,nJets,nBJets,MMC,collMass,visibleMass,dEtaTauLep,cosDPhi,MXLG;
+#@CutFake: leptonPt,leptonEta,tauPt,tauEta,met,transverseMassLepMET,transverseMassTauMET,nJets,nBJets,MMC,collMass,visibleMass,dEtaTauLep,cosDPhi,MXLG,ratioPt;
+
+#@CutCosDPhi: leptonPt,leptonEta,tauPt,tauEta,met,transverseMassLepMET,transverseMassTauMET,nJets,nBJets,MMC,collMass,visibleMass,dEtaTauLep,cosDPhi;
+#@CutDEta: leptonPt,leptonEta,tauPt,tauEta,met,transverseMassLepMET,transverseMassTauMET,nJets,nBJets,MMC,collMass,visibleMass,dEtaTauLep,cosDPhi;
+#@CutNbjets: leptonPt,leptonEta,tauPt,tauEta,met,transverseMassLepMET,transverseMassTauMET,nJets,nBJets,MMC,collMass,visibleMass,dEtaTauLep,cosDPhi;
+
+
+#@CutPreselection: leptonPt,leptonEta,tauPt,tauEta,met,transverseMassLepMET,transverseMassTauMET,nJets,nBJets,MMC,collMass,visibleMass,dEtaTauLep,cosDPhi,MXLG,ratioPt;
+
+
+@CutPreselection/*: leptonPt,leptonEta,tauPt,tauEta,met,sumPT,transverseMassLepMET,transverseMassTauMET,collMass,visibleMass,dEtaTauLep,dPhiTauLep,dRTauLep,cosDPhi,dAlpha,BDT_BL,dEtaJets,massJets;
+
+#@CutBDT: collMassBL,BDT_BL;
+
+#@CutBase/*: tauTruthID;
+
+#@CutTauPt/*: lepMET_tauPt, tauMET_tauPt, tauPt;
+#@CutTauPt: BDTscore_2D;
+@Cut01jet:BDT1j_BL_mtau,BDT1j_BL_etau;
+@Cut2jet:BDT2j_BL_mtau,BDT2j_BL_etau;
+
+

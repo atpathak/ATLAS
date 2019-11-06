@@ -1,0 +1,3 @@
+#!/bin/bash
+echo 'Total:' `squeue -u \`whoami\` | tail -n+2 | wc -l`
+echo 'Running:' `squeue -u \`whoami\` | grep ' R ' | wc -l`

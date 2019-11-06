@@ -1,0 +1,12 @@
+#344084 sig_mtau_ggH_tm
+#345077 sig_etau_VBFH_te
+#364164 bkg_WjetsSh_Wmn_3
+#364168 bkg_WjetsSh_Wmn_3
+#364169 bkg_WjetsSh_Wmn_3
+345074 /bkg/$(channel)/htt/VBFH
+345075 /bkg/$(channel)/htt/VBFH
+345121 /bkg/$(channel)/htt/ggH
+345122 /bkg/$(channel)/htt/ggH
+345211 /bkg/$(channel)/htt/WH
+345212 /bkg/$(channel)/htt/WH
+345217 /bkg/$(channel)/htt/ZH

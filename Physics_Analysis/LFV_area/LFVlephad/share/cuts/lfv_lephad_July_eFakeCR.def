@@ -1,0 +1,82 @@
+# -*- mode:tqfolder -*-
+
++CutBase{
+  <.cutExpression = "1.", .weightExpression = "{$(isData) ? 1. : [ScaleFactor_$(weightvariation)]}", .title = "Baseline">
+  +CutChannel{
+    <.cutExpression = "$(fitsChannel)", .title = "Channel">
+    +CutHadTau{
+      <.cutExpression = "{$(isSignal) ? (abs(tau_0_truth_pdgId)==15) : 1.}", .title = "Had Tau">
+      +CutTrigger{
+        <.cutExpression = "[Trigger] == 1", .title = "Trigger" >
+        +CutNPVX{
+          <.cutExpression = "n_pvx > 0", .title = "NPVX">
+	  +CutLepQual{
+            <.cutExpression = "{$(isETAU) ? lep_0_id_medium == 1 && lep_0_iso_Gradient == 1 && fabs(lep_0_eta) < 2.47 && !(fabs(lep_0_eta)>1.37 && fabs(lep_0_eta)<1.52) : lep_0_id_medium == 1 && lep_0_iso_Gradient == 1 && fabs(lep_0_eta) < 2.5}", .title = "LepQual">
+            +CutTauQual{
+              <.cutExpression = "n_taus > 0 && abs(tau_0_q) == 1 && abs(tau_0_eta) < 2.4 && !(fabs(tau_0_eta)>1.37 && fabs(tau_0_eta)<1.52)", .title = "TauQual">
+              +CutOS{
+                <.cutExpression = "lephad_qxq == -1", .title = "OS">
+                +CutTauAntiTau{
+		  <.cutExpression = "{$(isFailID) ? (tau_0_jet_bdt_tight == 0 && tau_0_jet_bdt_medium == 0 && tau_0_jet_bdt_score > 0.5) : (tau_0_jet_bdt_tight == 0 && tau_0_jet_bdt_medium == 1)}", .title = "TauAntiTau">
+	          +CutNoJetFake{
+                    <.cutExpression = "{$(isData) ? 1. : !(abs(tau_0_truth_pdgId) < 6 || tau_0_truth_pdgId == 21)}", .title = "NoJetFake">
+                    +CutLepPt{
+                      <.cutExpression = "lep_0_pt > 27.3", .title = "MuonPt">
+                      +CutTauPt{
+                        <.cutExpression = "tau_0_pt > 25.", .title = "TauPt">
+		      }
+		    }
+		  }
+		}
+	      }
+            }
+	  }
+	}
+      }
+    }
+  }
+}
+
+
+
+@*/CutTauPt{
+  +CutNtrack{
+    <.cutExpression = "{$(isETAU) ? (tau_0_n_tracks==1) : 1.}", .title = "ZVeto">
+    +CutPresel{
+      <.cutExpression = "( cos($(dPhiTauMET)) + cos($(dPhiLepMET)) ) > -0.35 && abs(lep_0_eta - tau_0_eta) < 2. && n_bjets == 0", .title = "ZVeto">
+      +CutZllCR{
+        <.cutExpression = "lephad_mt_lep0_met < 40. && taumet_transverse_mass < 60. && lephad_vis_mass > 85. && lephad_vis_mass < 95.", .title = "ZVeto", .weightExpression = "{$(isFailID) ? [fakeFactorPreselectionSR_$(fakevariation)] : 1.}">
+      }
+    }
+  }
+}
+
+@*/CutZllCR {
+  +CutZllCRNoEl{
+    <.cutExpression = "{$(isData) ? 1. : !(abs(tau_0_truth_pdgId) == 11)}", .title = "PreselectionNoJet">
+    +CutZllCRNoEl1Prong{
+      <.cutExpression = "tau_0_n_tracks == 1 && $(isSLT) == 1", .title = "PreselectionNoJet1Prong">
+      +CutZllCRNoEl1ProngNominal{
+        <.cutExpression = "tau_0_ele_BDTEleScoreTrans_run2 > 0.15", .title = "PreselectionNoJet1ProngSLT">
+      }
+      +CutZllCRNoEl1ProngInvert{
+        <.cutExpression = "tau_0_ele_BDTEleScoreTrans_run2 < 0.15", .title = "PreselectionNoJet1ProngSLT">
+      }
+    }
+  }
+  +CutZllCREl{
+    <.cutExpression = "1.", .title = "NoJetFake" >    
+    +CutZllCREl1Prong{
+      <.cutExpression = "tau_0_n_tracks == 1 && $(isSLT) == 1", .title = "PreselectionJet1Prong">
+      +CutZllCREl1ProngNominal{
+        <.cutExpression = "tau_0_ele_BDTEleScoreTrans_run2 > 0.15", .title = "PreselectionNoJet1ProngSLT">
+      }
+      +CutZllCREl1ProngInvert{
+        <.cutExpression = "tau_0_ele_BDTEleScoreTrans_run2 < 0.15", .title = "PreselectionNoJet1ProngSLT">
+      }
+    }
+  }
+}
+
+
+
