@@ -1,0 +1,370 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <Channel Name="LFV_etau_cba_sr1_signal">     
+    <UseInputChannel>etau_cba_sr1_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+  
+  <Channel Name="LFV_etau_cba_sr2_signal">
+    <UseInputChannel>etau_cba_sr2_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_sr3_signal">
+    <UseInputChannel>etau_cba_sr3_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_sr1_vbf_signal">
+    <UseInputChannel>etau_cba_sr1_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_sr2_vbf_signal">
+    <UseInputChannel>etau_cba_sr2_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_sr3_vbf_signal">
+    <UseInputChannel>etau_cba_sr3_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_vbf_signal">
+    <UseInputChannel>etau_cba_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanetau_regsr1vbf_selCBA_signal">
+    <UseInputChannel>etau_cba_sr1_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanetau_regsr2vbf_selCBA_signal">
+    <UseInputChannel>etau_cba_sr2_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanetau_regsr3vbf_selCBA_signal">
+    <UseInputChannel>etau_cba_sr3_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanetau_regvbf_selCBA_signal">
+    <UseInputChannel>etau_cba_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_bdt_signal">
+    <UseInputChannel>etau_cba_bdt_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_ebdt01_signal">
+    <UseInputChannel>etau_cba_ebdt01_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_etau_cba_ebdt2_signal">
+    <UseInputChannel>etau_cba_ebdt2_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_sr1_signal">
+    <UseInputChannel>mtau_cba_sr1_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_sr2_signal">
+    <UseInputChannel>mtau_cba_sr2_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_sr3_signal">
+    <UseInputChannel>mtau_cba_sr3_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_sr1_vbf_signal">
+    <UseInputChannel>mtau_cba_sr1_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_sr2_vbf_signal">
+    <UseInputChannel>mtau_cba_sr2_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_sr3_vbf_signal">
+    <UseInputChannel>mtau_cba_sr3_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_vbf_signal">
+    <UseInputChannel>mtau_cba_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanmtau_regsr1vbf_selCBA_signal">
+    <UseInputChannel>mtau_cba_sr1_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanmtau_regsr2vbf_selCBA_signal">
+    <UseInputChannel>mtau_cba_sr2_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanmtau_regsr3vbf_selCBA_signal">
+    <UseInputChannel>mtau_cba_sr3_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_yearAll_chanmtau_regvbf_selCBA_signal">
+    <UseInputChannel>mtau_cba_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_bdt_signal">
+    <UseInputChannel>mtau_cba_bdt_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_mbdt01_signal">
+    <UseInputChannel>mtau_cba_mbdt01_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mtau_cba_mbdt2_signal">
+    <UseInputChannel>mtau_cba_mbdt2_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>lh13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_emu_cba_inc_signal">
+    <UseInputChannel>emu_llAll_lfv_inc_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_emu_cba_inc_top">
+    <UseInputChannel>emu_llAll_lfv_inc_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_emu_cba_inc_ztt">
+    <UseInputChannel>emu_llAll_lfv_inc_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_emu_cba_vbf_signal">
+    <UseInputChannel>emu_llAll_lfv_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_emu_cba_vbf_top">
+    <UseInputChannel>emu_llAll_lfv_vbf_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_emu_cba_vbf_ztt">
+    <UseInputChannel>emu_llAll_lfv_vbf_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+  
+  <Channel Name="LFV_mue_cba_inc_signal">
+    <UseInputChannel>mue_llAll_lfv_inc_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mue_cba_inc_top">
+    <UseInputChannel>mue_llAll_lfv_inc_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mue_cba_inc_ztt">
+    <UseInputChannel>mue_llAll_lfv_inc_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mue_cba_vbf_signal">
+    <UseInputChannel>mue_llAll_lfv_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mue_cba_vbf_top">
+    <UseInputChannel>mue_llAll_lfv_vbf_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mue_cba_vbf_ztt">
+    <UseInputChannel>mue_llAll_lfv_vbf_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_cba_inc_signal">
+    <UseInputChannel>llAll_lfv_inc_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_cba_inc_top">
+    <UseInputChannel>llAll_lfv_inc_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_cba_inc_ztt">
+    <UseInputChannel>llAll_lfv_inc_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_cba_vbf_signal">
+    <UseInputChannel>llAll_lfv_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_cba_vbf_top">
+    <UseInputChannel>llAll_lfv_vbf_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_cba_vbf_ztt">
+    <UseInputChannel>llAll_lfv_vbf_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mva_inc_signal">
+    <UseInputChannel>llAll_lfv_inc_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mva_inc_top">
+    <UseInputChannel>llAll_lfv_inc_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mva_inc_ztt">
+    <UseInputChannel>llAll_lfv_inc_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mva_vbf_signal">
+    <UseInputChannel>llAll_lfv_vbf_signal</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mva_vbf_top">
+    <UseInputChannel>llAll_lfv_vbf_top</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+  <Channel Name="LFV_mva_vbf_ztt">
+    <UseInputChannel>llAll_lfv_vbf_ztt</UseInputChannel>
+    <Tag>Run2</Tag>
+    <Tag>yearAll</Tag>
+    <Tag>ll13TeV</Tag>
+  </Channel>
+
+
+</WorkspaceBuilder>

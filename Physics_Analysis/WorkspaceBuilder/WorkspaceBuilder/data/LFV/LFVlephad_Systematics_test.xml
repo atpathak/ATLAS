@@ -1,0 +1,61 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <!-- Lumi -->
+  <!--Systematic Name="LumiUncCombined" ForceOverall="True">
+    <SystematicNameInFile>LumiUncCombined</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+  
+
+  <Systematic Name="ATLAS_MUONS_ID">
+    <SystematicNameInFile>mu_es_id</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_MS">
+    <SystematicNameInFile>mu_es_ms</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_SCALE">
+    <SystematicNameInFile>mu_es_scale</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_SAGITTA_REBIAS">
+    <SystematicNameInFile>mu_es_sagitta_resbias</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_SAGITTA_RHO">
+    <SystematicNameInFile>mu_es_sagitta_rho</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAUS_TRUEHADTAU_SME_TES_DETECTOR">
+    <SystematicNameInFile>tau_tes_detector</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAUS_TRUEHADTAU_SME_TES_INSITU">
+    <SystematicNameInFile>tau_tes_insitu</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAUS_TRUEHADTAU_SME_TES_MODEL">
+    <SystematicNameInFile>tau_tes_model</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+</WorkspaceBuilder>

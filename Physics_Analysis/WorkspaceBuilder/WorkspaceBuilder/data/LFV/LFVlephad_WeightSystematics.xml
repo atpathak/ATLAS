@@ -1,0 +1,325 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <!-- Lumi -->
+  <!--Systematic Name="LumiUncCombined" ForceOverall="True">
+    <SystematicNameInFile>LumiUncCombined</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+  
+
+  <Systematic Name="ATLAS_EL_EFF_RECO_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_reco</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_id</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EL_EFF_ISO_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_iso</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EL_EFF_TRIG_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_trigger</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_STAT">
+    <SystematicNameInFile>mu_eff_stat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_STAT_LOWPT">
+    <SystematicNameInFile>mu_eff_statlowpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_SYS">
+    <SystematicNameInFile>mu_eff_sys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_SYS_LOWPT">
+    <SystematicNameInFile>mu_eff_syslowpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <!--Systematic Name="ATLAS_MUON_EFF_TrigStatUncertainty">
+    <SystematicNameInFile>mu_eff_trigger_stat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_MUON_EFF_TrigSystUncertainty">
+    <SystematicNameInFile>mu_eff_trigger_sys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <Systematic Name="ATLAS_MUON_EFF_IsoStatUncertainty">
+    <SystematicNameInFile>mu_eff_isostat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_IsoSystUncertainty">
+    <SystematicNameInFile>mu_eff_isosys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <!--Systematic Name="ATLAS_MUON_EFF_TtvaStatUncertainty">
+    <SystematicNameInFile>mu_eff_ttvastat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_MUON_EFF_TtvaSystUncertainty">
+    <SystematicNameInFile>mu_eff_ttvasys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <Systematic Name="ATLAS_TAU_EFF_RECO_TOTAL">
+    <SystematicNameInFile>tau_eff_reco_total</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_RECO_HIGHPT">
+    <SystematicNameInFile>tau_eff_reco_highpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ELEORL_TRUEELE">
+    <SystematicNameInFile>tau_eff_eleolr_trueelectron</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ELEORL_TRUEHADTAU">
+    <SystematicNameInFile>tau_eff_eleolr_truehadtau</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ID_TOTAL">
+    <SystematicNameInFile>tau_eff_jetid_total</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ID_HIGHPT">
+    <SystematicNameInFile>tau_eff_jetid_highpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_STATDATA">
+    <SystematicNameInFile>tau_trigger_statdata</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic--> 
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_STATMC">
+    <SystematicNameInFile>tau_trigger_statmc</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_SYST">
+    <SystematicNameInFile>tau_trigger_syst</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_TOTAL2016">
+    <SystematicNameInFile>tau_trigger_total2016</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <Systematic Name="ATLAS_BTAG_B_0">
+    <SystematicNameInFile>btag_b_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_B_1">
+    <SystematicNameInFile>btag_b_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_B_2">
+    <SystematicNameInFile>btag_b_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_C_0">
+    <SystematicNameInFile>btag_c_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_C_1">
+    <SystematicNameInFile>btag_c_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_C_2">
+    <SystematicNameInFile>btag_c_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_C_3">
+    <SystematicNameInFile>btag_c_3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_0">
+    <SystematicNameInFile>btag_light_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_1">
+    <SystematicNameInFile>btag_light_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_2">
+    <SystematicNameInFile>btag_light_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_3">
+    <SystematicNameInFile>btag_light_3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_4">
+    <SystematicNameInFile>btag_light_4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_ETRAPOLATION_FROM_C">
+    <SystematicNameInFile>btag_extrapolation_from_charm</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_EXTRAPOLATION">
+    <SystematicNameInFile>btag_extrapolation</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JVT">
+    <SystematicNameInFile>jet_jvteff</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_PRW_DATASF">
+    <SystematicNameInFile>pu_prw</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <!--Systematic Name="ATLAS_MUONS_ID">
+    <SystematicNameInFile>mu_es_id</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_MUONS_MS">
+    <SystematicNameInFile>mu_es_ms</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_MUONS_SCALE">
+    <SystematicNameInFile>mu_es_scale</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_FAKE_FF_SR1_SYS">
+    <SystematicNameInFile>fake_SR1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_FF_SR2_SYS">
+    <SystematicNameInFile>fake_SR2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_FF_SR3_SYS">
+    <SystematicNameInFile>fake_SR3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR1_SYS">
+    <SystematicNameInFile>fake_SR1_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR2_SYS">
+    <SystematicNameInFile>fake_SR2_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR3_SYS">
+    <SystematicNameInFile>fake_SR3_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR1_SYS">
+    <SystematicNameInFile>fake_SR1_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR2_SYS">
+    <SystematicNameInFile>fake_SR2_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR3_SYS">
+    <SystematicNameInFile>fake_SR3_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic-->
+
+</WorkspaceBuilder>

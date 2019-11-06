@@ -1,0 +1,67 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <!-- Lumi -->
+  <!--Systematic Name="LumiUncCombined" ForceOverall="True">
+    <SystematicNameInFile>LumiUncCombined</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+  
+
+  <Systematic Name="ATLAS_FAKE_FF_SR1_SYS">
+    <SystematicNameInFile>fake_SR1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_FF_SR2_SYS">
+    <SystematicNameInFile>fake_SR2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_FF_SR3_SYS">
+    <SystematicNameInFile>fake_SR3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR1_SYS">
+    <SystematicNameInFile>fake_SR1_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR2_SYS">
+    <SystematicNameInFile>fake_SR2_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR3_SYS">
+    <SystematicNameInFile>fake_SR3_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR1_SYS">
+    <SystematicNameInFile>fake_SR1_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR2_SYS">
+    <SystematicNameInFile>fake_SR2_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR3_SYS">
+    <SystematicNameInFile>fake_SR3_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lfv13TeV">MC</ApplyToInputSample>
+    <Tag>KinematicSystematic</Tag>
+  </Systematic>
+
+</WorkspaceBuilder>

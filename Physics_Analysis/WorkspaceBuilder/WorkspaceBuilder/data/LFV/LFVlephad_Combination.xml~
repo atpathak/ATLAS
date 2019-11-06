@@ -1,0 +1,41 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <IncludeFile>LFVlephad_Samples.xml</IncludeFile>
+  <IncludeFile>LFVlephad_InputChannels.xml</IncludeFile>
+  <IncludeFile>LFVlephad_Channels.xml</IncludeFile>
+  <IncludeFile>LFVlephad_Systematics_lephad.xml</IncludeFile>
+
+  <StatAnalysis Name="LFV13TeVCombinationCBA">
+    <!--UseChannel>LFV_cba_inc_signal</UseChannel>
+    <UseChannel>LFV_cba_inc_top</UseChannel>
+    <UseChannel>LFV_cba_inc_ztt</UseChannel>
+    <UseChannel>LFV_cba_vbf_signal</UseChannel>
+    <UseChannel>LFV_cba_vbf_top</UseChannel>
+    <UseChannel>LFV_cba_vbf_ztt</UseChannel-->
+    <!--UseChannel>LFV_mva_inc_signal</UseChannel>
+    <UseChannel>LFV_mva_inc_top</UseChannel>
+    <UseChannel>LFV_mva_inc_ztt</UseChannel>
+    <UseChannel>LFV_mva_vbf_signal</UseChannel>
+    <UseChannel>LFV_mva_vbf_top</UseChannel>
+    <UseChannel>LFV_mva_vbf_ztt</UseChannel-->
+    <!--UseChannel>LFV_mtau_cba_sr1_signal</UseChannel-->
+    <!--UseChannel>LFV_mtau_cba_sr2_signal</UseChannel>
+    <UseChannel>LFV_mtau_cba_sr3_signal</UseChanne-->
+    <!--UseChannel>LFV_mtau_cba_sr1_vbf_signal</UseChannel>
+    <UseChannel>LFV_mtau_cba_sr2_vbf_signal</UseChannel>
+    <UseChannel>LFV_mtau_cba_sr3_vbf_signal</UseChannel-->
+    <UseChannel>LFV_mtau_cba_vbf_signal</UseChannel-->
+    <!--UseChannel>LFV_etau_cba_sr1_signal</UseChannel>
+    <UseChannel>LFV_etau_cba_sr2_signal</UseChannel>
+    <UseChannel>LFV_etau_cba_sr3_signal</UseChannel-->
+    <!--UseChannel>LFV_etau_cba_sr1_vbf_signal</UseChannel>
+    <UseChannel>LFV_etau_cba_sr2_vbf_signal</UseChannel>
+    <UseChannel>LFV_etau_cba_sr3_vbf_signal</UseChannel>
+    <UseChannel>LFV_etau_cba_vbf_signal</UseChannel-->
+  </StatAnalysis>
+
+  <IncludeFile>LFVlephad_NormFactors.xml</IncludeFile>
+
+</WorkspaceBuilder>

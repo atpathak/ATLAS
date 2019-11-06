@@ -1,0 +1,1123 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <!--Lumi>
+  <Systematic Name="LumiUncCombined"><ForceOverall="True">
+    <SystematicNameInFile>lumiunccombined</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <Systematic Name="Theory_Sig_AlphaS">
+    <SystematicNameInFile>theory_sig_alphaS</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_Shower" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_shower</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+  
+  <Systematic Name="Theory_Sig_pdf_0" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_1" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_2" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_3" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_4" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_5" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_5</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_6" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_6</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_7" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_7</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_8" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_8</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_9" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_9</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_10" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_10</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_11" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_11</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_12" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_12</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_13" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_13</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_14" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_14</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_15" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_15</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_16" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_16</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_17" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_17</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_18" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_18</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_19" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_19</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_20" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_20</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_21" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_21</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_22" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_22</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_23" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_23</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_24" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_24</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_25" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_25</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_26" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_26</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_27" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_27</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_28" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_28</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_Sig_pdf_29" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_pdf_29</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_0" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_1" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_2" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_3" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_4" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_5" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_5</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_6" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_6</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_7" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_7</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_sig_qcd_8" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_sig_qcd_8</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_PDF">
+    <SystematicNameInFile>theory_ztt_PDF</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_ckk">
+    <SystematicNameInFile>theory_ztt_ckk</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+  
+  <Systematic Name="Theory_ztt_qsf">
+    <SystematicNameInFile>theory_ztt_qsf</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_MGvsSh" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_ztt_MGvsSh</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_lhe3weight_mur1_muf05_pdf261000" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_ztt_lhe3weight_mur1_muf05_pdf261000</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_lhe3weight_mur1_muf2_pdf261000" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_ztt_lhe3weight_mur1_muf2_pdf261000</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_lhe3weight_mur05_muf1_pdf261000" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_ztt_lhe3weight_mur05_muf1_pdf261000</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_lhe3weight_mur2_muf1_pdf261000" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_ztt_lhe3weight_mur2_muf1_pdf261000</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="Theory_ztt_lhe3weight_mur05_muf05_pdf261000" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>theory_ztt_lhe3weight_mur05_muf05_pdf261000</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+ <Systematic Name="Theory_ztt_lhe3weight_mur2_muf2_pdf261000" OneSided="True" Symmetrize="True">
+   <SystematicNameInFile>theory_ztt_lhe3weight_mur2_muf2_pdf261000</SystematicNameInFile>
+   <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic> 
+
+  <Systematic Name="ATLAS_EL_EFF_RECO_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_reco</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_id</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EL_EFF_ID_nonprompt_d0" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>el_eff_id_nonprompt_d0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EL_EFF_ISO_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_iso</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EL_EFF_TRIG_TOTAL_1NPCOR_PLUS_UNCOR">
+    <SystematicNameInFile>el_eff_trigger</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EG_RESOLUTION_ALL">
+    <SystematicNameInFile>el_es_res</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EG_SCALE_E4SCINTILLATOR">
+    <SystematicNameInFile>el_es_scale_e4scintillator</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+  
+  <Systematic Name="ATLAS_EG_SCALE_LARCALIB_EXTRA2015PRE">
+    <SystematicNameInFile>el_es_scale_larcalib</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EG_SCALE_LARTEMPERATURE_EXTRA2015PRE">
+    <SystematicNameInFile>el_es_scale_lartemperature_extra2015pre</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+  
+  <Systematic Name="ATLAS_EG_SCALE_LARTEMPERATURE_EXTRA2016PRE">
+    <SystematicNameInFile>el_es_scale_lartemperature_extra2016pre</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EG_SCALE_ALLCORR">
+    <SystematicNameInFile>el_es_scale</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_STAT">
+    <SystematicNameInFile>mu_eff_stat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_STAT_LOWPT">
+    <SystematicNameInFile>mu_eff_statlowpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_SYS">
+    <SystematicNameInFile>mu_eff_sys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_SYS_LOWPT">
+    <SystematicNameInFile>mu_eff_syslowpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_TrigStatUncertainty">
+    <SystematicNameInFile>mu_eff_trigger_stat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <!--ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample-->
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_TrigSystUncertainty">
+    <SystematicNameInFile>mu_eff_trigger_sys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <!--ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample-->
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_IsoStatUncertainty">
+    <SystematicNameInFile>mu_eff_isostat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUON_EFF_IsoSystUncertainty">
+    <SystematicNameInFile>mu_eff_isosys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_ID">
+    <SystematicNameInFile>mu_es_id</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_MS">
+    <SystematicNameInFile>mu_es_ms</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_SCALE">
+    <SystematicNameInFile>mu_es_scale</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_SAGITTA_REBIAS">
+    <SystematicNameInFile>mu_es_sagitta_resbias</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <!--ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample-->
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MUONS_SAGITTA_RHO">
+    <SystematicNameInFile>mu_es_sagitta_rho</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+
+  <!--Systematic Name="ATLAS_MUON_EFF_TtvaStatUncertainty">
+    <SystematicNameInFile>mu_eff_ttvastat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_MUON_EFF_TtvaSystUncertainty">
+    <SystematicNameInFile>mu_eff_ttvasys</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_STATDATA">
+    <SystematicNameInFile>tau_trigger_statdata</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic--> 
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_STATMC">
+    <SystematicNameInFile>tau_trigger_statmc</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_SYST">
+    <SystematicNameInFile>tau_trigger_syst</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <!--Systematic Name="ATLAS_TAU_EFF_TRIG_TOTAL2016">
+    <SystematicNameInFile>tau_trigger_total2016</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <Systematic Name="ATLAS_BTAG_B_0">
+    <SystematicNameInFile>btag_b_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_B_1">
+    <SystematicNameInFile>btag_b_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_B_2">
+    <SystematicNameInFile>btag_b_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_C_0">
+    <SystematicNameInFile>btag_c_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_C_1">
+    <SystematicNameInFile>btag_c_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_C_2">
+    <SystematicNameInFile>btag_c_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <!--Systematic Name="ATLAS_BTAG_C_3">
+    <SystematicNameInFile>btag_c_3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_0">
+    <SystematicNameInFile>btag_light_0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_1">
+    <SystematicNameInFile>btag_light_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_2">
+    <SystematicNameInFile>btag_light_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_3">
+    <SystematicNameInFile>btag_light_3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_LIGHT_4">
+    <SystematicNameInFile>btag_light_4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_BTAG_EXTRAPOLATION">
+    <SystematicNameInFile>btag_extrapolation</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+  
+  <Systematic Name="ATLAS_BTAG_ETRAPOLATION_FROM_C">
+    <SystematicNameInFile>btag_extrapolation_from_charm</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  
+  <!--Systematic Name="ATLAS_JET_JER_Crosscalibfwd" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>final_jet_jer_crosscalibfwd</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_Noisefwd" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>final_jet_jer_noisefwd</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic-->
+
+ <!--Systematic Name="ATLAS_Final_JET_JER_np0">
+    <SystematicNameInFile>final_jet_jer_np0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np1">
+    <SystematicNameInFile>final_jet_jer_np1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np2">
+    <SystematicNameInFile>final_jet_jer_np2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np3">
+    <SystematicNameInFile>final_jet_jer_np3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np4">
+    <SystematicNameInFile>final_jet_jer_np4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np5">
+    <SystematicNameInFile>final_jet_jer_np5</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np6">
+    <SystematicNameInFile>final_jet_jer_np6</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np7">
+    <SystematicNameInFile>final_jet_jer_np7</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_Final_JET_JER_np8">
+    <SystematicNameInFile>final_jet_jer_np8</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic-->
+
+ 
+ <!--Systematic Name="ATLAS_JET_JER_Crosscalibfwd" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>jet_jer_crosscalibfwd</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic-->
+
+ <!--Systematic Name="ATLAS_JET_JER_Noisefwd" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>jet_jer_noisefwd</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np0">
+    <SystematicNameInFile>jet_jer_np0</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np1">
+    <SystematicNameInFile>jet_jer_np1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np2">
+    <SystematicNameInFile>jet_jer_np2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np3">
+    <SystematicNameInFile>jet_jer_np3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np4">
+    <SystematicNameInFile>jet_jer_np4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np5">
+    <SystematicNameInFile>jet_jer_np5</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np6">
+    <SystematicNameInFile>jet_jer_np6</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np7">
+    <SystematicNameInFile>jet_jer_np7</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic>
+
+ <Systematic Name="ATLAS_JET_JER_np8">
+    <SystematicNameInFile>jet_jer_np8</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+ </Systematic-->
+  
+  <Systematic Name="ATLAS_JET_BJES_Response">
+    <SystematicNameInFile>jet_jes_bjes_response</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_1">
+    <SystematicNameInFile>jet_jes_effectivenp_1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_2">
+    <SystematicNameInFile>jet_jes_effectivenp_2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_3">
+    <SystematicNameInFile>jet_jes_effectivenp_3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_4">
+    <SystematicNameInFile>jet_jes_effectivenp_4</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_5">
+    <SystematicNameInFile>jet_jes_effectivenp_5</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_6">
+    <SystematicNameInFile>jet_jes_effectivenp_6</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_7">
+    <SystematicNameInFile>jet_jes_effectivenp_7</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EffectiveNP_8">
+    <SystematicNameInFile>jet_jes_effectivenp_8restterm</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+  
+  <Systematic Name="ATLAS_JET_EtaIntercalibration_Modelling">
+    <SystematicNameInFile>jet_jes_etaintercalibration_modelling</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EtaIntercalibration_NonClosure">
+    <SystematicNameInFile>jet_jes_etaintercalibration_nonclosure</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_EtaIntercalibration_TotalStat">
+    <SystematicNameInFile>jet_jes_etaintercalibration_totalstat</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_Flavor_Composition">
+    <SystematicNameInFile>jet_jes_flavor_composition</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_Flavor_Response">
+    <SystematicNameInFile>jet_jes_flavor_response</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_Pileup_OffsetMu">
+    <SystematicNameInFile>jet_jes_pileup_offsetmu</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_Pileup_OffsetNPV">
+    <SystematicNameInFile>jet_jes_pileup_offsetnpv</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_Pileup_PtTerm">
+    <SystematicNameInFile>jet_jes_pileup_ptterm</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_Pileup_RhoTopology">
+    <SystematicNameInFile>jet_jes_pileup_rhotopology</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_PunchThrough_MC15">
+    <SystematicNameInFile>jet_jes_punchthrough_mc15</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_SingleParticle_HighPt">
+    <SystematicNameInFile>jet_jes_singleparticle_highpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_Tilecorr_Uncertainty">
+    <SystematicNameInFile>jet_tilecorr_uncertainty</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JET_JER_SINGLE_NP" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>jet_jer</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_JVT">
+    <SystematicNameInFile>jet_jvteff</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_PRW_DATASF">
+    <SystematicNameInFile>pu_prw</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MET_SoftTrk_ResoPara" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>met_softtrk_resopara</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MET_SoftTrk_ResoPerp" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>met_softtrk_resoperp</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_MET_SoftTrk_Scale">
+    <SystematicNameInFile>met_softtrk_scale</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample>
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_RECO_TOTAL">
+    <SystematicNameInFile>tau_eff_reco_total</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_RECO_HIGHPT">
+    <SystematicNameInFile>tau_eff_reco_highpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ELEORL_TRUEELE">
+    <SystematicNameInFile>tau_eff_eleolr_trueelectron</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ELEORL_TRUEHADTAU">
+    <SystematicNameInFile>tau_eff_eleolr_truehadtau</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ID_TOTAL">
+    <SystematicNameInFile>tau_eff_jetid_total</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAU_EFF_ID_HIGHPT">
+    <SystematicNameInFile>tau_eff_jetid_highpt</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAUS_TRUEHADTAU_SME_TES_DETECTOR">
+    <SystematicNameInFile>tau_tes_detector</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <!--ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample-->
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAUS_TRUEHADTAU_SME_TES_INSITU">
+    <SystematicNameInFile>tau_tes_insitu</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <!--ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample-->
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_TAUS_TRUEHADTAU_SME_TES_MODEL">
+    <SystematicNameInFile>tau_tes_model</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <!--ApplyToInputSample InputChannel="ll13TeV">MC</ApplyToInputSample-->
+    <Tag>KineSystematic</Tag>
+  </Systematic>
+  
+  <Systematic Name="ATLAS_FAKE_FF_SR1_SYS">
+    <SystematicNameInFile>fake_SR1</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_FF_SR2_SYS">
+    <SystematicNameInFile>fake_SR2</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_FF_SR3_SYS">
+    <SystematicNameInFile>fake_SR3</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR1_SYS">
+    <SystematicNameInFile>fake_SR1_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR2_SYS">
+    <SystematicNameInFile>fake_SR2_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_R_SR3_SYS">
+    <SystematicNameInFile>fake_SR3_R</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR1_SYS">
+    <SystematicNameInFile>fake_SR1_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR2_SYS">
+    <SystematicNameInFile>fake_SR2_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_MC_SR3_SYS">
+    <SystematicNameInFile>fake_SR3_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_FAKE_NONCLOSURE" OneSided="True" Symmetrize="True">
+    <SystematicNameInFile>lh_fake_nonclosure</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <!--Systematic Name="ATLAS_EFAKE_FF_SYS">
+    <SystematicNameInFile>efake_FF</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EFAKE_ID_SYS">
+    <SystematicNameInFile>efake_ID</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic>
+
+  <Systematic Name="ATLAS_EFAKE_MC_SYS">
+    <SystematicNameInFile>efake_MC</SystematicNameInFile>
+    <ApplyToInputSample InputChannel="lh13TeV">MC</ApplyToInputSample>
+    <Tag>WeightSystematic</Tag>
+  </Systematic-->
+
+  
+</WorkspaceBuilder>

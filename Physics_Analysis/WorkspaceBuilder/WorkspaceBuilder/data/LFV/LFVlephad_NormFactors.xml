@@ -1,0 +1,20 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <NormFactor Name="SigXsecOverSM" Const="False" POI="True">
+    <NormFactorNameInFile>SigXsecOverSM</NormFactorNameInFile>
+    <ApplyToSample>signal</ApplyToSample>
+  </NormFactor>
+
+  <NormFactor Name="ATLAS_norm_Ztt" Const="False">
+    <NormFactorNameInFile>norm_ztt</NormFactorNameInFile>
+    <ApplyToSample Channel="ll13TeV">Ztt</ApplyToSample>
+  </NormFactor>
+
+  <NormFactor Name="ATLAS_norm_Top" Const="False">
+    <NormFactorNameInFile>norm_top</NormFactorNameInFile>
+    <ApplyToSample Channel="ll13TeV">Top</ApplyToSample>
+  </NormFactor>
+  
+</WorkspaceBuilder>

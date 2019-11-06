@@ -1,0 +1,233 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <InputChannel Name="etau_cba_sr1_signal">
+    <ChannelNameInFile>etau_cba_sr1_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="etau_cba_sr2_signal">
+    <ChannelNameInFile>etau_cba_sr2_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="etau_cba_sr3_signal">
+    <ChannelNameInFile>etau_cba_sr3_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="etau_cba_sr1_vbf_signal">
+    <ChannelNameInFile>etau_cba_sr1_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+  
+  <InputChannel Name="etau_cba_sr2_vbf_signal">
+    <ChannelNameInFile>etau_cba_sr2_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+  
+  <InputChannel Name="etau_cba_sr3_vbf_signal">
+    <ChannelNameInFile>etau_cba_sr3_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="etau_cba_vbf_signal">
+    <ChannelNameInFile>etau_cba_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="etau_cba_bdt_signal">
+    <ChannelNameInFile>etau_cba_bdt_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="etau_cba_ebdt01_signal">
+    <ChannelNameInFile>etau_cba_ebdt01_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="etau_cba_ebdt2_signal">
+    <ChannelNameInFile>etau_cba_ebdt2_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mtau_cba_sr1_signal">
+    <ChannelNameInFile>mtau_cba_sr1_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+  
+  <InputChannel Name="mtau_cba_sr2_signal">
+    <ChannelNameInFile>mtau_cba_sr2_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+  
+  <InputChannel Name="mtau_cba_sr3_signal">
+    <ChannelNameInFile>mtau_cba_sr3_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mtau_cba_sr1_vbf_signal">
+    <ChannelNameInFile>mtau_cba_sr1_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+  
+  <InputChannel Name="mtau_cba_sr2_vbf_signal">
+    <ChannelNameInFile>mtau_cba_sr2_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+  
+  <InputChannel Name="mtau_cba_sr3_vbf_signal">
+    <ChannelNameInFile>mtau_cba_sr3_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mtau_cba_vbf_signal">
+    <ChannelNameInFile>mtau_cba_vbf_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mtau_cba_bdt_signal">
+    <ChannelNameInFile>mtau_cba_bdt_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mtau_cba_mbdt01_signal">
+    <ChannelNameInFile>etau_cba_mbdt01_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mtau_cba_mbdt2_signal">
+    <ChannelNameInFile>etau_cba_mbdt2_signal</ChannelNameInFile>
+    <Tag>lh13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="emu_llAll_lfv_inc_signal">
+    <ChannelNameInFile>emu_llAll_lfv_inc_signal</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="emu_llAll_lfv_inc_top">
+    <ChannelNameInFile>emu_llAll_lfv_inc_top</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="emu_llAll_lfv_inc_ztt">
+    <ChannelNameInFile>emu_llAll_lfv_inc_ztt</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="emu_llAll_lfv_vbf_signal">
+    <ChannelNameInFile>emu_llAll_lfv_vbf_signal</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="emu_llAll_lfv_vbf_top">
+    <ChannelNameInFile>emu_llAll_lfv_vbf_top</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="emu_llAll_lfv_vbf_ztt">
+    <ChannelNameInFile>emu_llAll_lfv_vbf_ztt</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mue_llAll_lfv_inc_signal">
+    <ChannelNameInFile>mue_llAll_lfv_inc_signal</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mue_llAll_lfv_inc_top">
+    <ChannelNameInFile>mue_llAll_lfv_inc_top</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mue_llAll_lfv_inc_ztt">
+    <ChannelNameInFile>mue_llAll_lfv_inc_ztt</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mue_llAll_lfv_vbf_signal">
+    <ChannelNameInFile>mue_llAll_lfv_vbf_signal</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mue_llAll_lfv_vbf_top">
+    <ChannelNameInFile>mue_llAll_lfv_vbf_top</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="mue_llAll_lfv_vbf_ztt">
+    <ChannelNameInFile>mue_llAll_lfv_vbf_ztt</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="llAll_lfv_inc_signal">
+    <ChannelNameInFile>llAll_lfv_inc_signal</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="llAll_lfv_inc_top">
+    <ChannelNameInFile>llAll_lfv_inc_top</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="llAll_lfv_inc_ztt">
+    <ChannelNameInFile>llAll_lfv_inc_ztt</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="llAll_lfv_vbf_signal">
+    <ChannelNameInFile>llAll_lfv_vbf_signal</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="llAll_lfv_vbf_top">
+    <ChannelNameInFile>llAll_lfv_vbf_top</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+  <InputChannel Name="llAll_lfv_vbf_ztt">
+    <ChannelNameInFile>llAll_lfv_vbf_ztt</ChannelNameInFile>
+    <Tag>ll13TeV</Tag>
+    <Tag>SR</Tag>
+  </InputChannel>
+
+</WorkspaceBuilder>

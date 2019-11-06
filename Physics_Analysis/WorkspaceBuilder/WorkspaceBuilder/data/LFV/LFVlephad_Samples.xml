@@ -1,0 +1,173 @@
+<!DOCTYPE WorkspaceBuilder  SYSTEM '../WorkspaceBuilder.dtd'>
+
+<WorkspaceBuilder>
+
+  <!-- //====================//
+       // Sample definitions //
+       //====================// -->
+  
+  <Data Name="Data">
+    <InputData InputChannel="All">Data</InputData>
+  </Data>
+
+  <Sample Name="ggH" StatError="False" Signal="True">
+    <UseInputSample>ggH</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+    <ApplyToChannel>gghll13TeV</ApplyToChannel>
+    <Tag>signal</Tag>
+  </Sample>
+
+  <InputSample Name="ggH">
+    <SampleNameInFile InputChannel="All">ggH</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="VBFH" StatError="False" Signal="True">
+    <UseInputSample>VBFH</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+    <Tag>signal</Tag>
+  </Sample>
+
+  <InputSample Name="VBFH">
+    <SampleNameInFile InputChannel="All">VBFH</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <!--Sample Name="sig" StatError="True" Signal="True">
+    <UseInputSample>sig</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+    <Tag>signal</Tag>
+  </Sample>
+
+  <InputSample Name="sig">
+    <SampleNameInFile InputChannel="All">sig</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample-->
+  
+  <Sample Name="Top" StatError="True" Signal="False">
+    <UseInputSample>Top</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="Top">
+    <SampleNameInFile InputChannel="All">Top</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="VV" StatError="True" Signal="False">
+    <UseInputSample>VV</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="VV">
+    <SampleNameInFile InputChannel="All">VV</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Zll" StatError="True" Signal="False">
+    <UseInputSample>Zll</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="Zll">
+    <SampleNameInFile InputChannel="All">Zll</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Ztt" StatError="True" Signal="False">
+    <UseInputSample>Ztt</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="Ztt">
+    <SampleNameInFile InputChannel="All">Ztt</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="Fakes" StatError="True" Signal="False">
+    <UseInputSample>Fakes</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="Fakes">
+    <SampleNameInFile InputChannel="All">Fake</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <!--Sample Name="eFakes" StatError="True" Signal="False">
+    <UseInputSample>eFakes</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="eFakes">
+    <SampleNameInFile InputChannel="All">eFake</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample-->
+
+  <!--Sample Name="Wjets" StatError="True" Signal="False">
+    <UseInputSample>Wjets</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample-->
+
+  <!--InputSample Name="Wjets">
+    <SampleNameInFile InputChannel="All">Wjets</SampleNameInFile>
+    <Tag>Wjets</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample-->
+
+  <Sample Name="Htt" StatError="True" Signal="False">
+    <UseInputSample>Htt</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="Htt">
+    <SampleNameInFile InputChannel="All">Htt</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <Sample Name="VH" StatError="True" Signal="False">
+    <UseInputSample>VH</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="VH">
+    <SampleNameInFile InputChannel="All">VH</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample>
+
+  <!--Sample Name="other" StatError="True" Signal="False">
+    <UseInputSample>other</UseInputSample>
+    <ApplyToChannel>lh13TeV</ApplyToChannel>
+    <ApplyToChannel>ll13TeV</ApplyToChannel>
+  </Sample>
+
+  <InputSample Name="other">
+    <SampleNameInFile InputChannel="All">other</SampleNameInFile>
+    <Tag>MC</Tag>
+    <ApplyToInputChannel>All</ApplyToInputChannel>
+  </InputSample-->
+
+</WorkspaceBuilder>
